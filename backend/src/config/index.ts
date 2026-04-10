@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import path from 'path';
 dotenv.config({ path: path.join(process.cwd(), '.env') });
+dotenv.config({ path: path.join(process.cwd(), '../.env') });
 
 // Inject the correct database name into the MongoDB URL based on NODE_ENV.
 // development → acclimation-sports-management-development
