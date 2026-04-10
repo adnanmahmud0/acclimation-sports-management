@@ -1,0 +1,11 @@
+# Root-level gitignore
+# Per-project ignores are in backend/.gitignore and frontend/.gitignore
+
+# Environment secrets — NEVER commit these
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+# Dependencies (re-installed inside Docker)
+node_modules
+
+# Next.js build output (re-built inside Docker)
+.next
+out
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# Dev tooling
+eslint.config.mjs
+*.md
+AGENTS.md
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
