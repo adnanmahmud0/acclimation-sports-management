@@ -39,8 +39,8 @@ async function main() {
     socketHelper.socket(io);
     // @ts-expect-error: attach io to global
     global.io = io;
-  } catch (_error) {
-    // no-op
+  } catch (error) {
+    console.error('Failed to start server or seed database:', error);
   }
 
   //handle unhandleRejection

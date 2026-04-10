@@ -4,7 +4,7 @@ dotenv.config({ path: path.join(process.cwd(), '.env') });
 dotenv.config({ path: path.join(process.cwd(), '../.env') });
 
 // Inject the correct database name into the MongoDB URL based on NODE_ENV.
-// development → acclimation-sports-management-development
+// development → acclimation-development
 // production  → acclimation-sports-management
 const buildDatabaseUrl = (): string => {
   const rawUrl = process.env.DATABASE_URL || '';
@@ -12,7 +12,7 @@ const buildDatabaseUrl = (): string => {
   const dbName =
     env === 'production'
       ? 'acclimation-sports-management'
-      : 'acclimation-sports-management-development';
+      : 'acclimation-development';
 
   // MongoDB SRV URLs look like:
   //   mongodb+srv://user:pass@host/?params
