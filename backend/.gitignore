@@ -1,5 +1,17 @@
 node_modules
 .env
 
+# Build output (compiled by CI/Docker)
+dist
+
+# Logs
 /winston
+logs
+*.log
+
+# Uploads (user files, not for git)
 /uploads
+
+# OS
+.DS_Store
+Thumbs.db
