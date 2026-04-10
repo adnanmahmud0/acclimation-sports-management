@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import { Server as IOServer } from 'socket.io';
 import { Server as HttpServer } from 'http';
+import os from 'os';
 import app from './app';
 import config from './config';
 import { seedSuperAdmin } from './DB/seedAdmin';
@@ -26,7 +27,17 @@ async function main() {
     const host = (config.ip_address as string) || 'localhost';
 
     server = app.listen(port, host, () => {
-      console.log(`Server is running at http://${host}:${port}`);
+      console.log(`Backend server ready!`);
+      console.log(`- Local:         http://localhost:${port}`);
+      
+      const interfaces = os.networkInterfaces();
+      for (const name of Object.keys(interfaces)) {
+        for (const iface of interfaces[name] || []) {
+          if (iface.family === 'IPv4' && !iface.internal) {
+            console.log(`- Network:       http://${iface.address}:${port}`);
+          }
+        }
+      }
     });
 
     //socket
