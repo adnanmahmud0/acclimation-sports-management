@@ -22,7 +22,6 @@ uploads
 .eslintrc
 eslint.config.js
 .prettierrc
-tsconfig.json
 
 # Docker files themselves
 Dockerfile
