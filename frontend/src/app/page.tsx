@@ -14,15 +14,15 @@ export default function Home() {
   return (
     <div className="relative min-h-screen font-sans overflow-x-hidden">
       {/* Background Image with Overlay */}
-      <div className="fixed inset-0 z-[-1]">
+      <div className="absolute top-0 left-0 w-full h-[120vh] z-[-1] overflow-hidden">
         <Image
           src="/baskateballplayer.png"
           alt="NBA Basketball Player Action"
           fill
-          className="object-cover object-center opacity-40 blur-[2px]"
+          className="object-cover object-top opacity-80"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/60 to-[#05070a]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/60 via-[#05070a]/20 to-[#05070a]" />
       </div>
 
       {/* Navigation */}
