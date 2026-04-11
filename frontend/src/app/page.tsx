@@ -231,6 +231,113 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* About Section */}
+        <section id="about" className="relative py-24 px-6 md:px-12 mb-32">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary tracking-tight">
+                About Acclamation Sports Management — Led by <span className="text-white">Joe Grekoski</span>
+              </h2>
+              <p className="text-lg md:text-xl text-white/80 max-w-4xl mx-auto leading-relaxed mb-4">
+                The only NBA sports agency led by an intellectual property expert specializing in 
+                personal brand valuation and development for elite basketball talent.
+              </p>
+              <div className="inline-block px-4 py-1 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs font-bold tracking-widest uppercase mb-12">
+                Certified Agent — National Basketball Players Association (NBPA)
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+              {/* Left Column: Image & Mission */}
+              <div className="relative group">
+                <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="relative">
+                  <div className="aspect-square relative rounded-[3rem] overflow-hidden border-2 border-primary/30 mb-8 max-w-md mx-auto shadow-[0_0_50px_rgba(0,0,210,0.2)]">
+                    <Image 
+                      src="/player.png" 
+                      alt="Joe Grekoski" 
+                      fill 
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="glass-premium p-8 rounded-3xl border-primary/20 max-w-md mx-auto">
+                    <p className="text-primary text-lg font-serif italic leading-relaxed">
+                      "His goal is clear: to help elite players, college prospects, and 5-star high-school talents 
+                      succeed at the highest level on the court. While making sure they are compensated what 
+                      they truly deserve, both on and off the court."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: Experience & Bio */}
+              <div className="space-y-8 text-left">
+                <div className="prose prose-invert max-w-none">
+                  <p className="text-lg text-white/90 leading-relaxed">
+                    <span className="text-primary font-bold">Joe Grekoski</span> is the founder of Acclamation Group and Acclimation Sports Management. 
+                    He is a recognized economic expert who specializes in intellectual property with a particular focus 
+                    on personal brand valuation and development for high-profile athletes.
+                  </p>
+                </div>
+
+                <ul className="space-y-4">
+                  {[
+                    "Launched Acclamation Group and built it into a premier advisory firm serving top law firms worldwide and major global consumer brands.",
+                    "Advised on the sale of IP assets to professional sports teams using advanced social media sentiment analysis and esoteric brand valuation modeling.",
+                    "Featured on CBS News discussing college basketball economics and player valuation.",
+                    "Expert in determining fair market rates for endorsement deals, NIL valuation, and turning personal brands into premium, monetizable economic assets.",
+                    "Brings courtroom-tested economic analysis to NBA contract negotiation, reputational management, and long-term wealth building that traditional agents cannot match."
+                  ].map((bullet, idx) => (
+                    <li key={idx} className="flex items-start gap-4 text-white/70 leading-relaxed">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="p-6 glass border-primary/10 rounded-2xl bg-primary/5">
+                  <p className="text-sm md:text-base font-bold text-white leading-relaxed">
+                    At age 29, Joe Grekoski became one of the youngest economic damages experts to testify in a U.S. court.
+                  </p>
+                </div>
+
+                <p className="text-lg font-bold text-white tracking-tight leading-relaxed">
+                  While other agents focus only on basketball, Joe Grekoski built <span className="text-primary tracking-wide">Acclimation Sports Management</span> as 
+                  the true one-stop shop. You just play basketball. We handle everything else.
+                </p>
+              </div>
+            </div>
+
+            {/* CTA & Footer strip */}
+            <div className="mt-24 text-center space-y-12">
+              <Link href="/book" className="inline-block group">
+                <button className="px-10 py-5 bg-gradient-to-r from-[#00d2ff] to-[#3a7bd5] text-white font-black text-sm md:text-base tracking-widest rounded-xl shadow-[0_0_30px_rgba(0,210,255,0.4)] hover:shadow-[0_0_50px_rgba(0,210,255,0.6)] hover:scale-105 transition-all uppercase">
+                  SCHEDULE YOUR CONFIDENTIAL STRATEGY CALL WITH JOE GREKOSKI - 512-518-6547
+                </button>
+              </Link>
+
+              <div className="text-white/40 text-[10px] md:text-xs tracking-widest uppercase flex flex-col md:flex-row items-center justify-center gap-4">
+                <span>30 minutes that can add millions to your career</span>
+                <span className="hidden md:inline">•</span>
+                <span>Zero obligation</span>
+                <span className="hidden md:inline">•</span>
+                <span>Fort Lauderdale, FL</span>
+              </div>
+
+              <div className="w-full h-[1px] bg-white/10" />
+
+              <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[9px] md:text-[10px] font-bold tracking-[0.2em] text-white/30 uppercase pb-12">
+                <span>Intellectual Property Expert</span>
+                <span>Personal Brand Valuation Specialist</span>
+                <span>Endorsement Market Rate Authority</span>
+                <span>IP Asset Valuation for Professional Sports Teams</span>
+                <span>Featured on CBS News</span>
+                <span>You Just Play Basketball</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
