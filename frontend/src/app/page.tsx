@@ -106,15 +106,138 @@ export default function Home() {
           />
         </section>
         {/* CTA Section */}
-        <div className="flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center gap-8 mb-32">
           <Link href="/register" className="group relative">
             <div className="absolute inset-0 bg-primary/40 blur-2xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-500" />
-            <button className="relative px-12 py-5 bg-primary text-background font-black text-lg tracking-widest rounded-full shadow-[0_0_30px_rgba(0,210,255,0.6)] hover:shadow-[0_0_50px_rgba(0,210,255,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center gap-3">
+            <button className="relative px-12 py-5 bg-primary text-background font-black text-lg tracking-widest rounded-full shadow-[0_0_30px_rgba(0,210,255,0.6)] hover:shadow-[0_0_50px_rgba(0,210,255,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center gap-3 font-sans!">
               GET STARTED
               <ArrowRight className="w-6 h-6" />
             </button>
           </Link>
         </div>
+
+        {/* Contract Value Evolution Section */}
+        <section className="relative py-24 px-6 md:px-12 rounded-[3rem] overflow-hidden mb-32">
+           {/* Section Background */}
+          <div className="absolute inset-0 z-[-1]">
+            <Image 
+              src="/graph.png" 
+              alt="Background Graph" 
+              fill 
+              className="object-cover opacity-30"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#05070a] via-transparent to-[#05070a]" />
+          </div>
+
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary tracking-tight leading-tight">
+              Your NBA Contract Value Evolution – From Draft Day to $500M+ Generational Empire
+            </h2>
+            <p className="text-base md:text-lg text-white/70 max-w-4xl mx-auto mb-16 leading-relaxed">
+              Led by Joseph Grekoski, CVA — the only NBA contract negotiation expert who testified in 
+              U.S. courts at age 29 — delivering proprietary salary-cap models and litigation-grade 
+              strategy that multiplies your lifetime earnings at every stage.
+            </p>
+
+            <div className="glass-premium p-8 md:p-12 rounded-[2.5rem] relative mb-16">
+              <h3 className="text-2xl md:text-4xl font-bold mb-4 text-white">One-Stop Shop for Everything</h3>
+              <p className="text-sm md:text-base text-white/60 max-w-3xl mx-auto leading-relaxed">
+                We do it all — contract negotiation, salary-cap strategy, brand & endorsement deals, pre-draft 
+                mastery, analytics, and full concierge support (trainers, chefs, CPAs, wealth advisors). 
+                You just play basketball. Call <span className="text-primary font-bold">Acclimation Sports Management</span> and let us handle the rest.
+              </p>
+            </div>
+
+            {/* Steps Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 text-left relative">
+              {/* Vertical Connector Line */}
+              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-primary/20 -translate-x-1/2">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_rgba(0,210,255,0.8)]" />
+                <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary/50" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary/50" />
+                <div className="absolute top-3/4 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary/50" />
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary shadow-[0_0_10px_rgba(0,210,255,0.8)]" />
+              </div>
+
+              {/* Step 1 */}
+              <div className="relative pl-8 md:pl-0 md:pr-12 md:text-right">
+                <span className="text-5xl md:text-7xl font-black text-primary/20 absolute left-0 md:left-auto md:right-0 top-0">1.</span>
+                <div className="relative z-10">
+                  <h4 className="text-lg font-bold mb-4 text-primary tracking-widest uppercase">PRE-DRAFT & NBA COMBINE MASTERY</h4>
+                  <ul className="space-y-2 text-sm text-white/70 list-none md:list-none">
+                    <li>Data-driven positioning •</li>
+                    <li>Medical evaluation strategy •</li>
+                    <li>Elite scouting access •</li>
+                    <li>Athletic profiling that sets your entire NBA career foundation •</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative pl-8 md:pl-12">
+                <span className="text-5xl md:text-7xl font-black text-primary/20 absolute left-0 top-0">2.</span>
+                <div className="relative z-10">
+                  <h4 className="text-lg font-bold mb-4 text-primary tracking-widest uppercase">PROPRIETARY SALARY CAP & ANALYTICAL MODELS</h4>
+                  <ul className="space-y-2 text-sm text-white/70">
+                    <li>• Real-time forecasting</li>
+                    <li>• Luxury-tax modeling</li>
+                    <li>• Endorsement valuation algorithms</li>
+                    <li>• Market value simulations</li>
+                    <li>Intuitive analytics that consistently put more money in your pocket than any traditional agency</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative pl-8 md:pl-0 md:pr-12 md:text-right">
+                <span className="text-5xl md:text-7xl font-black text-primary/20 absolute left-0 md:left-auto md:right-0 top-0">3.</span>
+                <div className="relative z-10">
+                  <h4 className="text-lg font-bold mb-4 text-primary tracking-widest uppercase">LITIGATION-GRADE NBA CONTRACT NEGOTIATION</h4>
+                  <ul className="space-y-2 text-sm text-white/70">
+                    <li>Precision tactics •</li>
+                    <li>Courtroom-proven leverage •</li>
+                    <li>Unprecedented leverage •</li>
+                    <li>Better deals at significantly lower fees •</li>
+                    <li>Career-longevity protection •</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative pl-8 md:pl-12">
+                <span className="text-5xl md:text-7xl font-black text-primary/20 absolute left-0 top-0">4.</span>
+                <div className="relative z-10">
+                  <h4 className="text-lg font-bold mb-4 text-primary tracking-widest uppercase">GENERATIONAL WEALTH & BUSINESS EMPIRE</h4>
+                  <ul className="space-y-2 text-sm text-white/70">
+                    <li>• Off-court brand architecture</li>
+                    <li>• Endorsement empire building</li>
+                    <li>• Private-jet concierge support</li>
+                    <li>• Legacy planning</li>
+                    <li>• Dramatics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-24 space-y-8">
+              <Link href="/book" className="inline-block group">
+                <button className="px-10 py-5 bg-gradient-to-r from-primary to-secondary text-background font-black text-sm md:text-base tracking-widest rounded-xl shadow-[0_0_30px_rgba(0,210,255,0.4)] hover:shadow-[0_0_50px_rgba(0,210,255,0.6)] hover:scale-105 transition-all uppercase">
+                  SCHEDULE YOUR CONFIDENTIAL STRATEGY CALL WITH JOSEPH GREKOSKI, CVA
+                </button>
+              </Link>
+              
+              <div className="text-white/40 text-[10px] md:text-xs tracking-widest uppercase flex flex-col md:flex-row items-center justify-center gap-4">
+                <span>30 minutes that can add millions to your next contract</span>
+                <span className="hidden md:inline">•</span>
+                <span>Zero obligation</span>
+                <span className="hidden md:inline">•</span>
+                <span>Call Joe Directly Now: <span className="text-primary font-bold">512-518-6547</span></span>
+                <span className="hidden md:inline">•</span>
+                <span>Fort Lauderdale, FL</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
