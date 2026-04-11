@@ -130,14 +130,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary tracking-tight leading-tight">
-              Your NBA Contract Value Evolution – From Draft Day to $500M+ Generational Empire
-            </h2>
-            <p className="text-base md:text-lg text-white/70 max-w-4xl mx-auto mb-16 leading-relaxed">
-              Led by Joseph Grekoski, CVA — the only NBA contract negotiation expert who testified in 
-              U.S. courts at age 29 — delivering proprietary salary-cap models and litigation-grade 
-              strategy that multiplies your lifetime earnings at every stage.
-            </p>
+
 
             <div className="glass-premium p-8 md:p-12 rounded-[2.5rem] relative mb-16">
               <h3 className="text-2xl md:text-4xl font-bold mb-4 text-white">One-Stop Shop for Everything</h3>
