@@ -283,7 +283,8 @@ export default function Home() {
 
                 <ul className="space-y-4">
                   {[
-                    "Launched Acclamation Group and built it into a premier advisory firm serving top law firms worldwide and major global consumer brands.",
+                    "His goal is clear: to help elite players, college prospects, and 5-star high-school talents succeed at the highest level on the court. While making sure they are compensated what they truly deserve, both on and off the court.",
+                    "Launched Acclimation Group and built it into a premier advisory firm serving top law firms worldwide and major global consumer brands.",
                     "Advised on the sale of IP assets to professional sports teams using advanced social media sentiment analysis and esoteric brand valuation modeling.",
                     "Featured on CBS News discussing college basketball economics and player valuation.",
                     "Expert in determining fair market rates for endorsement deals, NIL valuation, and turning personal brands into premium, monetizable economic assets.",
