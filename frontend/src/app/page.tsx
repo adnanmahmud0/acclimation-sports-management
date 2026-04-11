@@ -6,6 +6,7 @@ import {
   Handshake, 
   ShieldCheck, 
   ChevronRight,
+  ChevronDown,
   ArrowRight
 } from "lucide-react";
 
@@ -25,18 +26,37 @@ export default function Home() {
       </div>
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 px-6 py-6 lg:px-12 flex justify-between items-center glass border-none!">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(0,210,255,0.5)]">
-            <Trophy className="text-background w-6 h-6" />
-          </div>
-          <span className="text-xl font-bold tracking-tight text-glow">ACCLIMATION</span>
+      <nav className="sticky top-0 z-50 px-6 py-4 lg:px-12 flex justify-between items-center glass border-none! bg-[#05070a]/80">
+        {/* Custom Text Logo */}
+        <div className="flex flex-col items-start">
+          <span className="text-3xl font-bold tracking-[0.1em] text-white leading-none">ACCLIMATION</span>
+          <div className="w-full h-[1px] bg-primary/50 my-1" />
+          <span className="text-[10px] font-bold tracking-[0.4em] text-white/70 leading-none">SPORTS MANAGEMENT</span>
         </div>
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
-          <Link href="#services" className="hover:text-primary transition-colors">Services</Link>
-          <Link href="#about" className="hover:text-primary transition-colors">Our Edge</Link>
-          <Link href="/login" className="px-5 py-2 glass rounded-full hover:bg-white/10 transition-all border-white/5!">Sign In</Link>
+
+        {/* Links */}
+        <div className="hidden lg:flex items-center gap-7 text-[13px] font-semibold text-white/90">
+          <Link href="/" className="text-primary hover:text-primary/80 transition-colors">Home</Link>
+          <button className="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
+            About <ChevronDown className="w-3 h-3 opacity-50" />
+          </button>
+          <button className="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
+            Services <ChevronDown className="w-3 h-3 opacity-50" />
+          </button>
+          <Link href="#advantage" className="hover:text-primary transition-colors">The Acclamation Advantage</Link>
+          <button className="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
+            For Players <ChevronDown className="w-3 h-3 opacity-50" />
+          </button>
+          <Link href="#contact" className="hover:text-primary transition-colors">Contact</Link>
         </div>
+
+        {/* CTA Button */}
+        <Link href="/book" className="group">
+          <button className="relative px-6 py-2 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl leading-tight text-center transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,210,255,0.3)] hover:shadow-[0_0_30px_rgba(0,210,255,0.5)]">
+            <span className="block text-[10px] font-bold tracking-wider text-white opacity-90">SCHEDULE CONFIDENTIAL</span>
+            <span className="block text-xs font-black tracking-widest text-white uppercase">STRATEGY CALL</span>
+          </button>
+        </Link>
       </nav>
 
       {/* Hero Section */}
