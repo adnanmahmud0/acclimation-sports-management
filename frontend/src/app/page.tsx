@@ -1,65 +1,122 @@
 import Image from "next/image";
+import Link from "next/link";
+import { 
+  Trophy, 
+  TrendingUp, 
+  Handshake, 
+  ShieldCheck, 
+  ChevronRight,
+  ArrowRight
+} from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="relative min-h-screen font-sans overflow-x-hidden">
+      {/* Background Image with Overlay */}
+      <div className="fixed inset-0 z-[-1]">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/baskateballplayer.png"
+          alt="NBA Basketball Player Action"
+          fill
+          className="object-cover object-center opacity-40 blur-[2px]"
           priority
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/60 to-[#05070a]" />
+      </div>
+
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 px-6 py-6 lg:px-12 flex justify-between items-center glass border-none!">
+        <div className="flex items-center gap-2">
+          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(0,210,255,0.5)]">
+            <Trophy className="text-background w-6 h-6" />
+          </div>
+          <span className="text-xl font-bold tracking-tight text-glow">ACCLIMATION</span>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
+          <Link href="#services" className="hover:text-primary transition-colors">Services</Link>
+          <Link href="#about" className="hover:text-primary transition-colors">Our Edge</Link>
+          <Link href="/login" className="px-5 py-2 glass rounded-full hover:bg-white/10 transition-all border-white/5!">Sign In</Link>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <main className="container mx-auto px-6 pt-20 pb-32 text-center text-balance">
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
+          Where Economic Precision <br className="hidden md:block" /> Meets NBA Domination
+        </h1>
+        
+        <p className="text-sm md:text-base font-bold tracking-[0.3em] uppercase text-white/50 mb-12">
+          A New Kind of Basketball Agency
+        </p>
+
+        {/* Feature Bar */}
+        <div className="inline-flex flex-wrap justify-center items-center gap-4 md:gap-8 px-8 py-3 glass-premium rounded-full text-[10px] md:text-xs font-semibold tracking-wide border-primary/20 bg-[#00d2ff]/5 mb-24">
+          <span className="flex items-center gap-2">20+ Years Economic Edge</span>
+          <span className="text-primary/30 hidden sm:inline">•</span>
+          <span className="flex items-center gap-2">Real-Time Salary Cap Forecasting</span>
+          <span className="text-primary/30 hidden sm:inline">•</span>
+          <span className="flex items-center gap-2">Litigation-Grade Strategy</span>
+          <span className="text-primary/30 hidden sm:inline">•</span>
+          <span className="flex items-center gap-2">In-House Analytics</span>
+          <span className="text-primary/30 hidden sm:inline">•</span>
+          <span className="flex items-center gap-2">Lower Fees & More In Your Pocket</span>
+        </div>
+
+        {/* Service Cards Grid */}
+        <section id="services" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-32 text-left">
+          <ServiceCard 
+            title="NBA Contract Negotiation & Representation"
+            desc="Data-driven deals with litigation-grade strategy and in-house salary-cap models."
+            icon={<ShieldCheck className="w-6 h-6 text-primary" />}
+          />
+          <ServiceCard 
+            title="Brand Development"
+            desc="Turn your talent into a premium, monetizable economic asset on and off the court."
+            icon={<TrendingUp className="w-6 h-6 text-primary" />}
+          />
+          <ServiceCard 
+            title="Marketing & Endorsement Deals"
+            desc="Proprietary analytics models ensure you're never underpaid for your influence."
+            icon={<Handshake className="w-6 h-6 text-primary" />}
+          />
+          <ServiceCard 
+            title="One-Stop Holistic Support"
+            desc="Elite trainers, chefs, wealth advisors, CPAs & tax strategists — all coordinated."
+            icon={<Trophy className="w-6 h-6 text-primary" />}
+          />
+        </section>
+        {/* CTA Section */}
+        <div className="flex flex-col items-center gap-8">
+          <Link href="/register" className="group relative">
+            <div className="absolute inset-0 bg-primary/40 blur-2xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-500" />
+            <button className="relative px-12 py-5 bg-primary text-background font-black text-lg tracking-widest rounded-full shadow-[0_0_30px_rgba(0,210,255,0.6)] hover:shadow-[0_0_50px_rgba(0,210,255,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center gap-3">
+              GET STARTED
+              <ArrowRight className="w-6 h-6" />
+            </button>
+          </Link>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="container mx-auto px-6 py-12 border-t border-white/5 text-center">
+        <p className="text-xs text-white/30 tracking-widest uppercase">
+          © 2026 ACCLIMATION SPORTS MANAGEMENT. ALL RIGHTS RESERVED.
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+function ServiceCard({ title, desc, icon }: { title: string, desc: string, icon: React.ReactNode }) {
+  return (
+    <div className="glass-premium p-8 rounded-[2rem] hover:border-primary/50 transition-all duration-500 group">
+      <div className="w-12 h-12 glass rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform bg-white/5 border-white/10!">
+        {icon}
+      </div>
+      <h4 className="text-lg font-bold mb-4 leading-snug">{title}</h4>
+      <p className="text-sm text-white/60 leading-relaxed font-light">
+        {desc}
+      </p>
     </div>
   );
 }
