@@ -261,13 +261,7 @@ export default function Home() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="glass-premium p-8 rounded-3xl border-primary/20 max-w-md mx-auto">
-                    <p className="text-primary text-lg font-serif italic leading-relaxed">
-                      "His goal is clear: to help elite players, college prospects, and 5-star high-school talents 
-                      succeed at the highest level on the court. While making sure they are compensated what 
-                      they truly deserve, both on and off the court."
-                    </p>
-                  </div>
+
                 </div>
               </div>
 
@@ -328,7 +322,14 @@ export default function Home() {
 
               <div className="w-full h-[1px] bg-white/10" />
 
-
+              <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[9px] md:text-[10px] font-bold tracking-[0.2em] text-white/30 uppercase pb-12">
+                <span>Intellectual Property Expert</span>
+                <span>Personal Brand Valuation Specialist</span>
+                <span>Endorsement Market Rate Authority</span>
+                <span>IP Asset Valuation for Professional Sports Teams</span>
+                <span>Featured on CBS News</span>
+                <span>You Just Play Basketball</span>
+              </div>
             </div>
           </div>
         </section>
