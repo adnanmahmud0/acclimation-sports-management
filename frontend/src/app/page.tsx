@@ -43,7 +43,7 @@ export default function Home() {
           <button className="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
             Services <ChevronDown className="w-3 h-3 opacity-50" />
           </button>
-          <Link href="#advantage" className="hover:text-primary transition-colors">The Acclamation Advantage</Link>
+          <Link href="#advantage" className="hover:text-primary transition-colors">The Acclimation Advantage</Link>
           <button className="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
             For Players <ChevronDown className="w-3 h-3 opacity-50" />
           </button>
@@ -237,7 +237,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary tracking-tight">
-                About Acclamation Sports Management — Led by <span className="text-white">Joe Grekoski</span>
+                About Acclimation Sports Management — Led by <span className="text-white">Joe Grekoski</span>
               </h2>
               <p className="text-lg md:text-xl text-white/80 max-w-4xl mx-auto leading-relaxed mb-4">
                 The only NBA sports agency led by an intellectual property expert specializing in 
@@ -255,7 +255,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="aspect-square relative rounded-[3rem] overflow-hidden border-2 border-primary/30 mb-8 max-w-md mx-auto shadow-[0_0_50px_rgba(0,0,210,0.2)]">
                     <Image 
-                      src="/player.png" 
+                      src="/joe.png" 
                       alt="Joe Grekoski" 
                       fill 
                       className="object-cover"
@@ -275,7 +275,7 @@ export default function Home() {
               <div className="space-y-8 text-left">
                 <div className="prose prose-invert max-w-none">
                   <p className="text-lg text-white/90 leading-relaxed">
-                    <span className="text-primary font-bold">Joe Grekoski</span> is the founder of Acclamation Group and Acclimation Sports Management. 
+                    <span className="text-primary font-bold">Joe Grekoski</span> is the founder of Acclimation Group and Acclimation Sports Management. 
                     He is a recognized economic expert who specializes in intellectual property with a particular focus 
                     on personal brand valuation and development for high-profile athletes.
                   </p>
