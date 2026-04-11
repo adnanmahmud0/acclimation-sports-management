@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { Navbar } from "@/components/navbar";
+import { FounderCard } from "@/components/founder-card";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,7 +31,11 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col bg-[#05070a] text-white">
-        <TooltipProvider>{children}</TooltipProvider>
+        <TooltipProvider>
+          <Navbar />
+          <FounderCard />
+          {children}
+        </TooltipProvider>
       </body>
     </html>
   );

@@ -1,0 +1,144 @@
+import Image from "next/image";
+import Link from "next/link";
+import { GraduationCap, Share2, Award, Home, Brain } from "lucide-react";
+
+export default function CollegeProspectsPage() {
+  return (
+    <main className="relative min-h-screen overflow-x-hidden pt-12 bg-[#05070a]">
+      {/* Hero Section */}
+      <div className="relative">
+        <div className="absolute inset-x-0 top-0 z-[-1] h-[85vh]">
+          <Image
+            src="/basketcoart_v5.png"
+            alt="Neon Arena Background"
+            fill
+            className="object-cover opacity-90 shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
+        </div>
+
+        <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
+          <div className="space-y-16 max-w-7xl mx-auto text-center">
+            
+            {/* Header Content */}
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:text-left">
+               <div className="flex-1 space-y-6">
+                 <h1 className="text-4xl md:text-8xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
+                   College <br className="hidden md:block" />
+                   <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic">
+                      Prospects
+                   </span>
+                 </h1>
+                 <div className="space-y-6">
+                    <h2 className="text-xl md:text-3xl font-black text-white italic tracking-tight opacity-90">
+                      Position yourself for the NBA Draft and <br />
+                      build your future wealth now.
+                    </h2>
+                    <p className="text-sm md:text-lg text-white/50 font-medium leading-relaxed max-w-3xl mx-auto lg:mx-0 italic">
+                      The college years are your launchpad. We help top college prospects maximize NIL deals, develop a professional brand, and prepare for the NBA with elite off-court support.
+                    </p>
+                 </div>
+               </div>
+               
+               {/* Visual Element - Floating Basketball (from mockup vibe) */}
+               <div className="lg:w-1/3 relative aspect-square w-64 md:w-80 animate-float hidden lg:block">
+                  <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
+                  <div className="relative w-full h-full rounded-full border-2 border-primary/30 flex items-center justify-center overflow-hidden">
+                     <Image src="/baskatecoart.png" alt="Basketball Grid" fill className="object-cover opacity-20 rotate-45 scale-150" />
+                     <div className="text-primary font-black text-4xl italic tracking-tighter opacity-40 select-none">FUTURE</div>
+                  </div>
+               </div>
+            </div>
+
+            {/* What We Provide - Arc Layout */}
+            <div className="space-y-16 py-12">
+               <div className="flex items-center justify-center gap-4 text-primary">
+                  <div className="h-[1px] w-12 bg-primary/30" />
+                  <span className="text-sm font-black uppercase tracking-[0.4em]">What We Provide</span>
+                  <div className="h-[1px] w-12 bg-primary/30" />
+               </div>
+
+               {/* Arc Grid */}
+               <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                  <ArcCard 
+                    number="1"
+                    icon={<GraduationCap className="w-5 h-5" />}
+                    title="NIL deal valuation and high-value brand partnerships"
+                    desc="Connect with top brands and secure maximum value for your name, image, and likeness."
+                  />
+                  <ArcCard 
+                    number="2"
+                    icon={<Share2 className="w-5 h-5" />}
+                    title="Personal brand development and marketing strategy"
+                    desc="Build a professional, social-media-ready identity that sets you apart."
+                  />
+                  <ArcCard 
+                    number="3"
+                    icon={<Award className="w-5 h-5" />}
+                    title="Pre-draft & NBA Combine mastery"
+                    desc="Elite trainers, private chefs, luxury accommodations, and interview prep to dominate the draft."
+                  />
+                  <ArcCard 
+                    number="4"
+                    icon={<Home className="w-5 h-5" />}
+                    title="One-stop holistic concierge support"
+                    desc="Manage travel, finances, and logistics so you can focus solely on your game."
+                  />
+                  <ArcCard 
+                    number="5"
+                    icon={<Brain className="w-5 h-5" />}
+                    title="Early contract negotiation planning and salary cap education"
+                    desc="Learn the business of the NBA early to maximize your future earnings."
+                  />
+               </div>
+            </div>
+
+            {/* Transition Copy */}
+            <div className="space-y-12">
+               <p className="text-white/80 text-lg md:text-2xl font-bold italic tracking-wide leading-relaxed">
+                  Start building your NBA-level empire while still in college.
+               </p>
+
+               {/* CTA Section */}
+               <div className="pt-6">
+                  <Link href="/get-started" className="group relative inline-block w-full max-w-4xl px-4">
+                     <div className="absolute inset-0 bg-primary/40 blur-3xl rounded-xl scale-75 group-hover:scale-110 transition-transform duration-500" />
+                     <div className="relative bg-gradient-to-r from-primary via-purple-600 to-primary px-10 py-6 rounded-2xl transition-all duration-300 group-hover:shadow-[0_0_50px_rgba(0,180,255,0.6)] group-active:scale-[0.98] border border-white/20">
+                       <span className="text-xs md:text-xl font-black text-white uppercase tracking-widest leading-tight block">
+                         SCHEDULE YOUR CONFIDENTIAL COLLEGE PROSPECT STRATEGY CALL TODAY
+                       </span>
+                     </div>
+                  </Link>
+               </div>
+            </div>
+
+            <div className="pt-16 text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic border-t border-white/5">
+               Developmental Pipeline • NIL Optimization • Strategic Brand Launch
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+function ArcCard({ number, icon, title, desc }: { number: string, icon: React.ReactNode, title: string, desc: string }) {
+  return (
+    <div className="bg-[#0a0d12]/60 border border-white/5 p-6 rounded-2xl backdrop-blur-md hover:border-primary/40 transition-all group flex flex-col items-center text-center space-y-4 shadow-xl min-h-[280px]">
+       <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center font-black text-primary text-sm group-hover:bg-primary group-hover:text-black transition-all">
+          {number}
+       </div>
+       <div className="w-8 h-8 flex items-center justify-center text-white/40 group-hover:text-primary transition-colors">
+          {icon}
+       </div>
+       <div className="space-y-3">
+          <h4 className="text-[11px] font-black text-white uppercase tracking-widest leading-tight">{title}</h4>
+          <p className="text-[10px] font-bold text-white/30 uppercase tracking-widest leading-relaxed">
+             {desc}
+          </p>
+       </div>
+    </div>
+  );
+}
