@@ -283,12 +283,12 @@ export default function Home() {
 
                 <ul className="space-y-4">
                   {[
-                    "His goal is clear: to help elite players, college prospects, and 5-star high-school talents succeed at the highest level on the court. While making sure they are compensated what they truly deserve, both on and off the court.",
                     "Launched Acclimation Group and built it into a premier advisory firm serving top law firms worldwide and major global consumer brands.",
                     "Advised on the sale of IP assets to professional sports teams using advanced social media sentiment analysis and esoteric brand valuation modeling.",
                     "Featured on CBS News discussing college basketball economics and player valuation.",
                     "Expert in determining fair market rates for endorsement deals, NIL valuation, and turning personal brands into premium, monetizable economic assets.",
-                    "Brings courtroom-tested economic analysis to NBA contract negotiation, reputational management, and long-term wealth building that traditional agents cannot match."
+                    "Brings courtroom-tested economic analysis to NBA contract negotiation, reputational management, and long-term wealth building that traditional agents cannot match.",
+                    "His goal is clear: to help elite players, college prospects, and 5-star high-school talents succeed at the highest level on the court. While making sure they are compensated what they truly deserve, both on and off the court."
                   ].map((bullet, idx) => (
                     <li key={idx} className="flex items-start gap-4 text-white/70 leading-relaxed">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
