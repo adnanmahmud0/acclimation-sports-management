@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 import { Logo } from "@/components/logo";
 
 const aboutItems = [
@@ -108,6 +108,7 @@ const playerItems = [
 
 export function Navbar() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
   // Hide navbar on admin pages
   if (pathname?.startsWith("/admin")) {
@@ -118,7 +119,7 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 px-4 py-3 lg:px-12 flex justify-between items-center glass border-none! bg-[#05070a]/80">
       {/* Mobile Menu (Left) */}
       <div className="lg:hidden">
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger
             render={
               <button className="p-2 text-white/70 hover:text-primary transition-colors cursor-pointer">
@@ -141,6 +142,7 @@ export function Navbar() {
                   href="/" 
                   className="text-xl font-bold tracking-tight hover:text-primary transition-colors block"
                   onClick={() => {
+                    setOpen(false);
                     if (pathname === "/") {
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }
@@ -158,6 +160,7 @@ export function Navbar() {
                       key={item.title} 
                       href={item.href} 
                       className="group flex flex-col gap-1"
+                      onClick={() => setOpen(false)}
                     >
                       <span className="text-sm font-semibold text-white/90 group-hover:text-primary transition-colors">
                         {item.title}
@@ -178,6 +181,7 @@ export function Navbar() {
                       key={item.title} 
                       href={item.href} 
                       className="group flex flex-col gap-1"
+                      onClick={() => setOpen(false)}
                     >
                       <span className="text-sm font-semibold text-white/90 group-hover:text-primary transition-colors">
                         {item.title}
@@ -194,6 +198,7 @@ export function Navbar() {
                 <Link 
                   href="/#advantage" 
                   className="text-lg font-bold hover:text-primary transition-colors block"
+                  onClick={() => setOpen(false)}
                 >
                   The Advantage
                 </Link>
@@ -207,6 +212,7 @@ export function Navbar() {
                       key={item.title} 
                       href={item.href} 
                       className="group flex flex-col gap-1"
+                      onClick={() => setOpen(false)}
                     >
                       <span className="text-sm font-semibold text-white/90 group-hover:text-primary transition-colors">
                         {item.title}
@@ -223,11 +229,12 @@ export function Navbar() {
                 <Link 
                   href="/contact" 
                   className="text-lg font-bold hover:text-primary transition-colors block"
+                  onClick={() => setOpen(false)}
                 >
                   Contact
                 </Link>
                 
-                <Link href="/book" className="block mt-4">
+                <Link href="/book" className="block mt-4" onClick={() => setOpen(false)}>
                   <button className="w-full py-4 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl font-bold text-xs tracking-widest uppercase text-white shadow-lg shadow-primary/20">
                     Schedule Strategy Call
                   </button>
