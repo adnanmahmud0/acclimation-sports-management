@@ -126,62 +126,113 @@ export function Navbar() {
               </button>
             }
           />
-          <SheetContent side="left" className="bg-[#05070a] border-white/10 text-white w-80">
-            <SheetHeader className="text-left pb-6 border-b border-white/5">
-              <SheetTitle>
-                <Logo variant="horizontal" width={150} height={35} />
-              </SheetTitle>
+          <SheetContent side="left" className="bg-[#05070a]/95 backdrop-blur-xl border-white/10 text-white w-[300px] sm:w-[350px] flex flex-col h-full p-0">
+            <SheetHeader className="text-left p-6 border-b border-white/5 bg-[#05070a]">
+              <div className="flex items-center justify-between">
+                <SheetTitle>
+                  <Logo variant="horizontal" width={140} height={32} />
+                </SheetTitle>
+              </div>
             </SheetHeader>
             
-            <div className="flex flex-col gap-6 py-8">
-              <Link 
-                href="/" 
-                className="text-lg font-bold hover:text-primary transition-colors"
-                onClick={() => {
-                  if (pathname === "/") {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }
-                }}
-              >
-                Home
-              </Link>
+            <div className="flex-1 overflow-y-auto py-6 px-6 space-y-8 scrollbar-hide">
+              <div className="space-y-4">
+                <Link 
+                  href="/" 
+                  className="text-xl font-bold tracking-tight hover:text-primary transition-colors block"
+                  onClick={() => {
+                    if (pathname === "/") {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }
+                  }}
+                >
+                  Home
+                </Link>
+              </div>
               
               <div className="space-y-4">
-                <h4 className="text-xs font-black tracking-widest text-white/30 uppercase">About</h4>
-                <div className="grid gap-2 pl-2">
+                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">About Acclimation</h4>
+                <div className="grid gap-3">
                   {aboutItems.map(item => (
-                    <Link key={item.title} href={item.href} className="text-sm font-medium text-white/70 hover:text-primary transition-colors">
-                      {item.title}
+                    <Link 
+                      key={item.title} 
+                      href={item.href} 
+                      className="group flex flex-col gap-1"
+                    >
+                      <span className="text-sm font-semibold text-white/90 group-hover:text-primary transition-colors">
+                        {item.title}
+                      </span>
+                      <span className="text-[11px] text-white/40 line-clamp-1">
+                        {item.description}
+                      </span>
                     </Link>
                   ))}
                 </div>
               </div>
 
               <div className="space-y-4">
-                <h4 className="text-xs font-black tracking-widest text-white/30 uppercase">Services</h4>
-                <div className="grid gap-2 pl-2">
+                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">Agency Services</h4>
+                <div className="grid gap-3">
                   {serviceItems.map(item => (
-                    <Link key={item.title} href={item.href} className="text-sm font-medium text-white/70 hover:text-primary transition-colors">
-                      {item.title}
+                    <Link 
+                      key={item.title} 
+                      href={item.href} 
+                      className="group flex flex-col gap-1"
+                    >
+                      <span className="text-sm font-semibold text-white/90 group-hover:text-primary transition-colors">
+                        {item.title}
+                      </span>
+                      <span className="text-[11px] text-white/40 line-clamp-1">
+                        {item.description}
+                      </span>
                     </Link>
                   ))}
                 </div>
               </div>
-
-              <Link href="/#advantage" className="text-lg font-bold hover:text-primary transition-colors">The Advantage</Link>
 
               <div className="space-y-4">
-                <h4 className="text-xs font-black tracking-widest text-white/30 uppercase">For Players</h4>
-                <div className="grid gap-2 pl-2">
+                <Link 
+                  href="/#advantage" 
+                  className="text-lg font-bold hover:text-primary transition-colors block"
+                >
+                  The Advantage
+                </Link>
+              </div>
+
+              <div className="space-y-4">
+                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">Player Portfolios</h4>
+                <div className="grid gap-3">
                   {playerItems.map(item => (
-                    <Link key={item.title} href={item.href} className="text-sm font-medium text-white/70 hover:text-primary transition-colors">
-                      {item.title}
+                    <Link 
+                      key={item.title} 
+                      href={item.href} 
+                      className="group flex flex-col gap-1"
+                    >
+                      <span className="text-sm font-semibold text-white/90 group-hover:text-primary transition-colors">
+                        {item.title}
+                      </span>
+                      <span className="text-[11px] text-white/40 line-clamp-1">
+                        {item.description}
+                      </span>
                     </Link>
                   ))}
                 </div>
               </div>
 
-              <Link href="/contact" className="text-lg font-bold hover:text-primary transition-colors">Contact</Link>
+              <div className="space-y-4 pb-8">
+                <Link 
+                  href="/contact" 
+                  className="text-lg font-bold hover:text-primary transition-colors block"
+                >
+                  Contact
+                </Link>
+                
+                <Link href="/book" className="block mt-4">
+                  <button className="w-full py-4 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl font-bold text-xs tracking-widest uppercase text-white shadow-lg shadow-primary/20">
+                    Schedule Strategy Call
+                  </button>
+                </Link>
+              </div>
             </div>
           </SheetContent>
         </Sheet>
