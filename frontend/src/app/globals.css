@@ -71,6 +71,11 @@ body {
   @apply scroll-smooth antialiased font-sans overflow-x-hidden;
 }
 
+/* Fix for italic text being cut off on the right (glyph slant) */
+.italic {
+  padding-right: 0.15em;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
