@@ -31,7 +31,7 @@ export default function TwoWayContractsPage() {
                   NBA Two-Way Contracts <br />
                   <span className="text-primary italic">2026: Rules, Salaries &</span> <br />
                   The Fast Track from <br />
-                  <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic pr-12">
+                  <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent flex italic pr-12">
                     G League to Millions
                   </span>
                 </h1>

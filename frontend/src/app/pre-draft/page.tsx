@@ -29,7 +29,7 @@ export default function PreDraftPage() {
             <div className="space-y-6">
                <h1 className="text-4xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,210,255,0.3)]">
                  Pre-Draft and NBA <br />
-                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic">
+                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic flex">
                     Combine Mastery
                  </span>
                </h1>

@@ -30,7 +30,7 @@ export default function SalaryCapPage() {
           </div>
           <h1 className="text-4xl md:text-7xl font-black uppercase italic tracking-tighter leading-[1.1]">
             Master the Salary Cap. <br />
-            <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic">
+            <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic flex">
               Maximize Every Dollar.
             </span>
           </h1>

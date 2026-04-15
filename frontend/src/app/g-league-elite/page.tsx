@@ -33,7 +33,7 @@ export default function GLeagueElitePage() {
                   NBA G League 2025-26: <br />
                   <span className="text-primary italic">Rules, Salaries, & THE</span> 
                   Fast Track from <br />
-                  <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic">
+                  <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent flex italic">
                     Prospects to the NBA
                   </span>
                 </h1>

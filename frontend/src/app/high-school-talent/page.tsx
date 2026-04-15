@@ -30,7 +30,7 @@ export default function HighSchoolTalentPage() {
             <div className="space-y-8">
                <h1 className="text-2xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-[1.1] drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
                  From Elite High School to the NBA — <br />
-                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic pr-12">
+                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic pr-12 flex">
                     Start Building Your Professional Future Now
                  </span>
                </h1>
