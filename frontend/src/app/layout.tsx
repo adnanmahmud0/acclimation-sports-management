@@ -16,8 +16,51 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Acclimation Sports Management | NBA Agency",
-  description: "Data-driven NBA representation and career management.",
+  title: {
+    default: "Acclimation Sports Management | Elite NBA Agency",
+    template: "%s | Acclimation Sports Management",
+  },
+  description: "Data-driven NBA representation, career management, and salary cap analytics. Expert advocacy for NBA players, college prospects, and elite high-school talent.",
+  keywords: ["NBA Agency", "Basketball Representation", "NIL Deals", "Contract Negotiation", "Salary Cap Analytics", "NBA Draft Preparation", "Sports Management"],
+  authors: [{ name: "Joe Grekoski" }],
+  creator: "Acclimation Sports Management",
+  publisher: "Acclimation Sports Management",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://acclimation-sports.com"), // Replace with actual domain if known
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Acclimation Sports Management | Elite NBA Agency",
+    description: "Data-driven NBA representation and career management.",
+    url: "https://acclimation-sports.com",
+    siteName: "Acclimation Sports Management",
+    images: [
+      {
+        url: "/logo/AcclimationLogo-Vartical.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Acclimation Sports Management Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Acclimation Sports Management | Elite NBA Agency",
+    description: "Data-driven NBA representation and career management.",
+    images: ["/logo/AcclimationLogo-Vartical.jpg"],
+  },
+  icons: {
+    icon: "/logo/AcclimationLogo-Vartical.jpg",
+    shortcut: "/logo/AcclimationLogo-Vartical.jpg",
+    apple: "/logo/AcclimationLogo-Vartical.jpg",
+  },
 };
 
 export default function RootLayout({

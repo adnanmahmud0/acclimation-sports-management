@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Elite High School Talent NIL Representation",
+  description: "Multi-million dollar NIL deal strategy and professional career planning for top-ranked prep basketball prospects.",
+};
 import { CheckCircle2 } from "lucide-react";
 
 export default function HighSchoolTalentPage() {

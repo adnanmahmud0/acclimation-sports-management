@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "WNBA Representation & CBA Advocacy",
+  description: "Capitalize on the historic new WNBA CBA. Expert negotiation and representation that maximizes earnings and brand value for WNBA athletes.",
+};
 
 export default function WNBAPage() {
   return (

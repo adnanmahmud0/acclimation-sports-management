@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NBA Marketing & Endorsements",
+  description: "Maximizing off-court income through shoe deals, NIL, and legacy partnerships for elite basketball talent.",
+};
 import { BarChart3, Mic2, Handshake, Network, Trophy } from "lucide-react";
 import { Logo } from "@/components/logo";
 

@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CircleDot, TrendingUp, Target, Mic, FileText } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NBA Pre-Draft and Combine Preparation",
+  description: "Elite preparation for top-ranked prep and college highlights to rise on NBA draft boards and enter the league with maximum value.",
+};
 
 export default function PreDraftPage() {
   return (

@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NBA Salary Cap Analytics & Strategy",
+  description: "Proprietary analytical models and expert salary cap strategy to optimize every contract and maximize career earnings.",
+};
 
 export default function SalaryCapPage() {
   return (

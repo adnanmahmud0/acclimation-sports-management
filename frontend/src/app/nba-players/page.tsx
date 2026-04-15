@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Representing Active NBA Players",
+  description: "Veteran representation focused on wealth architecture, contract extensions, and post-career financial security for active NBA athletes.",
+};
 
 export default function NBAPlayersPage() {
   return (

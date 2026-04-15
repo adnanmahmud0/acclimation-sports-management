@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Holistic Concierge Support",
+  description: "Elite trainers, personal chefs, private jets, and wealth management support for the modern NBA athlete.",
+};
 import { Dumbbell, Utensils, PiggyBank, Plane, Tv, Headphones } from "lucide-react";
 import { Logo } from "@/components/logo";
 

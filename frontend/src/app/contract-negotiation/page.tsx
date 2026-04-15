@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NBA Contract Negotiation & Representation",
+  description: "Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player security.",
+};
 
 
 export default function ContractNegotiationPage() {

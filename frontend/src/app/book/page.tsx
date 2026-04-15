@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Book Your Strategy Call",
+  description: "Schedule a confidential strategy call with Joe Grekoski to discuss your NBA career architecture and economic positioning.",
+};
 import { Search, Map, BarChart3, ShieldCheck } from "lucide-react";
 import { Logo } from "@/components/logo";
 

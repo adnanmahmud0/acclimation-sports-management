@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { GraduationCap, Share2, Award, Home, Brain } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "College Prospects NBA Draft Preparation",
+  description: "Maximize NIL deals, develop a professional brand, and prepare for the NBA with elite off-court support for top college basketball prospects.",
+};
 
 export default function CollegeProspectsPage() {
   return (

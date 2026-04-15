@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Contact Acclimation Sports Management",
+  description: "Connect with Joe Grekoski and the Acclimation team for elite NBA representation and data-driven career advocacy.",
+};
 
 export default function ContactPage() {
   return (

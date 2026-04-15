@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Personal Branding & Marketing",
+  description: "Transforming talent into a premium, monetizable economic asset through professional brand development and strategic marketing.",
+};
 
 export default function PersonalBrandingPage() {
   return (

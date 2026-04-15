@@ -1,5 +1,11 @@
 import Image from "next/image";
 import { Search, TrendingUp, Handshake, Trophy } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Get Started | NBA Player Profile Submission",
+  description: "Take the first step toward your professional basketball career. Submit your player profile for exclusive valuation and draft strategy.",
+};
 
 export default function GetStartedPage() {
   return (
