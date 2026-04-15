@@ -3,19 +3,18 @@ import Link from "next/link";
 
 export default function NBAPlayersPage() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden pt-12 bg-[#05070a]">
-      {/* Hero Section */}
-      <div className="relative">
-        <div className="absolute inset-x-0 top-0 z-[-1] h-[85vh]">
-          <Image
-            src="/basketcoart_v5.png"
-            alt="Neon Arena Background"
-            fill
-            className="object-cover opacity-90 shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
-        </div>
+    <main className="relative min-h-screen overflow-x-hidden pt-12">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/ground.png"
+          alt="Active NBA Players Background"
+          fill
+          className="object-cover opacity-80"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/80 via-[#05070a]/40 to-[#05070a]" />
+      </div>
 
         <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center text-center">
           <div className="space-y-12 max-w-6xl mx-auto">
@@ -102,7 +101,6 @@ export default function NBAPlayersPage() {
 
           </div>
         </div>
-      </div>
     </main>
   );
 }

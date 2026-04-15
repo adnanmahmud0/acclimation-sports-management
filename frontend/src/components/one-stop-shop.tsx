@@ -121,7 +121,7 @@ export function OneStopShop() {
             <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-xl scale-95 group-hover:scale-105 transition-transform duration-500" />
             <div className="relative bg-gradient-to-r from-[#00d2ff] via-[#3adaff] to-[#00d2ff] px-6 py-4 md:py-6 rounded-xl transition-all duration-300 group-hover:shadow-[0_0_40px_rgba(0,210,255,0.6)] group-active:scale-[0.98]">
               <span className="text-xs md:text-lg font-black text-black uppercase tracking-tight md:tracking-wider">
-                Schedule your confidential strategy call with Joseph Grekoski, CVA
+                Schedule your confidential strategy call with Joe Grekoski
               </span>
             </div>
           </Link>

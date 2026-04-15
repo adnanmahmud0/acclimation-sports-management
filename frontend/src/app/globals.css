@@ -60,7 +60,7 @@
 }
 
 body {
-  @apply scroll-smooth antialiased font-sans;
+  @apply scroll-smooth antialiased font-sans overflow-x-hidden;
 }
 
 /* Custom Scrollbar */

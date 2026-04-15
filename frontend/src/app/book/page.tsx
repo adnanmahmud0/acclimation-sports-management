@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Search, Map, BarChart3, ShieldCheck } from "lucide-react";
+import { Logo } from "@/components/logo";
 
 export default function BookingPage() {
   return (
@@ -30,7 +31,7 @@ export default function BookingPage() {
                  </span>
                </h1>
                <p className="text-sm md:text-lg text-white/70 font-medium leading-relaxed max-w-4xl mx-auto italic">
-                 Schedule a private 20-30 minute strategy call with Joseph Grekoski, CVA.
+                 Schedule a private 20-30 minute strategy call with Joe Grekoski.
                  Get personalized guidance on NIL, recruiting, brand value, contract strategy, and your direct path to the NBA — whether you&apos;re elite high school talent, a college prospect, or an active player.
                </p>
                
@@ -66,7 +67,7 @@ export default function BookingPage() {
                   <ExpectationCard 
                     icon={<BarChart3 className="w-5 h-5" />}
                     title="Proprietary Insights"
-                    desc="Proprietary valuation & salary cap insights (your CVA edge)."
+                    desc="Proprietary valuation & salary cap insights."
                   />
                   <ExpectationCard 
                     icon={<ShieldCheck className="w-5 h-5" />}
@@ -127,9 +128,12 @@ export default function BookingPage() {
                </div>
             </div>
 
-            <div className="pt-16 text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic border-t border-white/5">
-               © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
-            </div>
+            <footer className="pt-16 flex flex-col items-center gap-6 border-t border-white/5">
+               <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
+               <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic">
+                  © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
+               </div>
+            </footer>
 
           </div>
         </div>

@@ -25,13 +25,12 @@ export default function TwoWayContractsPage() {
                   NBA Two-Way Contracts <br />
                   <span className="text-primary italic">2026: Rules, Salaries &</span> <br />
                   The Fast Track from <br />
-                  <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic">
+                  <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic pr-12">
                     G League to Millions
                   </span>
                 </h1>
                 
                 <div className="flex items-center gap-4">
-                   <div className="w-12 h-1 bg-primary/50" />
                    <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight italic">
                      Led by <span className="text-white font-bold">Joe Grekoski</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
                    </p>

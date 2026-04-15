@@ -1,30 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Logo } from "@/components/logo";
+
 
 export default function ContractNegotiationPage() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden">
-      {/* Hero Section */}
-      <div className="relative">
-        <div className="absolute inset-0 z-[-1] h-[85vh]">
-          <Image
-            src="/effect.png"
-            alt="Contract Negotiation Background"
-            fill
-            className="object-cover opacity-90 shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-transparent to-[#05070a]" />
-        </div>
+    <main className="relative min-h-screen overflow-x-hidden pt-12">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/effect.png"
+          alt="Contract Negotiation Background"
+          fill
+          className="object-cover opacity-80"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-transparent to-[#05070a]" />
+      </div>
 
-        <div className="container mx-auto px-6 pt-5 relative z-10 ">
-          <div className="space-y-8">
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white uppercase italic leading-tight text-center">
-              NBA Contract Negotiation & <br />
-              <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic">
-                Representation
-              </span>
-            </h1>
+      <div className="container mx-auto px-6 pt-24 relative z-10 ">
+        <div className="space-y-8">
+          <h1 className="text-2xl md:text-6xl font-black tracking-tight text-white uppercase italic leading-tight text-center">
+            NBA Contract Negotiation & <br />
+            <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic pr-4">
+              Representation
+            </span>
+          </h1>
 
             <p className="text-lg md:text-2xl text-white/90 font-medium leading-relaxed italic">
               Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player for active NBA players, college prospects, and elite high-school talent.
@@ -46,7 +47,6 @@ export default function ContractNegotiationPage() {
                 ))}
               </ul>
             </div>
-          </div>
         </div>
       </div>
 
@@ -91,9 +91,12 @@ export default function ContractNegotiationPage() {
             </Link>
           </div>
 
-          <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic pt-12">
-            Elite Advocacy • Data Centric Identification • Strategic Market Positioning
-          </div>
+          <footer className="pt-12 flex flex-col items-center gap-6 border-t border-white/5">
+              <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
+              <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic">
+                Elite Advocacy • Data Centric Identification • Strategic Market Positioning
+              </div>
+          </footer>
         </div>
       </div>
     </main>

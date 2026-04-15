@@ -22,7 +22,7 @@ export function ContactSection() {
             Ready to Take the Next Step?
           </h2>
           <p className="text-lg md:text-2xl text-white/70 font-medium italic">
-            Schedule a Confidential Strategy Call with Joseph Grekoski, CVA
+            Schedule a Confidential Strategy Call with Joe Grekoski
           </p>
         </div>
 
@@ -62,25 +62,25 @@ export function ContactSection() {
            {/* Direct Contact Footer Block */}
            <div className="pt-12 flex flex-col md:flex-row gap-12 items-center border-t border-white/5">
               <div className="flex-1 flex gap-6 items-center">
-                 <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/30 relative shrink-0 shadow-2xl">
-                    <Image src="/joe_bio.png" alt="Joseph Grekoski" fill className="object-cover" />
-                 </div>
+                  <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/30 relative shrink-0 shadow-2xl">
+                     <Image src="/owner/me.png" alt="Joe Grekoski" fill className="object-cover" />
+                  </div>
                  <div className="text-left">
-                    <div className="text-white font-black text-xl tracking-[0.05em] uppercase leading-tight">Joseph Grekoski, CVA</div>
-                    <div className="text-primary/60 text-xs font-black tracking-widest uppercase mb-3">Founder & Principal</div>
-                    <p className="text-[10px] font-bold text-white/40 leading-relaxed uppercase max-w-md hidden lg:block">
-                       Joseph Grekoski, CVA — specialized in NBA contract negotiation, economic valuation, and advanced salary-cap forecasting. Delivering courtroom-proven strategy for elite professional athletes.
-                    </p>
+                     <div className="text-white font-black text-xl tracking-[0.05em] uppercase leading-tight">Joe Grekoski</div>
+                     <div className="text-primary/60 text-xs font-black tracking-widest uppercase mb-3">Founding Principal</div>
+                     <p className="text-[10px] font-bold text-white/40 leading-relaxed uppercase max-w-md hidden lg:block">
+                        Joe Grekoski — specialized in NBA contract negotiation, economic valuation, and advanced salary-cap forecasting. Delivering courtroom-proven strategy for elite professional athletes.
+                     </p>
                  </div>
               </div>
 
               <div className="flex flex-col items-center md:items-end gap-6 shrink-0">
                  <div className="bg-[#0a0d12]/80 border border-primary/40 p-1.5 rounded-2xl flex overflow-hidden shadow-2xl">
                     <div className="bg-gradient-to-r from-primary to-primary/80 px-6 py-4 flex items-center justify-center">
-                       <span className="text-[11px] font-black text-black uppercase leading-tight text-center">Call Joseph<br />Directly</span>
+                       <span className="text-[11px] font-black text-black uppercase leading-tight text-center">Call Joe<br />Directly</span>
                     </div>
                     <div className="bg-[#0a0d12] px-10 py-4 flex items-center justify-center group cursor-pointer">
-                       <span className="text-2xl font-black text-white tracking-[0.1em] group-hover:text-primary transition-colors">(954) 555-0198</span>
+                        <span className="text-2xl font-black text-white tracking-[0.1em] group-hover:text-primary transition-colors">512-518-6547</span>
                     </div>
                  </div>
                  <div className="text-center md:text-right space-y-2">

@@ -5,7 +5,7 @@ export default function GetStartedPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden flex flex-col">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-[-1]">
+      <div className="absolute inset-0 z-0">
         <Image
           src="/bascatecoart_v6.png"
           alt="Basketball Arena Background"
@@ -88,7 +88,7 @@ export default function GetStartedPage() {
 
              <div className="text-center pt-6">
                 <p className="text-white/60 text-lg md:text-xl font-medium italic tracking-wide">
-                   Or call us directly at <a href="tel:9545550198" className="text-white font-bold hover:text-primary transition-colors">(954) 555-0198</a> to speak with Joseph Grekoski, CVA right away.
+                   Or call us directly at <a href="tel:5125186547" className="text-white font-bold hover:text-primary transition-colors">512-518-6547</a> to speak with Joe Grekoski right away.
                 </p>
              </div>
           </div>
@@ -97,7 +97,7 @@ export default function GetStartedPage() {
         {/* Branding Footer In Page */}
         <div className="mt-20 text-center space-y-4 opacity-40 hover:opacity-100 transition-opacity">
            <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs md:text-sm">
-             Led by Joseph Grekoski, CVA • Representing Active NBA Players • College Prospects • Elite High School Talent
+             Led by Joe Grekoski • Representing Active NBA Players • College Prospects • Elite High School Talent
            </h4>
            <div className="h-[1px] w-full max-w-md bg-gradient-to-r from-transparent via-white/20 to-transparent mx-auto" />
            <div className="flex justify-between items-center text-[10px] font-bold text-white/30 uppercase tracking-[0.3em] pt-4 px-4 w-full">

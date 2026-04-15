@@ -17,27 +17,33 @@ export default function PersonalBrandingPage() {
 
       <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
         {/* Hero Section */}
-        <div className="text-center space-y-4 mb-12">
+        <div className="text-center space-y-4 mb-8 md:mb-12">
            <span className="text-primary font-black tracking-[0.5em] uppercase text-xs drop-shadow-md">Brand Equity</span>
-           <div className="text-4xl font-black text-white drop-shadow-md">$1.2M</div>
-           <h1 className="text-4xl md:text-7xl font-black text-white leading-tight uppercase italic tracking-tight drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]">
+           <div className="text-3xl md:text-4xl font-black text-white drop-shadow-md">$1.2M</div>
+           <h1 className="text-2xl md:text-7xl font-black text-white leading-tight uppercase italic tracking-tight drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]">
              Turn Your Talent Into a <br />
-             <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent">
+             <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent pr-6">
                Premium, Monetizable
              </span> <br />
+
              Economic Asset
            </h1>
-           <p className="text-white/60 text-sm font-bold max-w-2xl mx-auto italic drop-shadow-md">
+           <p className="text-white/60 text-xs md:text-sm font-bold max-w-2xl mx-auto italic drop-shadow-md">
              Personal Brand Development: the art of truly identifying the unique value, data-backed and scaling strategically and carefully, then to view the potential.
            </p>
         </div>
 
-        {/* Central Visual Section */}
-        <div className="relative w-full max-w-5xl aspect-[16/9] mb-4 flex items-center justify-center">
-           {/* Empty Central Space with Orbiting Data Points */}
-           <div className="relative w-full h-full flex items-center justify-center">
-              
-              {/* Data Points - Positions preserved as requested */}
+        {/* Central Visual Section - Mobile Optimized */}
+        <div className="relative w-full max-w-5xl mb-12">
+           {/* Mobile view: Stacked Data Points */}
+           <div className="grid grid-cols-1 md:hidden gap-4 w-full">
+              <DataPoint title="Brand Equity" value="$1.2M" />
+              <DataPoint title="Social Reach" value="2.4M" />
+              <DataPoint title="Endorsement Value" value="$850K" />
+           </div>
+
+           {/* Desktop view: Orbiting Data Points */}
+           <div className="hidden md:flex relative w-full aspect-[16/9] items-center justify-center">
               <div className="absolute top-10 left-10 md:top-20 md:left-20 bg-[#0a0d12]/95 border border-primary/30 p-5 rounded-2xl backdrop-blur-xl shadow-2xl z-20">
                  <div className="text-[10px] font-bold text-primary uppercase tracking-widest">Brand Equity</div>
                  <div className="text-xl font-black text-white">$1.2M</div>
@@ -117,17 +123,19 @@ export default function PersonalBrandingPage() {
         <div className="mt-16 w-full max-w-7xl flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/10 pt-12">
            <div className="flex items-center gap-6">
               <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/50 relative shadow-2xl">
-                 <Image src="/joe_bio.png" alt="Joe Grekoski" fill className="object-cover" />
+                 <Image src="/owner/me.png" alt="Joe Grekoski" fill className="object-cover" />
               </div>
               <div className="text-left">
-                 <div className="text-white font-black text-lg tracking-widest uppercase leading-tight">Joseph Grekoski, CVA</div>
-                 <div className="text-primary/60 text-xs font-bold tracking-widest uppercase">Founder & Principal</div>
+                 <div className="text-white font-black text-lg tracking-widest uppercase leading-tight">Joe Grekoski</div>
+                 <div className="text-primary/60 text-xs font-bold tracking-widest uppercase">Founding Principal</div>
               </div>
            </div>
            <div className="text-center md:text-right">
-              <a href="mailto:josephgrekoski@acclimationagency.com" className="text-white hover:text-primary transition-colors text-sm font-bold tracking-widest underline decoration-primary/30 underline-offset-4">
-                josephgrekoski@acclimationagency.com
+              <a href="mailto:josephgrekoski@acclimationgroup.com" className="text-white hover:text-primary transition-colors text-sm font-bold tracking-widest underline decoration-primary/30 underline-offset-4">
+                josephgrekoski@acclimationgroup.com
               </a>
+
+
            </div>
         </div>
       </div>
@@ -147,6 +155,15 @@ function ServiceBox({ title, desc }: { title: string, desc: string }) {
              {desc}
           </p>
        </div>
+    </div>
+  );
+}
+
+function DataPoint({ title, value }: { title: string, value: string }) {
+  return (
+    <div className="bg-[#0a0d12]/95 border border-primary/30 p-5 rounded-2xl backdrop-blur-xl shadow-2xl flex justify-between items-center">
+      <div className="text-[10px] font-bold text-primary uppercase tracking-widest">{title}</div>
+      <div className="text-xl font-black text-white">{value}</div>
     </div>
   );
 }

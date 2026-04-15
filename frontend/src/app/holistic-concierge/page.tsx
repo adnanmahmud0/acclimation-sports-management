@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Dumbbell, Utensils, PiggyBank, Plane, Tv, Headphones } from "lucide-react";
+import { Logo } from "@/components/logo";
 
 export default function HolisticConciergePage() {
   return (
@@ -89,9 +90,12 @@ export default function HolisticConciergePage() {
                </p>
             </div>
 
-            <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase italic border-t border-white/5">
-              © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
-            </div>
+            <footer className="pt-12 flex flex-col items-center gap-6 border-t border-white/5">
+                <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
+                <div className="text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase italic">
+                  © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
+                </div>
+            </footer>
 
           </div>
         </div>

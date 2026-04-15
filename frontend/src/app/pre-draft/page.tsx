@@ -5,18 +5,17 @@ import { CircleDot, TrendingUp, Target, Mic, FileText } from "lucide-react";
 export default function PreDraftPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden pt-12">
-      {/* Hero Section */}
-      <div className="relative">
-        <div className="absolute inset-x-0 top-0 z-[-1] h-[85vh]">
-          <Image
-            src="/bascetcoart_v4.png"
-            alt="Pre-Draft Court Background"
-            fill
-            className="object-cover opacity-90 shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
-        </div>
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/bascetcoart_v4.png"
+          alt="Pre-Draft Court Background"
+          fill
+          className="object-cover opacity-80"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
+      </div>
 
         <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center text-center">
           <div className="space-y-12 max-w-5xl mx-auto">
@@ -83,18 +82,16 @@ export default function PreDraftPage() {
             <div className="pt-20">
                <div className="bg-[#0a0d12]/60 border border-white/5 backdrop-blur-md px-8 py-6 rounded-2xl inline-flex flex-wrap items-center justify-center gap-4 shadow-2xl">
                   <p className="text-white/40 text-[10px] md:text-sm font-bold uppercase tracking-widest leading-none">
-                    Schedule your confidential strategy call with <span className="text-white">Joseph Grekoski, CVA</span> today.
+                    Schedule your confidential strategy call with <span className="text-white">Joe Grekoski</span> today.
                   </p>
                   <div className="w-[1px] h-4 bg-white/20 hidden md:block" />
                   <p className="text-white text-[10px] md:text-sm font-black uppercase tracking-widest leading-none">
-                    Phone: (954) 555-0198
+                    Phone: 512-518-6547
                   </p>
                </div>
             </div>
-
           </div>
         </div>
-      </div>
     </main>
   );
 }

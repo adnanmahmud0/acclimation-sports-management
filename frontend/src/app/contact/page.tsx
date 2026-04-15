@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Logo } from "@/components/logo";
+
 
 export default function ContactPage() {
   return (
@@ -23,7 +25,7 @@ export default function ContactPage() {
             Ready to Take the Next Step?
           </h1>
           <p className="text-lg md:text-2xl text-white/70 font-medium italic">
-            Schedule a Confidential Strategy Call with Joseph Grekoski, CVA
+            Schedule a Confidential Strategy Call with Joe Grekoski
           </p>
         </div>
 
@@ -64,29 +66,29 @@ export default function ContactPage() {
            <div className="pt-8 flex flex-col md:flex-row gap-8 items-center border-t border-white/5">
               <div className="flex-1 flex gap-4 items-center">
                  <div className="w-16 h-16 rounded-full overflow-hidden border border-primary/30 relative shrink-0 shadow-xl">
-                    <Image src="/joe_bio.png" alt="Joseph Grekoski" fill className="object-cover" />
+                    <Image src="/owner/me.png" alt="Joseph Grekoski" fill className="object-cover" />
                  </div>
                  <div className="text-left">
-                    <div className="text-white font-black text-lg tracking-widest uppercase leading-tight">Joseph Grekoski, CVA</div>
-                    <div className="text-white/30 text-[10px] font-black tracking-widest uppercase">Founder & Principal</div>
+                    <div className="text-white font-black text-lg tracking-widest uppercase leading-tight">Joe Grekoski</div>
+                    <div className="text-white/30 text-[10px] font-black tracking-widest uppercase">Founding Principal</div>
                     <p className="text-[9px] text-white/40 leading-relaxed uppercase mt-2 max-w-sm hidden md:block">
-                       Led by Joseph Grekoski, CVA — the NBA contract negotiation expert who testified in U.S. courts at age 29 — delivering litigation-grade strategy, proprietary salary-cap models, and NIL-to-NBA valuation that traditional agents simply can&apos;t match.
+                       Led by Joe Grekoski — the NBA contract negotiation expert who testified in U.S. courts at age 29 — delivering litigation-grade strategy, proprietary salary-cap models, and NIL-to-NBA valuation that traditional agents simply can&apos;t match.
                     </p>
                  </div>
               </div>
 
               <div className="flex flex-col items-center md:items-end gap-4 shrink-0">
-                 <div className="bg-[#0a0d12]/80 border border-primary/40 p-1 rounded-xl flex overflow-hidden shadow-2xl">
-                    <div className="bg-gradient-to-r from-primary to-primary/80 px-4 py-3 flex items-center justify-center">
-                       <span className="text-[10px] font-black text-black uppercase leading-tight text-center">Call Joseph<br />Directly</span>
+                 <div className="bg-[#0a0d12]/80 border border-primary/40 p-1.5 rounded-2xl flex overflow-hidden shadow-2xl">
+                    <div className="bg-gradient-to-r from-primary to-primary/80 px-4 py-2 flex items-center justify-center">
+                       <span className="text-[10px] font-black text-black uppercase leading-tight text-center">Call Joe<br />Directly</span>
                     </div>
                     <div className="bg-[#0a0d12] px-6 py-3 flex items-center justify-center group cursor-pointer">
-                       <span className="text-xl font-black text-white tracking-widest group-hover:text-primary transition-colors">(954) 555-0198</span>
+                       <span className="text-xl font-black text-white tracking-widest group-hover:text-primary transition-colors">512-518-6547</span>
                     </div>
                  </div>
                  <div className="text-center md:text-right space-y-1">
-                    <a href="mailto:Joseph.Grekoski@AcclimationGroup.com" className="text-white/60 hover:text-primary transition-colors text-xs font-bold tracking-widest block">
-                       Joseph.Grekoski@AcclimationGroup.com
+                    <a href="mailto:josephgrekoski@acclimationgroup.com" className="text-white/60 hover:text-primary transition-colors text-xs font-bold tracking-widest block">
+                       josephgrekoski@acclimationgroup.com
                     </a>
                     <span className="text-[10px] font-bold text-white/20 uppercase tracking-widest block">Fort Lauderdale, FL</span>
                  </div>
@@ -110,9 +112,13 @@ export default function ContactPage() {
               <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
            </div>
            
-           <p className="text-[9px] font-black text-white/10 uppercase tracking-[0.3em]">
-              © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
-           </p>
+           <footer className="mt-8 flex flex-col items-center gap-6">
+              <Logo variant="vertical" width={60} height={60} className="opacity-30 hover:opacity-100 transition-opacity" />
+              <p className="text-[9px] font-black text-white/10 uppercase tracking-[0.3em]">
+                 © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
+              </p>
+           </footer>
+
         </div>
       </div>
     </main>

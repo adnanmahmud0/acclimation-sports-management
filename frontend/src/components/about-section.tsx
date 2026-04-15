@@ -34,7 +34,7 @@ export function AboutSection() {
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-2 border-primary/30 p-2 glass">
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-[#05070a]">
                   <Image
-                    src="/joe.png"
+                    src="/owner/me.png"
                     alt="Joe Grekoski - Founder"
                     fill
                     className="object-cover object-top hover:scale-105 transition-transform duration-700"

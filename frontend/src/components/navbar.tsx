@@ -20,6 +20,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import React from "react";
+import { Logo } from "@/components/logo";
 
 const aboutItems = [
   {
@@ -114,7 +115,7 @@ export function Navbar() {
   }
 
   return (
-    <nav className="sticky top-0 z-50 px-6 py-4 lg:px-12 flex justify-between items-center glass border-none! bg-[#05070a]/80">
+    <nav className="sticky top-0 z-50 px-4 py-3 lg:px-12 flex justify-between items-center glass border-none! bg-[#05070a]/80">
       {/* Mobile Menu (Left) */}
       <div className="lg:hidden">
         <Sheet>
@@ -128,10 +129,7 @@ export function Navbar() {
           <SheetContent side="left" className="bg-[#05070a] border-white/10 text-white w-80">
             <SheetHeader className="text-left pb-6 border-b border-white/5">
               <SheetTitle>
-                <div className="flex flex-col items-start leading-none">
-                  <span className="text-xl font-bold tracking-tighter text-white">ACCLIMATION</span>
-                  <span className="text-[8px] font-bold tracking-[0.3em] text-primary">SPORTS MANAGEMENT</span>
-                </div>
+                <Logo variant="horizontal" width={150} height={35} />
               </SheetTitle>
             </SheetHeader>
             
@@ -189,24 +187,12 @@ export function Navbar() {
         </Sheet>
       </div>
 
-      {/* Custom Text Logo */}
-      <Link 
-        href="/" 
-        className="flex flex-col items-start group"
-        onClick={() => {
-          if (pathname === "/") {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }
-        }}
-      >
-        <span className="text-3xl font-bold tracking-[0.1em] text-white leading-none group-hover:text-primary transition-colors">
-          ACCLIMATION
-        </span>
-        <div className="w-full h-[1px] bg-primary/50 my-1" />
-        <span className="text-[10px] font-bold tracking-[0.4em] text-white/70 leading-none">
-          SPORTS MANAGEMENT
-        </span>
-      </Link>
+      {/* Logo */}
+      <Logo 
+        variant="horizontal" 
+        className="w-32 md:w-48 lg:w-56" 
+      />
+
 
       {/* Navigation Menu (Desktop) */}
       <div className="hidden lg:flex items-center gap-2">
@@ -318,9 +304,9 @@ export function Navbar() {
 
       {/* CTA Button */}
       <div className="flex items-center gap-4">
-        <Link href="/book" className="group">
+        <Link href="/book" className="group hidden sm:block">
           <button className="relative px-3 md:px-6 py-2 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl leading-tight text-center transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,210,255,0.3)] hover:shadow-[0_0_30px_rgba(0,210,255,0.5)]">
-            <span className="hidden sm:block text-[10px] font-bold tracking-wider text-white opacity-90 uppercase">Schedule Confidential</span>
+            <span className="hidden md:block text-[10px] font-bold tracking-wider text-white opacity-90 uppercase">Schedule Confidential</span>
             <span className="block text-[10px] md:text-xs font-black tracking-widest text-white uppercase">Strategy Call</span>
           </button>
         </Link>

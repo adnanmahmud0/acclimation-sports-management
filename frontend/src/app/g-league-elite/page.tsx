@@ -25,15 +25,14 @@ export default function GLeagueElitePage() {
               <div className="space-y-8 max-w-5xl">
                 <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white uppercase italic leading-[1.1]">
                   NBA G League 2025-26: <br />
-                  <span className="text-primary italic">Rules, Salaries &</span> 
-                  The Fast Track from <br />
+                  <span className="text-primary italic">Rules, Salaries, & THE</span> 
+                  Fast Track from <br />
                   <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic">
                     Prospects to the NBA
                   </span>
                 </h1>
                 
                 <div className="flex items-center gap-4">
-                   <div className="w-12 h-1 bg-primary/50" />
                    <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight italic">
                      Led by <span className="text-white font-bold">Joe Grekoski</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
                    </p>

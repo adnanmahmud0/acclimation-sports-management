@@ -1,33 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BarChart3, Mic2, Handshake, Network, Trophy } from "lucide-react";
+import { Logo } from "@/components/logo";
+
 
 export default function MarketingEndorsementsPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden pt-12">
-      {/* Hero Section */}
-      <div className="relative">
-        <div className="absolute inset-x-0 top-0 z-[-1] h-[85vh]">
-          <Image
-            src="/fullbuscatecoart.png"
-            alt="Arena Background"
-            fill
-            className="object-cover opacity-90 shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
-        </div>
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/fullbuscatecoart.png"
+          alt="Arena Background"
+          fill
+          className="object-cover opacity-80"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
+      </div>
 
-        <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center text-center">
-          <div className="space-y-12 max-w-5xl mx-auto">
-            {/* Main Header */}
-            <div className="space-y-6">
-               <h1 className="text-4xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,210,255,0.3)]">
-                 Marketing & <br />
-                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic">
-                    Endorsement Deals
-                 </span>
-               </h1>
+      <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center text-center">
+        <div className="space-y-12 max-w-5xl mx-auto">
+          {/* Main Header */}
+          <div className="space-y-6">
+             <h1 className="text-2xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,210,255,0.3)]">
+               Marketing & <br />
+               <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic pr-4">
+                  Endorsement Deals
+               </span>
+             </h1>
                <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto italic">
                  We build and monetize your personal brand so you earn maximum value from endorsements, sponsorships, and marketing opportunities. elite high school talent turn their talent into real off-court income.
                </p>
@@ -86,21 +87,27 @@ export default function MarketingEndorsementsPage() {
             </div>
 
             {/* Footer Lane */}
-            <div className="pt-20">
+            <div className="pt-20 space-y-12">
                <div className="bg-[#0a0d12]/60 border border-white/5 backdrop-blur-md px-8 py-6 rounded-2xl inline-flex flex-wrap items-center justify-center gap-4 shadow-2xl">
                   <p className="text-white/40 text-[10px] md:text-sm font-bold uppercase tracking-widest leading-none">
-                    Schedule your confidential strategy call with <span className="text-white">Joseph Grekoski, CVA</span> today.
+                    Schedule your confidential strategy call with <span className="text-white">Joe Grekoski</span> today.
                   </p>
                   <div className="w-[1px] h-4 bg-white/20 hidden md:block" />
                   <p className="text-white text-[10px] md:text-sm font-black uppercase tracking-widest leading-none">
-                    Phone: (954) 555-0198
+                    Phone: 512-518-6547
                   </p>
+               </div>
+
+               <div className="flex flex-col items-center gap-6">
+                  <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
+                  <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic">
+                     © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
+                  </div>
                </div>
             </div>
 
           </div>
         </div>
-      </div>
     </main>
   );
 }

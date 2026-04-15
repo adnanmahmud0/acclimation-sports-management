@@ -4,28 +4,27 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function HighSchoolTalentPage() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden pt-12 bg-[#05070a]">
-      {/* Hero Section */}
-      <div className="relative">
-        <div className="absolute inset-x-0 top-0 z-[-1] h-[85vh]">
-          <Image
-            src="/player.png"
-            alt="High School Players Background"
-            fill
-            className="object-cover opacity-90 shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
-        </div>
+    <main className="relative min-h-screen overflow-x-hidden pt-12">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/player.png"
+          alt="High School Players Background"
+          fill
+          className="object-cover opacity-80"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/80 via-[#05070a]/50 to-[#05070a]" />
+      </div>
 
         <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
           <div className="space-y-16 max-w-7xl mx-auto text-center">
             
             {/* Header Content */}
             <div className="space-y-8">
-               <h1 className="text-4xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-[1.1] drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
+               <h1 className="text-2xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-[1.1] drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
                  From Elite High School to the NBA — <br />
-                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic">
+                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic pr-12">
                     Start Building Your Professional Future Now
                  </span>
                </h1>
@@ -89,16 +88,16 @@ export default function HighSchoolTalentPage() {
 
             {/* CTA Section */}
             <div className="space-y-12">
-               <div className="pt-6">
+               <Link href="tel:5125186547" className="pt-6 block">
                   <div className="group relative inline-block w-full max-w-3xl px-4">
                      <div className="absolute inset-0 bg-primary/40 blur-3xl rounded-xl scale-75 group-hover:scale-110 transition-transform duration-500" />
-                     <div className="relative bg-gradient-to-r from-purple-600 via-primary to-cyan-400 px-10 py-6 rounded-2xl transition-all duration-300 shadow-[0_0_50px_rgba(0,180,255,0.4)] border border-white/20">
-                       <span className="text-sm md:text-2xl font-black text-white uppercase tracking-widest leading-tight block">
-                         Schedule Your Confidential Strategy Call → (954) 555-0198
+                     <div className="relative bg-gradient-to-r from-purple-600 via-primary to-cyan-400 px-10 py-6 rounded-2xl transition-all duration-300 shadow-[0_0_50px_rgba(0,180,255,0.4)] border border-white/20 group-hover:shadow-[0_0_70px_rgba(0,180,255,0.6)]">
+                       <span className="text-xs md:text-2xl font-black text-white uppercase tracking-widest leading-tight block">
+                         Schedule Your Confidential Strategy Call → 512-518-6547
                        </span>
                      </div>
                   </div>
-               </div>
+               </Link>
                
                <p className="text-white text-lg md:text-2xl font-black italic uppercase tracking-tighter opacity-80">
                   Ready to take the next step? Schedule Your <span className="text-primary">Confidential Strategy Call</span> Today
@@ -111,9 +110,8 @@ export default function HighSchoolTalentPage() {
 
           </div>
         </div>
-      </div>
-    </main>
-  );
+      </main>
+    );
 }
 
 function ChoiceItem({ title, desc }: { title: string, desc: string }) {
