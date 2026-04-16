@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   description: "Data-driven NBA representation, career management, and salary cap analytics. Expert advocacy for NBA players, college prospects, and elite high-school talent.",
   keywords: ["NBA Agency", "Basketball Representation", "NIL Deals", "Contract Negotiation", "Salary Cap Analytics", "NBA Draft Preparation", "Sports Management"],
-  authors: [{ name: "Joe Grekoski" }],
+  authors: [{ name: "JOE GREKOSKI" }],
   creator: "Acclimation Sports Management",
   publisher: "Acclimation Sports Management",
   formatDetection: {

@@ -29,18 +29,18 @@ export default function CollegeProspectsPage() {
             {/* Header Content */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:text-left">
                <div className="flex-1 space-y-6">
-                 <h1 className="text-4xl md:text-8xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,210,255,0.4)]">
+                 <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
                    College <br className="hidden md:block" />
-                                       <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic pr-12">
+                                       <span className="   pr-12">
                       PROSPECTS
                    </span>
                  </h1>
                  <div className="space-y-6">
-                    <h2 className="text-xl md:text-3xl font-black text-white italic tracking-tight opacity-90">
+                    <h2 className="text-xl md:text-3xl font-black text-white tracking-tight opacity-90">
                       Position yourself for the NBA Draft and <br />
                       build your future wealth now.
                     </h2>
-                    <p className="text-sm md:text-lg text-white/50 font-medium leading-relaxed max-w-3xl mx-auto lg:mx-0 italic">
+                    <p className="text-sm md:text-lg text-white/50 font-medium leading-relaxed max-w-3xl mx-auto lg:mx-0">
                       The college years are your launchpad. We help top college prospects maximize NIL deals, develop a professional brand, and prepare for the NBA with elite off-court support.
                     </p>
                  </div>
@@ -51,7 +51,7 @@ export default function CollegeProspectsPage() {
                   <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
                   <div className="relative w-full h-full rounded-full border-2 border-primary/30 flex items-center justify-center overflow-hidden">
                      <Image src="/baskatecoart.png" alt="Basketball Grid" fill className="object-cover opacity-20 rotate-45 scale-150" />
-                     <div className="text-primary font-black text-4xl italic tracking-tighter opacity-40 select-none">FUTURE</div>
+                     <div className="text-primary font-black text-4xl tracking-tighter opacity-40 select-none">FUTURE</div>
                   </div>
                </div>
             </div>
@@ -101,7 +101,7 @@ export default function CollegeProspectsPage() {
 
             {/* Transition Copy */}
             <div className="space-y-12">
-               <p className="text-white/80 text-lg md:text-2xl font-bold italic tracking-wide leading-relaxed">
+               <p className="text-white/80 text-lg md:text-2xl font-bold tracking-wide leading-relaxed">
                   Start building your NBA-level empire while still in college.
                </p>
 
@@ -118,7 +118,7 @@ export default function CollegeProspectsPage() {
                </div>
             </div>
 
-            <div className="pt-16 text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic border-t border-white/5">
+            <div className="pt-16 text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase border-t border-white/5">
                Developmental Pipeline • NIL Optimization • Strategic Brand Launch
             </div>
 
@@ -146,3 +146,4 @@ function ArcCard({ number, icon, title, desc }: { number: string, icon: React.Re
     </div>
   );
 }
+

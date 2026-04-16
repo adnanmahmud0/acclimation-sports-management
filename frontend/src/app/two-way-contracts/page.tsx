@@ -27,18 +27,18 @@ export default function TwoWayContractsPage() {
           <div className="space-y-12">
             <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12">
               <div className="space-y-8 max-w-5xl">
-                <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white uppercase italic leading-[1.1]">
+                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
                   NBA Two-Way Contracts <br />
-                  <span className="text-primary italic">2026: Rules, Salaries &</span> <br />
+                  <span className="text-primary">2026: Rules, Salaries &</span> <br />
                   The Fast Track from <br />
-                  <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent flex italic pr-12">
+                  <span className="   flex pr-12">
                     G League to Millions
                   </span>
                 </h1>
                 
                 <div className="flex items-center gap-4">
-                   <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight italic">
-                     Led by <span className="text-white font-bold">Joe Grekoski</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
+                   <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight">
+                     Led by <span className="text-white font-bold">JOE GREKOSKI</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
                    </p>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function TwoWayContractsPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           
           <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
-            <h3 className="text-xl font-black text-white uppercase italic tracking-wider">
+            <h3 className="text-xl font-black text-white uppercase tracking-wider">
               What Is a Two-Way Contract?
             </h3>
             <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
@@ -92,7 +92,7 @@ export default function TwoWayContractsPage() {
           </div>
 
           <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
-            <h3 className="text-xl font-black text-white uppercase italic tracking-wider">
+            <h3 className="text-xl font-black text-white uppercase tracking-wider">
               2025-26 / 2026-27 Key Rules
             </h3>
             <div className="space-y-4">
@@ -114,7 +114,7 @@ export default function TwoWayContractsPage() {
           </div>
 
           <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
-            <h3 className="text-xl font-black text-white uppercase italic tracking-wider">
+            <h3 className="text-xl font-black text-white uppercase tracking-wider">
               Salary Breakdown 2025-26
             </h3>
             <div className="space-y-6">
@@ -125,7 +125,7 @@ export default function TwoWayContractsPage() {
               
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <div className="flex justify-between text-[10px] font-bold text-white/40 uppercase tracking-widest italic">
+                  <div className="flex justify-between text-[10px] font-bold text-white/40 uppercase tracking-widest">
                     <span>Higher NBA Days</span>
                     <span>Daily Rate G League</span>
                   </div>
@@ -139,7 +139,7 @@ export default function TwoWayContractsPage() {
           </div>
 
           <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
-            <h3 className="text-xl font-black text-white uppercase italic tracking-wider">
+            <h3 className="text-xl font-black text-white uppercase tracking-wider">
               How Conversions Work
             </h3>
             <div className="flex flex-col gap-6">
@@ -164,10 +164,11 @@ export default function TwoWayContractsPage() {
 
         </div>
 
-        <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/20 uppercase italic border-t border-white/5">
+        <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/20 uppercase border-t border-white/5">
           Undrafted To Millions • NBA Collective Bargaining Expert • Luxury Tax Optimization • Elite Representation
         </div>
       </div>
     </main>
   );
 }
+

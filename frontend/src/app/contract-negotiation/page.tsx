@@ -26,14 +26,14 @@ export default function ContractNegotiationPage() {
 
       <div className="container mx-auto px-6 pt-24 relative z-10 ">
         <div className="space-y-8">
-          <h1 className="text-2xl md:text-6xl font-black tracking-tight text-white uppercase italic leading-tight text-center">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
             NBA Contract Negotiation & <br />
-            <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic pr-4">
+            <span className="   pr-4">
               Representation
             </span>
           </h1>
 
-            <p className="text-lg md:text-2xl text-white/90 font-medium leading-relaxed italic">
+            <p className="text-lg md:text-2xl text-white/90 font-medium leading-relaxed">
               Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player for active NBA players, college prospects, and elite high-school talent.
             </p>
 
@@ -91,7 +91,7 @@ export default function ContractNegotiationPage() {
               <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-xl scale-95 group-hover:scale-110 transition-transform duration-500" />
               <div className="relative bg-[#0a0d12] border border-white/10 px-8 py-5 rounded-lg transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-[0_0_30px_rgba(0,210,255,0.3)]">
                 <span className="text-xs md:text-xl font-black text-white uppercase tracking-widest leading-tight block">
-                  SCHEDULE YOUR <span className="text-primary italic">CONFIDENTIAL</span> CONTRACT STRATEGY CALL
+                  SCHEDULE YOUR <span className="text-primary">CONFIDENTIAL</span> CONTRACT STRATEGY CALL
                 </span>
               </div>
             </Link>
@@ -99,7 +99,7 @@ export default function ContractNegotiationPage() {
 
           <footer className="pt-12 flex flex-col items-center gap-6 border-t border-white/5">
               <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
-              <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic">
+              <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase">
                 Elite Advocacy • Data Centric Identification • Strategic Market Positioning
               </div>
           </footer>
@@ -108,3 +108,4 @@ export default function ContractNegotiationPage() {
     </main>
   );
 }
+

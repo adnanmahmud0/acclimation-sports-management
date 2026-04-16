@@ -29,18 +29,18 @@ export default function GLeagueElitePage() {
             {/* Hero Content Section */}
             <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12">
               <div className="space-y-8 max-w-5xl">
-                <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white uppercase italic leading-[1.1]">
+                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
                   NBA G League 2025-26: <br />
-                  <span className="text-primary italic">Rules, Salaries, & THE</span> 
+                  <span className="text-primary">Rules, Salaries, & THE</span> 
                   Fast Track from <br />
-                  <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent flex italic">
+                  <span className="   flex">
                     Prospects to the NBA
                   </span>
                 </h1>
                 
                 <div className="flex items-center gap-4">
-                   <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight italic">
-                     Led by <span className="text-white font-bold">Joe Grekoski</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
+                   <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight">
+                     Led by <span className="text-white font-bold">JOE GREKOSKI</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
                    </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function GLeagueElitePage() {
           <div className="glass-premium rounded-2xl md:rounded-full px-8 py-6 flex flex-wrap justify-between items-center gap-8 border-primary/20 shadow-2xl">
             <div className="flex flex-col">
                <span className="text-xs font-black text-primary uppercase tracking-widest">2025-26 G League</span>
-               <span className="text-lg font-bold text-white uppercase italic">Season at a Glance</span>
+               <span className="text-lg font-bold text-white uppercase">Season at a Glance</span>
             </div>
             
             <div className="flex flex-col items-center">
@@ -109,16 +109,16 @@ export default function GLeagueElitePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
-              <h3 className="text-xl font-black text-white uppercase italic tracking-wider">
+              <h3 className="text-xl font-black text-white uppercase tracking-wider">
                 What Is the NBA G League?
               </h3>
               <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center gap-6">
                 <div className="relative w-12 h-12">
-                   <div className="w-full h-full rounded bg-primary/20 flex items-center justify-center font-black text-primary italic">NBA</div>
+                   <div className="w-full h-full rounded bg-primary/20 flex items-center justify-center font-black text-primary">NBA</div>
                 </div>
                 <div className="text-2xl text-white/20">×</div>
                 <div className="relative w-12 h-12">
-                   <div className="w-full h-full rounded bg-purple-500/20 flex items-center justify-center font-black text-purple-500 italic text-xl">G</div>
+                   <div className="w-full h-full rounded bg-purple-500/20 flex items-center justify-center font-black text-purple-500 text-xl">G</div>
                 </div>
               </div>
               <p className="text-sm text-white/70 leading-relaxed font-medium pt-2">
@@ -127,7 +127,7 @@ export default function GLeagueElitePage() {
             </div>
 
             <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6 text-white/80">
-              <h3 className="text-xl font-black text-white uppercase italic tracking-wider leading-tight">
+              <h3 className="text-xl font-black text-white uppercase tracking-wider leading-tight">
                 2025-26 / 2026-27 Key Rules & Roster
               </h3>
               <ul className="space-y-4">
@@ -147,7 +147,7 @@ export default function GLeagueElitePage() {
             </div>
 
             <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
-              <h3 className="text-xl font-black text-white uppercase italic tracking-wider leading-tight">
+              <h3 className="text-xl font-black text-white uppercase tracking-wider leading-tight">
                 G League Salaries Breakdown 2025-26
               </h3>
               <div className="space-y-6">
@@ -159,19 +159,19 @@ export default function GLeagueElitePage() {
                     <div className="h-full bg-primary w-[40%] shadow-[0_0_10px_rgba(0,210,255,0.5)]" />
                     <div className="h-full bg-purple-600 w-[60%]" />
                   </div>
-                  <div className="flex justify-between text-[10px] font-bold text-white/40 uppercase tracking-widest italic">
+                  <div className="flex justify-between text-[10px] font-bold text-white/40 uppercase tracking-widest">
                     <span>Base Salary</span>
                     <span>Performance Uplift</span>
                   </div>
                 </div>
-                <p className="text-xs text-white/50 leading-relaxed font-bold italic pt-4">
-                  + Standard Player Salary: $45,000 + <span className="text-primary italic">Enhanced minimum available</span>
+                <p className="text-xs text-white/50 leading-relaxed font-bold pt-4">
+                  + Standard Player Salary: $45,000 + <span className="text-primary">Enhanced minimum available</span>
                 </p>
               </div>
             </div>
 
             <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
-              <h3 className="text-xl font-black text-white uppercase italic tracking-wider leading-tight">
+              <h3 className="text-xl font-black text-white uppercase tracking-wider leading-tight">
                 How the G League Leads to the NBA
               </h3>
               <div className="flex flex-col gap-6">
@@ -195,7 +195,7 @@ export default function GLeagueElitePage() {
 
           </div>
 
-          <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase italic border-t border-white/5">
+          <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase border-t border-white/5">
             Developing The Future • High Stakes Representation • Strategic Career Planning
           </div>
         </div>
@@ -203,3 +203,4 @@ export default function GLeagueElitePage() {
     </main>
   );
 }
+

@@ -10,9 +10,9 @@ export function AboutSection() {
 
       <div className="container mx-auto px-6 max-w-7xl relative">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white uppercase leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
             About Acclimation Sports Management<br />
-            Led by <span className="text-primary italic">Joe Grekoski</span>
+            Led by JOE GREKOSKI
           </h2>
           
           <div className="max-w-4xl mx-auto glass-premium p-6 rounded-2xl border-primary/20 bg-primary/5">
@@ -35,7 +35,7 @@ export function AboutSection() {
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-[#05070a]">
                   <Image
                     src="/owner/me.png"
-                    alt="Joe Grekoski - Founder"
+                    alt="JOE GREKOSKI - Founder"
                     fill
                     className="object-cover object-top hover:scale-105 transition-transform duration-700"
                   />
@@ -53,9 +53,9 @@ export function AboutSection() {
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <p className="text-lg text-white/90 leading-relaxed">
-                <span className="font-black text-primary">Joe Grekoski</span> is the founder of Acclimation Group and <span className="font-bold">Acclimation Sports Management</span>. 
+                <span className="font-black text-primary">JOE GREKOSKI</span> is the founder of Acclimation Group and <span className="font-bold">Acclimation Sports Management</span>. 
                 He is a recognized economic expert who specializes in intellectual property with a particular focus on 
-                personal brand valuation and development for high-profile athletes. At age 29, Joe Grekoski became one of the youngest economic damages experts to testify in a U.S. court.
+                personal brand valuation and development for high-profile athletes. At age 29, JOE GREKOSKI became one of the youngest economic damages experts to testify in a U.S. court.
               </p>
             </div>
 
@@ -78,8 +78,8 @@ export function AboutSection() {
             </ul>
 
             <p className="text-sm font-medium text-white/50 leading-relaxed uppercase tracking-wide">
-              While other agents focus only on basketball, Joe Grekoski built <span className="text-white">Acclimation Sports Management</span> as the true one-stop shop. 
-              <span className="text-primary italic"> You just play basketball. We handle everything else.</span>
+              While other agents focus only on basketball, JOE GREKOSKI built <span className="text-white">Acclimation Sports Management</span> as the true one-stop shop. 
+              <span className="text-primary"> You just play basketball. We handle everything else.</span>
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export function AboutSection() {
             <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-xl scale-95 group-hover:scale-105 transition-transform duration-500" />
             <div className="relative bg-gradient-to-r from-[#00d2ff] via-[#3adaff] to-[#00d2ff] px-6 py-3 md:py-5 rounded-xl transition-all duration-300 group-hover:shadow-[0_0_40px_rgba(0,210,255,0.6)] group-active:scale-[0.98] text-center">
               <span className="text-xs md:text-lg font-black text-black uppercase tracking-tight md:tracking-wider">
-                Schedule your confidential strategy call with Joe Grekoski - 512-518-6547
+                Schedule your confidential strategy call with JOE GREKOSKI - 512-518-6547
               </span>
             </div>
           </Link>
@@ -108,7 +108,7 @@ export function AboutSection() {
       {/* Specialty Bar (Bottom) */}
       <div className="mt-20 w-full bg-[#0a0d12]/80 backdrop-blur-sm py-6 border-y border-white/5 overflow-hidden relative">
         <div className="flex whitespace-nowrap animate-marquee">
-          <div className="flex items-center gap-12 text-[9px] md:text-[11px] font-black tracking-[0.4em] text-white/30 uppercase italic">
+          <div className="flex items-center gap-12 text-[9px] md:text-[11px] font-black tracking-[0.4em] text-white/30 uppercase">
             {[
               "Intellectual Property Expert",
               "Personal Brand Valuation Specialist",
@@ -126,7 +126,7 @@ export function AboutSection() {
             ))}
           </div>
           {/* Duplicate for infinite loop */}
-          <div className="flex items-center gap-12 text-[9px] md:text-[11px] font-black tracking-[0.4em] text-white/30 uppercase italic ml-12">
+          <div className="flex items-center gap-12 text-[9px] md:text-[11px] font-black tracking-[0.4em] text-white/30 uppercase ml-12">
             {[
               "Intellectual Property Expert",
               "Personal Brand Valuation Specialist",

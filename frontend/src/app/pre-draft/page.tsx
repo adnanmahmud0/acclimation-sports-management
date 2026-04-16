@@ -27,13 +27,13 @@ export default function PreDraftPage() {
           <div className="space-y-12 max-w-5xl mx-auto">
             {/* Main Header */}
             <div className="space-y-6">
-               <h1 className="text-4xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,210,255,0.3)]">
+               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
                  Pre-Draft and NBA <br />
-                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic flex">
+                 <span className="   flex">
                     Combine Mastery
                  </span>
                </h1>
-               <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto italic">
+               <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
                  Our Pre-Draft and NBA Combine Mastery program prepares elite high school and college basketball prospects to rise on draft boards and enter the NBA with maximum value.
                </p>
             </div>
@@ -65,7 +65,7 @@ export default function PreDraftPage() {
             </div>
 
             {/* Transition Copy */}
-            <p className="text-white/60 text-lg md:text-xl font-bold italic tracking-wide">
+            <p className="text-white/60 text-lg md:text-xl font-bold tracking-wide">
                From elite high school talent to college standouts, we help you turn potential into a guaranteed NBA future.
             </p>
 
@@ -88,7 +88,7 @@ export default function PreDraftPage() {
             <div className="pt-20">
                <div className="bg-[#0a0d12]/60 border border-white/5 backdrop-blur-md px-8 py-6 rounded-2xl inline-flex flex-wrap items-center justify-center gap-4 shadow-2xl">
                   <p className="text-white/40 text-[10px] md:text-sm font-bold uppercase tracking-widest leading-none">
-                    Schedule your confidential strategy call with <span className="text-white">Joe Grekoski</span> today.
+                    Schedule your confidential strategy call with <span className="text-white">JOE GREKOSKI</span> today.
                   </p>
                   <div className="w-[1px] h-4 bg-white/20 hidden md:block" />
                   <p className="text-white text-[10px] md:text-sm font-black uppercase tracking-widest leading-none">
@@ -108,7 +108,8 @@ function PointItem({ icon, text }: { icon: React.ReactNode, text: string }) {
        <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-primary/40 transition-all shadow-xl">
           {icon}
        </div>
-       <span className="text-base md:text-lg font-bold text-white tracking-tight leading-tight uppercase italic">{text}</span>
+       <span className="text-base md:text-lg font-bold text-white tracking-tight leading-tight uppercase">{text}</span>
     </li>
   );
 }
+

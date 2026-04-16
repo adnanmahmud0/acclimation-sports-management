@@ -29,7 +29,7 @@ const aboutItems = [
     description: "The economic edge that sets Acclimation apart from traditional agencies.",
   },
   {
-    title: "Joe Grekoski, CVA",
+    title: "JOE GREKOSKI, CVA",
     href: "/#about",
     description: "Meet the intellectual property expert leading the next era of NBA representation.",
   },
@@ -248,7 +248,7 @@ export function Navbar() {
       {/* Logo */}
       <Logo 
         variant="horizontal" 
-        className="w-32 md:w-48 lg:w-56" 
+        className="w-40 md:w-56 lg:w-64" 
       />
 
 

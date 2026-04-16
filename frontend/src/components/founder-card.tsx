@@ -18,7 +18,7 @@ export function FounderCard() {
         <div className="w-12 h-12 rounded-full overflow-hidden border border-primary/30 shrink-0">
           <Image 
             src="/owner/me.png" 
-            alt="Joe Grekoski" 
+            alt="JOE GREKOSKI" 
             width={48} 
             height={48} 
             className="object-cover" 
@@ -26,8 +26,8 @@ export function FounderCard() {
 
         </div>
         <div>
-          <h4 className="text-xs font-black text-white group-hover:text-primary transition-colors">Joe Grekoski</h4>
-          <p className="text-[10px] text-white/50 font-bold uppercase tracking-wider">Founding Principal</p>
+          <h4 className="text-xs font-black text-white group-hover:text-primary transition-colors uppercase">JOE GREKOSKI</h4>
+          <p className="text-[10px] text-white/50 font-bold tracking-wider">Founding Principal</p>
 
           <Link href="/book" className="text-[10px] text-primary font-bold hover:underline block mt-0.5">
             Schedule your confidential strategy call

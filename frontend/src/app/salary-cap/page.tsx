@@ -28,13 +28,13 @@ export default function SalaryCapPage() {
           <div className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 mb-2 shadow-xl">
             Salary Cap & Analytical Models
           </div>
-          <h1 className="text-4xl md:text-7xl font-black uppercase italic tracking-tighter leading-[1.1]">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
             Master the Salary Cap. <br />
-            <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent italic flex">
+            <span className="   flex">
               Maximize Every Dollar.
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-white/60 font-medium max-w-4xl mx-auto leading-relaxed italic">
+          <p className="text-lg md:text-xl text-white/60 font-medium max-w-4xl mx-auto leading-relaxed">
             Proprietary analytical models and expert salary cap strategy that put more money in your pocket. 
             We deliver precise, real-time salary cap modeling and data-driven strategies to optimize every contract.
           </p>
@@ -95,7 +95,7 @@ export default function SalaryCapPage() {
                      <span className="text-primary">+120%</span>
                   </div>
                   <div className="bg-[#0a0d12]/60 p-4 rounded-xl border border-white/5 space-y-1">
-                     <div className="text-[9px] font-bold text-white/20 uppercase tracking-widest leading-none italic">Personal Brand Delta</div>
+                     <div className="text-[9px] font-bold text-white/20 uppercase tracking-widest leading-none">Personal Brand Delta</div>
                      <div className="text-xl font-black text-white">$2.1M / $1.2M</div>
                   </div>
                </div>
@@ -146,7 +146,7 @@ export default function SalaryCapPage() {
              </div>
           </div>
 
-          <div className="pt-24 text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic border-t border-white/5">
+          <div className="pt-24 text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase border-t border-white/5">
             Economic Precision • Real-Time Simulations • Market Value Maximization
           </div>
         </div>
@@ -163,3 +163,4 @@ function EngineCard({ title, children }: { title: string, children: React.ReactN
     </div>
   );
 }
+

@@ -18,11 +18,11 @@ export function ContactSection() {
       <div className="container mx-auto px-6 relative z-10 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center space-y-4 mb-16 max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-black text-white leading-tight uppercase italic tracking-tighter drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
+          <h2 className="text-4xl md:text-6xl font-serif font-bold text-white leading-tight uppercase tracking-tighter drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
             Ready to Take the Next Step?
           </h2>
-          <p className="text-lg md:text-2xl text-white/70 font-medium italic">
-            Schedule a Confidential Strategy Call with Joe Grekoski
+          <p className="text-lg md:text-2xl text-white/70 font-medium">
+            Schedule a Confidential Strategy Call with JOE GREKOSKI
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export function ContactSection() {
                     {["Active NBA Player", "College Prospect", "Elite High School Talent", "Parent/Guardian", "Other"].map((type) => (
                        <label key={type} className="flex items-center gap-3 cursor-pointer group">
                           <input type="radio" name="playerType" className="w-4 h-4 accent-primary" />
-                          <span className="text-xs font-black text-white/60 group-hover:text-white transition-colors uppercase italic tracking-widest">{type}</span>
+                          <span className="text-xs font-black text-white/60 group-hover:text-white transition-colors uppercase tracking-widest">{type}</span>
                        </label>
                     ))}
                  </div>
@@ -63,13 +63,13 @@ export function ContactSection() {
            <div className="pt-12 flex flex-col md:flex-row gap-12 items-center border-t border-white/5">
               <div className="flex-1 flex gap-6 items-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/30 relative shrink-0 shadow-2xl">
-                     <Image src="/owner/me.png" alt="Joe Grekoski" fill className="object-cover" />
+                     <Image src="/owner/me.png" alt="JOE GREKOSKI" fill className="object-cover" />
                   </div>
                  <div className="text-left">
-                     <div className="text-white font-black text-xl tracking-[0.05em] uppercase leading-tight">Joe Grekoski</div>
-                     <div className="text-primary/60 text-xs font-black tracking-widest uppercase mb-3">Founding Principal</div>
+                     <div className="text-white font-black text-xl tracking-[0.05em] uppercase leading-tight">JOE GREKOSKI</div>
+                     <div className="text-primary/60 text-xs font-bold tracking-widest mb-3">Founding Principal</div>
                      <p className="text-[10px] font-bold text-white/40 leading-relaxed uppercase max-w-md hidden lg:block">
-                        Joe Grekoski — specialized in NBA contract negotiation, economic valuation, and advanced salary-cap forecasting. Delivering courtroom-proven strategy for elite professional athletes.
+                        JOE GREKOSKI — specialized in NBA contract negotiation, economic valuation, and advanced salary-cap forecasting. Delivering courtroom-proven strategy for elite professional athletes.
                      </p>
                  </div>
               </div>
@@ -95,7 +95,7 @@ export function ContactSection() {
 
         {/* Confidence Tags */}
         <div className="mt-20 text-center space-y-12 w-full">
-           <div className="flex flex-wrap justify-center gap-x-16 gap-y-6 text-xs font-black text-white/30 uppercase tracking-[0.5em] italic">
+           <div className="flex flex-wrap justify-center gap-x-16 gap-y-6 text-xs font-black text-white/30 uppercase tracking-[0.5em]">
               <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-primary" /> 100% Confidential</span>
               <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-primary" /> Trusted by 50+ NBA Players & Top Prospects</span>
               <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-primary" /> Litigation-Proven Strategies</span>

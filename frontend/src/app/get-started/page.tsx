@@ -25,11 +25,11 @@ export default function GetStartedPage() {
       <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center space-y-4 mb-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight uppercase italic tracking-tight">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
             Take the First Step Toward Your <br />
             Professional Basketball Career
           </h1>
-          <p className="text-xl md:text-2xl text-white/60 font-medium italic">
+          <p className="text-xl md:text-2xl text-white/60 font-medium">
             Your direct path to the NBA starts here.
           </p>
         </div>
@@ -93,8 +93,8 @@ export default function GetStartedPage() {
              </form>
 
              <div className="text-center pt-6">
-                <p className="text-white/60 text-lg md:text-xl font-medium italic tracking-wide">
-                   Or call us directly at <a href="tel:5125186547" className="text-white font-bold hover:text-primary transition-colors">512-518-6547</a> to speak with Joe Grekoski right away.
+                <p className="text-white/60 text-lg md:text-xl font-medium tracking-wide">
+                   Or call us directly at <a href="tel:5125186547" className="text-white font-bold hover:text-primary transition-colors">512-518-6547</a> to speak with JOE GREKOSKI right away.
                 </p>
              </div>
           </div>
@@ -103,7 +103,7 @@ export default function GetStartedPage() {
         {/* Branding Footer In Page */}
         <div className="mt-20 text-center space-y-4 opacity-40 hover:opacity-100 transition-opacity">
            <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs md:text-sm">
-             Led by Joe Grekoski • Representing Active NBA Players • College Prospects • Elite High School Talent
+             Led by JOE GREKOSKI • Representing Active NBA Players • College Prospects • Elite High School Talent
            </h4>
            <div className="h-[1px] w-full max-w-md bg-gradient-to-r from-transparent via-white/20 to-transparent mx-auto" />
            <div className="flex justify-between items-center text-[10px] font-bold text-white/30 uppercase tracking-[0.3em] pt-4 px-4 w-full">
@@ -147,3 +147,4 @@ function FormInput({ label, type }: { label: string, type: string }) {
     </div>
   );
 }
+

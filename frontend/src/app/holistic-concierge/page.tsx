@@ -29,18 +29,18 @@ export default function HolisticConciergePage() {
           <div className="space-y-12 max-w-6xl mx-auto">
             {/* Main Header */}
             <div className="space-y-6">
-               <h1 className="text-4xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
+               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
                  One-Stop Holistic <br />
-                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic flex">
+                 <span className="   flex">
                     Concierge Support
                  </span>
                </h1>
                <div className="space-y-6">
-                  <h2 className="text-xl md:text-3xl font-black text-white italic tracking-tight opacity-90">
+                  <h2 className="text-xl md:text-3xl font-black text-white tracking-tight opacity-90">
                     We manage your entire off-court world so you can <br className="hidden md:block" />
-                    <span className="text-primary italic">focus only on dominating the game.</span>
+                    <span className="text-primary">focus only on dominating the game.</span>
                   </h2>
-                  <p className="text-sm md:text-lg text-white/60 font-medium leading-relaxed max-w-4xl mx-auto italic">
+                  <p className="text-sm md:text-lg text-white/60 font-medium leading-relaxed max-w-4xl mx-auto">
                     From private jets to personal chefs, from wealth planning to media training — we handle everything so you can focus on the game. One call. Everything handled. Total peace of mind.
                   </p>
                </div>
@@ -91,14 +91,14 @@ export default function HolisticConciergePage() {
                     </span>
                   </div>
                </Link>
-               <p className="text-white/40 text-[10px] md:text-sm font-black uppercase tracking-[0.5em] italic">
+               <p className="text-white/40 text-[10px] md:text-sm font-black uppercase tracking-[0.5em]">
                  One call. Everything handled. Total peace of mind.
                </p>
             </div>
 
             <footer className="pt-12 flex flex-col items-center gap-6 border-t border-white/5">
                 <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
-                <div className="text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase italic">
+                <div className="text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase">
                   © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
                 </div>
             </footer>
@@ -117,7 +117,7 @@ function ServiceCard({ icon, title, desc }: { icon: React.ReactNode, title: stri
           {icon}
        </div>
        <div className="space-y-1">
-          <h4 className="text-base md:text-lg font-black text-white tracking-tight leading-tight uppercase italic group-hover:text-primary transition-colors">{title}</h4>
+          <h4 className="text-base md:text-lg font-black text-white tracking-tight leading-tight uppercase group-hover:text-primary transition-colors">{title}</h4>
           <p className="text-white/40 text-[10px] md:text-xs font-bold uppercase tracking-widest leading-relaxed">
              {desc}
           </p>
@@ -125,3 +125,4 @@ function ServiceCard({ icon, title, desc }: { icon: React.ReactNode, title: stri
     </div>
   );
 }
+

@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Acclimation Sports Management",
-  description: "Connect with Joe Grekoski and the Acclimation team for elite NBA representation and data-driven career advocacy.",
+  description: "Connect with JOE GREKOSKI and the Acclimation team for elite NBA representation and data-driven career advocacy.",
 };
 
 export default function ContactPage() {
@@ -26,11 +26,11 @@ export default function ContactPage() {
       <div className="container mx-auto px-6 pt-32 pb-12 relative z-10 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center space-y-4 mb-12">
-          <h1 className="text-4xl md:text-6xl font-black text-white leading-tight uppercase italic tracking-tighter drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
             Ready to Take the Next Step?
           </h1>
-          <p className="text-lg md:text-2xl text-white/70 font-medium italic">
-            Schedule a Confidential Strategy Call with Joe Grekoski
+          <p className="text-lg md:text-2xl text-white/70 font-medium">
+            Schedule a Confidential Strategy Call with JOE GREKOSKI
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function ContactPage() {
                     {["Active NBA Player", "College Prospect", "Elite High School Talent", "Parent/Guardian", "Other"].map((type) => (
                        <label key={type} className="flex items-center gap-3 cursor-pointer group">
                           <input type="radio" name="playerType" className="w-4 h-4 accent-primary" />
-                          <span className="text-sm font-bold text-white/70 group-hover:text-white transition-colors uppercase italic">{type}</span>
+                          <span className="text-sm font-bold text-white/70 group-hover:text-white transition-colors uppercase">{type}</span>
                        </label>
                     ))}
                  </div>
@@ -74,10 +74,10 @@ export default function ContactPage() {
                     <Image src="/owner/me.png" alt="Joseph Grekoski" fill className="object-cover" />
                  </div>
                  <div className="text-left">
-                    <div className="text-white font-black text-lg tracking-widest uppercase leading-tight">Joe Grekoski</div>
-                    <div className="text-white/30 text-[10px] font-black tracking-widest uppercase">Founding Principal</div>
+                    <div className="text-white font-black text-lg tracking-widest uppercase leading-tight">JOE GREKOSKI</div>
+                    <div className="text-white/30 text-[10px] font-black tracking-widest ">Founding Principal</div>
                     <p className="text-[9px] text-white/40 leading-relaxed uppercase mt-2 max-w-sm hidden md:block">
-                       Led by Joe Grekoski — the NBA contract negotiation expert who testified in U.S. courts at age 29 — delivering litigation-grade strategy, proprietary salary-cap models, and NIL-to-NBA valuation that traditional agents simply can&apos;t match.
+                       Led by JOE GREKOSKI — the NBA contract negotiation expert who testified in U.S. courts at age 29 — delivering litigation-grade strategy, proprietary salary-cap models, and NIL-to-NBA valuation that traditional agents simply can&apos;t match.
                     </p>
                  </div>
               </div>
@@ -92,8 +92,8 @@ export default function ContactPage() {
                     </div>
                  </div>
                  <div className="text-center md:text-right space-y-1">
-                    <a href="mailto:josephgrekoski@acclimationgroup.com" className="text-white/60 hover:text-primary transition-colors text-xs font-bold tracking-widest block">
-                       josephgrekoski@acclimationgroup.com
+                    <a href="mailto:Joseph.Grekoski@AcclimationGroup.com" className="text-white/60 hover:text-primary transition-colors text-xs font-bold tracking-widest block">
+                       Joseph.Grekoski@AcclimationGroup.com
                     </a>
                     <span className="text-[10px] font-bold text-white/20 uppercase tracking-widest block">Fort Lauderdale, FL</span>
                  </div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
 
         {/* Confidence Tags */}
         <div className="mt-12 text-center space-y-8">
-           <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 text-[11px] font-black text-white/40 uppercase tracking-[0.4em] italic">
+           <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 text-[11px] font-black text-white/40 uppercase tracking-[0.4em]">
               <span>100% Confidential</span>
               <span>Trusted by 50+ NBA Players & Top Prospects</span>
               <span>Litigation-Proven Strategies</span>
@@ -129,3 +129,4 @@ export default function ContactPage() {
     </main>
   );
 }
+

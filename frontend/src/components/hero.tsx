@@ -68,7 +68,7 @@ export function Hero() {
           {/* Career Value Growth Section */}
           <div className="relative glass-premium p-6 rounded-xl overflow-hidden mb-6 border-primary/10 mx-auto">
             <div className="flex flex-col items-center">
-              <h3 className="text-sm font-bold text-white tracking-widest uppercase">Projected Career Value Growth</h3>
+              <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent text-center">Projected Career Value Growth</h3>
               <div className="w-full h-[280px] relative">
                 <CareerGrowthChart />
               </div>
@@ -97,7 +97,7 @@ function ServiceCard({ title, desc, icon }: { title: string, desc: string, icon:
       <div className="w-10 h-10 glass rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform bg-white/5 border-white/10!">
         {icon}
       </div>
-      <h4 className="text-lg font-bold leading-snug">{title}</h4>
+      <h4 className="font-serif text-xl md:text-2xl font-bold leading-tight bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent mb-2">{title}</h4>
       <p className="text-sm text-white/60 leading-relaxed font-light">
         {desc}
       </p>

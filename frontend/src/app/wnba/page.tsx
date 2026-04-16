@@ -26,17 +26,17 @@ export default function WNBAPage() {
         <div className="space-y-12">
           {/* Header Section */}
           <div className="text-center space-y-6">
-            <h1 className="text-2xl md:text-5xl font-black tracking-tighter uppercase italic">
-              <span className="bg-gradient-to-r from-[#00d2ff] via-purple-500 to-[#00d2ff] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(0,210,255,0.5)]">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
+              <span className="   drop-shadow-[0_0_30px_rgba(0,210,255,0.5)]">
                 WNBA
               </span>
             </h1>
 
             <div className="space-y-4 text-center">
               <h2 className="text-xl md:text-3xl font-extrabold tracking-tight text-white leading-tight max-w-4xl mx-auto">
-                Capitalize on the Historic New CBA — <br/><span className="text-primary italic">Maximize Your Earnings Now</span>
+                Capitalize on the Historic New CBA — <br/><span className="text-primary">Maximize Your Earnings Now</span>
               </h2>
-              <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed max-w-3xl mx-auto italic">
+              <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed max-w-3xl mx-auto">
                 The new 7-year WNBA CBA (2026–2032) explodes salaries: salary cap jumps to $7M in 2026, 
                 average pay rises to $583K, and max contracts reach $1.4M+.
               </p>
@@ -77,7 +77,7 @@ export default function WNBAPage() {
             <div className="absolute -inset-[1px] bg-gradient-to-r from-[#00d2ff] via-purple-500 to-primary rounded-[2rem] opacity-70" />
 
             <div className="relative bg-[#0a0d12]/90 h-full p-8 md:p-12 rounded-[2rem] shadow-2xl space-y-6 md:space-y-8">
-              <h3 className="text-xl md:text-3xl font-black text-white leading-tight uppercase italic">
+              <h3 className="text-xl md:text-3xl font-black text-white leading-tight uppercase">
                 What We Provide:
               </h3>
 
@@ -102,3 +102,4 @@ export default function WNBAPage() {
     </main>
   );
 }
+

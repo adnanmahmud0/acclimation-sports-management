@@ -26,15 +26,15 @@ export default function NBAPlayersPage() {
           <div className="space-y-12 max-w-6xl mx-auto">
             {/* Main Header */}
             <div className="space-y-6">
-               <h1 className="text-4xl md:text-8xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,210,255,0.4)]">
+               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
                  Active NBA Players
                </h1>
                <div className="space-y-6">
-                  <h2 className="text-xl md:text-4xl font-black text-white uppercase italic tracking-tight opacity-90">
+                  <h2 className="text-xl md:text-4xl font-black text-white uppercase tracking-tight opacity-90">
                     Maximize Your Off-Court Value <br className="hidden md:block" />
-                    <span className="text-primary italic">and Build Real Wealth</span>
+                    <span className="text-primary">and Build Real Wealth</span>
                   </h2>
-                  <p className="text-sm md:text-xl text-white/60 font-medium leading-relaxed max-w-4xl mx-auto italic">
+                  <p className="text-sm md:text-xl text-white/60 font-medium leading-relaxed max-w-4xl mx-auto">
                     Your on-court talent opens doors. We turn that into serious money through world-class endorsements, smart branding, and strategic opportunities.
                   </p>
                </div>
@@ -82,7 +82,7 @@ export default function NBAPlayersPage() {
 
             {/* Transition Copy */}
             <div className="space-y-8">
-               <p className="text-white/80 text-lg md:text-2xl font-bold italic tracking-wide leading-relaxed max-w-5xl mx-auto">
+               <p className="text-white/80 text-lg md:text-2xl font-bold tracking-wide leading-relaxed max-w-5xl mx-auto">
                   We handle the business so you can focus on ball — and get paid <br className="hidden md:block" /> 
                   what you&apos;re truly worth off the court.
                </p>
@@ -101,7 +101,7 @@ export default function NBAPlayersPage() {
                </div>
             </div>
 
-            <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase italic border-t border-white/5">
+            <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase border-t border-white/5">
               Acclimation Sports Management • Veteran Representation • Wealth Architecture
             </div>
 
@@ -123,3 +123,4 @@ function TimelinePoint({ number, text }: { number: string, text: string }) {
     </div>
   );
 }
+

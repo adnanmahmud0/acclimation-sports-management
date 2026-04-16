@@ -20,7 +20,7 @@ import { Logo } from "@/components/logo"
 
 const data = {
   user: {
-    name: "Joe Grekoski",
+    name: "JOE GREKOSKI",
     email: "Joe@Acclimation-Group.com",
     avatar: "/owner/me.png",
   },

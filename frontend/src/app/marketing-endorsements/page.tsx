@@ -29,13 +29,13 @@ export default function MarketingEndorsementsPage() {
         <div className="space-y-12 max-w-5xl mx-auto">
           {/* Main Header */}
           <div className="space-y-6">
-             <h1 className="text-2xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,210,255,0.3)]">
+             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
                Marketing & <br />
-               <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic pr-4">
+               <span className="   pr-4">
                   Endorsement Deals
                </span>
              </h1>
-               <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto italic">
+               <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
                  We build and monetize your personal brand so you earn maximum value from endorsements, sponsorships, and marketing opportunities. elite high school talent turn their talent into real off-court income.
                </p>
             </div>
@@ -72,10 +72,10 @@ export default function MarketingEndorsementsPage() {
 
             {/* Transition Copy */}
             <div className="space-y-6 max-w-4xl mx-auto">
-               <p className="text-white/60 text-lg md:text-xl font-bold italic tracking-wide leading-relaxed">
+               <p className="text-white/60 text-lg md:text-xl font-bold tracking-wide leading-relaxed">
                   Whether you're chasing your first major shoe deal, building your NIL portfolio, or expanding your brand as a NBA player, we make sure you're never undervalued in the marketplace.
                </p>
-               <h2 className="text-2xl md:text-4xl font-black text-white uppercase italic tracking-tighter">
+               <h2 className="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter">
                   Ready to unlock your full earning potential off the court?
                </h2>
             </div>
@@ -96,7 +96,7 @@ export default function MarketingEndorsementsPage() {
             <div className="pt-20 space-y-12">
                <div className="bg-[#0a0d12]/60 border border-white/5 backdrop-blur-md px-8 py-6 rounded-2xl inline-flex flex-wrap items-center justify-center gap-4 shadow-2xl">
                   <p className="text-white/40 text-[10px] md:text-sm font-bold uppercase tracking-widest leading-none">
-                    Schedule your confidential strategy call with <span className="text-white">Joe Grekoski</span> today.
+                    Schedule your confidential strategy call with <span className="text-white">JOE GREKOSKI</span> today.
                   </p>
                   <div className="w-[1px] h-4 bg-white/20 hidden md:block" />
                   <p className="text-white text-[10px] md:text-sm font-black uppercase tracking-widest leading-none">
@@ -106,7 +106,7 @@ export default function MarketingEndorsementsPage() {
 
                <div className="flex flex-col items-center gap-6">
                   <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
-                  <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic">
+                  <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase">
                      © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
                   </div>
                </div>
@@ -125,7 +125,7 @@ function ListItem({ icon, title, desc }: { icon: React.ReactNode, title: string,
           {icon}
        </div>
        <div className="space-y-1">
-          <h4 className="text-lg md:text-xl font-black text-white tracking-tight leading-tight uppercase italic">{title}</h4>
+          <h4 className="text-lg md:text-xl font-black text-white tracking-tight leading-tight uppercase">{title}</h4>
           {desc && (
             <p className="text-white/40 text-[10px] md:text-xs font-bold uppercase tracking-widest">{desc}</p>
           )}
@@ -133,3 +133,4 @@ function ListItem({ icon, title, desc }: { icon: React.ReactNode, title: string,
     </li>
   );
 }
+

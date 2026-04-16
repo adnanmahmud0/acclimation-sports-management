@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Book Your Strategy Call",
-  description: "Schedule a confidential strategy call with Joe Grekoski to discuss your NBA career architecture and economic positioning.",
+  description: "Schedule a confidential strategy call with JOE GREKOSKI to discuss your NBA career architecture and economic positioning.",
 };
 import { Search, Map, BarChart3, ShieldCheck } from "lucide-react";
 import { Logo } from "@/components/logo";
@@ -30,14 +30,14 @@ export default function BookingPage() {
             
             {/* Header Content */}
             <div className="space-y-6">
-               <h1 className="text-4xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-tight drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
+               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
                  Ready to Build Your NBA Future? <br />
-                 <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent italic">
+                 <span className="  ">
                     Let&apos;s Talk Confidentially.
                  </span>
                </h1>
-               <p className="text-sm md:text-lg text-white/70 font-medium leading-relaxed max-w-4xl mx-auto italic">
-                 Schedule a private 20-30 minute strategy call with Joe Grekoski.
+               <p className="text-sm md:text-lg text-white/70 font-medium leading-relaxed max-w-4xl mx-auto">
+                 Schedule a private 20-30 minute strategy call with JOE GREKOSKI.
                  Get personalized guidance on NIL, recruiting, brand value, contract strategy, and your direct path to the NBA — whether you&apos;re elite high school talent, a college prospect, or an active player.
                </p>
                
@@ -89,7 +89,7 @@ export default function BookingPage() {
                   <div className="flex flex-col lg:flex-row gap-12 text-left">
                      {/* Pick Your Time Side */}
                      <div className="flex-1 space-y-6">
-                        <h3 className="text-2xl font-black text-white uppercase italic tracking-widest border-l-4 border-primary pl-6">Pick Your Time</h3>
+                        <h3 className="text-2xl font-black text-white uppercase tracking-widest border-l-4 border-primary pl-6">Pick Your Time</h3>
                         <div className="space-y-4">
                            <div className="bg-primary/10 border border-primary/30 p-5 rounded-xl">
                               <div className="text-xs font-black text-primary uppercase tracking-widest mb-1">Elite High School Strategy Call</div>
@@ -101,7 +101,7 @@ export default function BookingPage() {
 
                      {/* Choose Call Type Side */}
                      <div className="lg:w-2/3 space-y-6">
-                        <h3 className="text-2xl font-black text-white uppercase italic tracking-widest text-center lg:text-right">Choose Your Call Type</h3>
+                        <h3 className="text-2xl font-black text-white uppercase tracking-widest text-center lg:text-right">Choose Your Call Type</h3>
                         <div className="flex flex-wrap justify-center lg:justify-end gap-3">
                            {["Elite High School Strategy Call (30 min)", "Active Player / Contract Review (45 min)"].map((type) => (
                               <button key={type} className="px-6 py-3 rounded-full border border-white/10 text-[10px] font-black text-white/50 uppercase tracking-widest hover:border-primary/50 hover:text-white transition-all">
@@ -126,7 +126,7 @@ export default function BookingPage() {
                   </div>
                </div>
 
-               <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-[11px] font-black text-white/30 uppercase tracking-[0.4em] italic pt-8">
+               <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-[11px] font-black text-white/30 uppercase tracking-[0.4em] pt-8">
                   <span>Personalized NBA pathway</span>
                   <span>NIL maximization</span>
                   <span>NCAA compliance</span>
@@ -136,7 +136,7 @@ export default function BookingPage() {
 
             <footer className="pt-16 flex flex-col items-center gap-6 border-t border-white/5">
                <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
-               <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase italic">
+               <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase">
                   © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
                </div>
             </footer>
@@ -176,3 +176,4 @@ function TimeRow({ day, time1, time2, time3, time4 }: { day: string, time1: stri
     </tr>
   );
 }
+

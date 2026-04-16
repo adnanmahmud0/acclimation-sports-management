@@ -26,15 +26,15 @@ export default function PersonalBrandingPage() {
         <div className="text-center space-y-4 mb-8 md:mb-12">
            <span className="text-primary font-black tracking-[0.5em] uppercase text-xs drop-shadow-md">Brand Equity</span>
            <div className="text-3xl md:text-4xl font-black text-white drop-shadow-md">$1.2M</div>
-           <h1 className="text-2xl md:text-7xl font-black text-white leading-tight uppercase italic tracking-tight drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]">
+           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
              Turn Your Talent Into a <br />
-             <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent pr-6">
+             <span className="   pr-6">
                Premium, Monetizable
              </span> <br />
 
              Economic Asset
            </h1>
-           <p className="text-white/60 text-xs md:text-sm font-bold max-w-2xl mx-auto italic drop-shadow-md">
+           <p className="text-white/60 text-xs md:text-sm font-bold max-w-2xl mx-auto drop-shadow-md">
              Personal Brand Development: the art of truly identifying the unique value, data-backed and scaling strategically and carefully, then to view the potential.
            </p>
         </div>
@@ -73,7 +73,7 @@ export default function PersonalBrandingPage() {
               
               {/* Strategy Details */}
               <div className="flex-1 space-y-8">
-                 <h2 className="text-2xl md:text-3xl font-black text-white uppercase italic tracking-tight drop-shadow-lg">
+                 <h2 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight drop-shadow-lg">
                     Personal Brand Strategy | <span className="text-primary">Negotiation:</span>
                  </h2>
                  <div className="grid md:grid-cols-3 gap-6">
@@ -129,16 +129,16 @@ export default function PersonalBrandingPage() {
         <div className="mt-16 w-full max-w-7xl flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/10 pt-12">
            <div className="flex items-center gap-6">
               <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/50 relative shadow-2xl">
-                 <Image src="/owner/me.png" alt="Joe Grekoski" fill className="object-cover" />
+                 <Image src="/owner/me.png" alt="JOE GREKOSKI" fill className="object-cover" />
               </div>
               <div className="text-left">
-                 <div className="text-white font-black text-lg tracking-widest uppercase leading-tight">Joe Grekoski</div>
-                 <div className="text-primary/60 text-xs font-bold tracking-widest uppercase">Founding Principal</div>
+                 <div className="text-white font-black text-lg tracking-widest uppercase leading-tight">JOE GREKOSKI</div>
+                 <div className="text-primary/60 text-xs font-bold tracking-widest ">Founding Principal</div>
               </div>
            </div>
            <div className="text-center md:text-right">
-              <a href="mailto:josephgrekoski@acclimationgroup.com" className="text-white hover:text-primary transition-colors text-sm font-bold tracking-widest underline decoration-primary/30 underline-offset-4">
-                josephgrekoski@acclimationgroup.com
+              <a href="mailto:Joseph.Grekoski@AcclimationGroup.com" className="text-white hover:text-primary transition-colors text-sm font-bold tracking-widest underline decoration-primary/30 underline-offset-4">
+                Joseph.Grekoski@AcclimationGroup.com
               </a>
 
 
@@ -173,4 +173,5 @@ function DataPoint({ title, value }: { title: string, value: string }) {
     </div>
   );
 }
+
 
