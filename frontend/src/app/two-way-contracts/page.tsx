@@ -31,10 +31,8 @@ export default function TwoWayContractsPage() {
             <div className="flex flex-col items-center text-center gap-12">
               <div className="space-y-8 max-w-5xl mx-auto">
                 <GradientHeader tag="h1" size="lg" className="mb-4">
-                  NBA Two-Way Contracts
-                  2026: Rules, Salaries and
-                  The Fast Track from
-                    G League to Millions
+                  NBA Two-Way Contracts <br /> 2025-26 / 2026-27: <br />
+                  Rules, Salaries and Fast Track
                 </GradientHeader>
               </div>
             </div>
@@ -88,7 +86,7 @@ export default function TwoWayContractsPage() {
                   <div className="w-8 h-8 rounded-lg bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-black flex-shrink-0 group-hover:bg-primary group-hover:text-black transition-colors">
                     {rule.id}
                   </div>
-                  <p className="text-sm text-white/80 leading-snug font-medium pt-1">
+                  <p className="text-base text-white/90 leading-snug font-medium pt-1">
                     {rule.text}
                   </p>
                 </div>
@@ -105,6 +103,9 @@ export default function TwoWayContractsPage() {
               <div className="text-5xl font-black text-primary drop-shadow-[0_0_15px_rgba(0,210,255,0.4)]">
                 $636,435
               </div>
+              <p className="text-sm font-bold text-white/80 uppercase tracking-widest leading-relaxed pt-2">
+                2025-26 value (2026-27 will increase)
+              </p>
 
               <div className="space-y-4">
                 <div className="space-y-2">
@@ -132,7 +133,7 @@ export default function TwoWayContractsPage() {
                 "Team converts to standard"
               ].map((step, i) => (
                 <div key={i} className="relative group">
-                  <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-xs font-bold text-white/90 group-hover:bg-primary/10 group-hover:border-primary/30 transition-all">
+                  <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-sm font-bold text-white/90 group-hover:bg-primary/10 group-hover:border-primary/30 transition-all">
                     {step}
                   </div>
                   {i < 2 && (
