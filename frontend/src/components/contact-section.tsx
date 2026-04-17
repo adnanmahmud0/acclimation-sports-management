@@ -99,15 +99,6 @@ export function ContactSection() {
                   </div>
                </div>
             </div>
-
-            {/* Confidence Tags */}
-            <div className="mt-20 text-center space-y-12 w-full">
-               <div className="flex flex-wrap justify-center gap-x-16 gap-y-6 text-xs font-black text-white/30 uppercase tracking-[0.5em]">
-                  <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-primary" /> 100% Confidential</span>
-                  <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-primary" /> Trusted by 50+ NBA Players & Top Prospects</span>
-                  <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-primary" /> Litigation-Proven Strategies</span>
-               </div>
-            </div>
          </div>
       </section>
    );

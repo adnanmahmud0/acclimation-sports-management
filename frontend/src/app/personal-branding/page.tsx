@@ -35,7 +35,7 @@ export default function PersonalBrandingPage() {
 
                   Economic Asset
                </GradientHeader>
-               <p className="text-white/60 text-xs md:text-sm font-bold max-w-2xl mx-auto drop-shadow-md">
+               <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
                   Personal Brand Development: the art of truly identifying the unique value, data-backed and scaling strategically and carefully, then to view the potential.
                </p>
             </div>
@@ -101,11 +101,11 @@ export default function PersonalBrandingPage() {
                      <div className="grid grid-cols-2 gap-6">
                         <div className="bg-[#0a0d12]/95 border border-primary/20 p-8 rounded-2xl shadow-2xl">
                            <div className="text-4xl font-black text-white mb-2">$8.2M</div>
-                           <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest leading-relaxed">Average Uplift in <br /> Endorsement Value</div>
+                           <div className="text-xs font-bold text-white/70 uppercase tracking-widest leading-relaxed">Average Uplift in <br /> Endorsement Value</div>
                         </div>
                         <div className="bg-[#0a0d12]/95 border border-primary/20 p-8 rounded-2xl shadow-2xl">
                            <div className="text-4xl font-black text-white mb-2">340%</div>
-                           <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest leading-relaxed">Brand <br /> Growth</div>
+                           <div className="text-xs font-bold text-white/70 uppercase tracking-widest leading-relaxed">Brand <br /> Growth</div>
                         </div>
                      </div>
                   </div>
@@ -131,9 +131,9 @@ function ServiceBox({ title, desc }: { title: string, desc: string }) {
          <div className="space-y-4">
             <div className="flex gap-3 items-center">
                <div className="w-2 h-2 rounded-full bg-primary shadow-[0_0_12px_rgba(0,210,255,1)]" />
-               <h4 className="text-white font-black uppercase text-xs tracking-widest leading-tight">{title}</h4>
+               <h4 className="text-white font-black uppercase text-sm tracking-widest leading-tight">{title}</h4>
             </div>
-            <p className="text-white/60 text-xs font-bold leading-relaxed uppercase tracking-wider">
+            <p className="text-white/70 text-xs font-bold leading-relaxed uppercase tracking-wider">
                {desc}
             </p>
          </div>

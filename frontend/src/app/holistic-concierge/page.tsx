@@ -42,7 +42,7 @@ export default function HolisticConciergePage() {
                     We manage your entire off-court world so you can <br className="hidden md:block" />
                     <span className="text-primary">focus only on dominating the game.</span>
                   </h2>
-                  <p className="text-sm md:text-lg text-white/60 font-medium leading-relaxed max-w-4xl mx-auto">
+                  <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
                     From private jets to personal chefs, from wealth planning to media training — we handle everything so you can focus on the game. One call. Everything handled. Total peace of mind.
                   </p>
                </div>
@@ -109,7 +109,7 @@ function ServiceCard({ icon, title, desc }: { icon: React.ReactNode, title: stri
        </div>
        <div className="space-y-1">
           <h4 className="text-base md:text-lg font-black text-white tracking-tight leading-tight uppercase group-hover:text-primary transition-colors">{title}</h4>
-          <p className="text-white/40 text-[11px] md:text-xs font-bold uppercase tracking-widest leading-relaxed">
+          <p className="text-white/60 text-xs md:text-sm font-bold uppercase tracking-widest leading-relaxed">
              {desc}
           </p>
        </div>

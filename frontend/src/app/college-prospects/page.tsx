@@ -133,8 +133,8 @@ function ArcCard({ number, icon, title, desc }: { number: string, icon: React.Re
         {icon}
       </div>
       <div className="space-y-3">
-        <h4 className="text-sm font-black text-white uppercase tracking-widest leading-tight">{title}</h4>
-        <p className="text-[11px] font-bold text-white/30 uppercase tracking-widest leading-relaxed">
+        <h4 className="text-base md:text-lg font-black text-white uppercase tracking-widest leading-tight">{title}</h4>
+        <p className="text-sm font-bold text-white/60 uppercase tracking-widest leading-relaxed">
           {desc}
         </p>
       </div>

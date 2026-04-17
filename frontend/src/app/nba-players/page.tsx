@@ -33,7 +33,7 @@ export default function NBAPlayersPage() {
                  Active NBA Players
                </GradientHeader>
                <div className="space-y-6">
-                  <h2 className="text-lg md:text-xl font-black text-white uppercase tracking-tight opacity-90">
+                  <h2 className="c">
                     Maximize Your Off-Court Value <br className="hidden md:block" />
                     <span className="text-primary">and Build Real Wealth</span>
                   </h2>
@@ -149,7 +149,7 @@ function TimelinePoint({ number, text }: { number: string, text: string }) {
        <div className="w-14 h-14 rounded-full bg-[#0a0d12]/80 border border-primary/40 flex items-center justify-center font-black text-xl text-white group-hover:bg-primary group-hover:text-black group-hover:border-primary transition-all shadow-[0_0_20px_rgba(0,180,255,0.2)] relative z-10">
           {number}
        </div>
-       <p className="text-xs font-bold text-white/50 uppercase tracking-widest leading-relaxed px-4 group-hover:text-white transition-colors">
+       <p className="text-base font-bold text-white/90 uppercase tracking-widest leading-relaxed px-4 group-hover:text-white transition-colors">
           {text}
        </p>
     </div>

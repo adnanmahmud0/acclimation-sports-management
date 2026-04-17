@@ -22,7 +22,7 @@ export function GradientHeader({
 
   return (
     <Tag className={cn(
-      "font-serif font-bold leading-[1.1] bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent pb-3",
+      "font-serif font-bold leading-[1.1] bg-gradient-to-r from-white to-primary bg-clip-text text-transparent pb-3 inline-block",
       sizeClasses[size],
       className
     )}>

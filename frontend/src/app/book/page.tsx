@@ -39,7 +39,7 @@ export default function BookingPage() {
                      Let&apos;s Talk Confidentially.
                   </span>
                 </GradientHeader>
-                <p className="text-sm md:text-lg text-white/70 font-medium leading-relaxed max-w-4xl mx-auto">
+                <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
                   Schedule a private 20-30 minute strategy call with Joe Grekoski.
                   Get personalized guidance on NIL, recruiting, brand value, contract strategy, and your direct path to the NBA — whether you&apos;re elite high school talent, a college prospect, or an active player.
                 </p>

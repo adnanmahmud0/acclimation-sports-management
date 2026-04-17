@@ -37,7 +37,7 @@ export default function SalaryCapPage() {
               Maximize Every Dollar.
             </span>
           </GradientHeader>
-          <p className="text-lg md:text-xl text-white/60 font-medium max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/80 font-medium max-w-4xl mx-auto leading-relaxed">
             Proprietary analytical models and expert salary cap strategy that put more money in your pocket. 
             We deliver precise, real-time salary cap modeling and data-driven strategies to optimize every contract.
           </p>

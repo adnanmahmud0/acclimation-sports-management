@@ -41,7 +41,7 @@ export default function HighSchoolTalentPage() {
                   <h2 className="text-lg md:text-2xl font-black text-white tracking-tight opacity-90">
                     The Path to the Pros Begins Here
                   </h2>
-                  <p className="text-sm md:text-xl text-white/50 font-medium leading-relaxed max-w-4xl mx-auto">
+                  <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
                     Join the exclusive network of elite prospects who secured multi-million dollar NIL deals and direct NBA pathways before graduation. Our proprietary system turns high school talent into professional assets.
                   </p>
                </div>
@@ -55,7 +55,7 @@ export default function HighSchoolTalentPage() {
                   <div className="space-y-4">
                     <div className="flex items-center gap-3 text-primary">
                       <div className="h-[1px] w-8 bg-primary/40" />
-                      <span className="text-[10px] font-black uppercase tracking-[0.4em]">Acclimation Edge</span>
+                      <span className="text-xs font-black uppercase tracking-[0.4em]">Acclimation Edge</span>
                     </div>
                     <GradientHeader tag="h3" size="md">
                       Why Elite Prospects <br /> Choose Acclimation
@@ -102,7 +102,7 @@ export default function HighSchoolTalentPage() {
                           "Elite Media & Interview Training",
                           "College-to-Pro Multi-Year Transition"
                         ].map((benefit, idx) => (
-                          <li key={idx} className="flex items-center gap-5 text-white/50 font-bold uppercase tracking-widest text-[11px] border-b border-white/[0.03] pb-6 last:border-0 hover:text-white transition-all duration-300 group/item">
+                          <li key={idx} className="flex items-center gap-5 text-white/70 font-bold uppercase tracking-widest text-sm border-b border-white/[0.03] pb-6 last:border-0 hover:text-white transition-all duration-300 group/item">
                              <div className="w-2 h-2 rounded-full border border-primary/40 flex items-center justify-center group-hover/item:border-primary transition-colors">
                                 <div className="w-1 h-1 rounded-full bg-primary/40 group-hover/item:bg-primary" />
                              </div>
@@ -113,7 +113,7 @@ export default function HighSchoolTalentPage() {
                     </div>
 
                     <div className="pt-8">
-                       <p className="text-[10px] font-black text-primary/40 uppercase tracking-[0.4em]">Exclusive Entry • High Stakes Advocacy</p>
+                       <p className="text-xs font-black text-primary/40 uppercase tracking-[0.4em]">Exclusive Entry • High Stakes Advocacy</p>
                     </div>
                   </div>
                </div>
@@ -126,10 +126,7 @@ export default function HighSchoolTalentPage() {
                     Schedule Your Confidential Strategy Call → 512-518-6547
                   </CtaButton>
                </div>
-               
-               <p className="text-white text-lg md:text-2xl font-black uppercase tracking-tighter opacity-80">
-                  Ready to take the next step? Schedule Your <span className="text-primary">Confidential Strategy Call</span> Today
-               </p>
+            
             </div>
 
             <Footer />
@@ -146,9 +143,9 @@ function ChoiceItem({ title, desc }: { title: string, desc: string }) {
           <div className="w-8 h-8 rounded-lg bg-primary/5 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
             <CheckCircle2 className="w-4 h-4 text-primary group-hover:text-inherit" />
           </div>
-          <h4 className="text-xs font-black text-white uppercase tracking-widest leading-tight">{title}</h4>
+          <h4 className="text-base font-black text-white uppercase tracking-widest leading-tight">{title}</h4>
        </div>
-       <p className="text-[10px] font-bold text-white/30 uppercase tracking-widest leading-relaxed">
+       <p className="text-sm font-bold text-white/50 uppercase tracking-widest leading-relaxed">
           {desc}
        </p>
     </div>

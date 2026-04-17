@@ -34,8 +34,8 @@ export default function WNBAPage() {
             </GradientHeader>
 
             <div className="space-y-4 text-center">
-              <h2 className="text-lg md:text-xl font-black text-white leading-tight uppercase">
-                Capitalize on the Historic New CBA Maximize Your Earnings Now
+              <h2 className="text-lg md:text-xl font-black text-white leading-tight">
+                Capitalize on the Historic New CBA <br /> <span className="text-primary">Maximize Your Earnings Now</span>
               </h2>
               <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed max-w-3xl mx-auto">
                 The new 7-year WNBA CBA (2026–2032) explodes salaries: salary cap jumps to $7M in 2026, 

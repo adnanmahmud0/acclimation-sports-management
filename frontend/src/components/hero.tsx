@@ -55,7 +55,7 @@ export function Hero() {
               icon={<TrendingUp className="w-5 h-5 text-primary" />}
             />
             <ServiceCard
-              title="Marketing & Endorsements"
+              title="Marketing and Endorsements"
               desc="Proprietary analytics ensure you're never underpaid."
               icon={<Handshake className="w-5 h-5 text-primary" />}
             />

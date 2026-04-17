@@ -16,10 +16,10 @@ export function AboutSection() {
             About Acclimation Sports Management<br />
             Led by Joe Grekoski
           </GradientHeader>
-          
+
           <div className="max-w-4xl mx-auto glass-premium p-6 rounded-2xl border-primary/20 bg-primary/5">
             <p className="text-sm md:text-base font-bold text-white leading-relaxed">
-              The only NBA sports agency led by an intellectual property expert specializing in personal brand 
+              The only NBA sports agency led by an intellectual property expert specializing in personal brand
               valuation and development for elite basketball talent.
             </p>
           </div>
@@ -44,8 +44,8 @@ export function AboutSection() {
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <p className="text-lg text-white/90 leading-relaxed">
-                <span className="font-black text-primary">Joe Grekoski</span> is the founder of <span className="font-bold whitespace-nowrap">Acclimation Group</span> and <span className="font-bold">Acclimation Sports Management</span>. 
-                He is a recognized economic expert who specializes in intellectual property with a particular focus on 
+                <span className="font-black text-primary">Joe Grekoski</span> is the founder of <span className="font-bold whitespace-nowrap">Acclimation Group</span> and <span className="font-bold">Acclimation Sports Management</span>.
+                He is a recognized economic expert who specializes in intellectual property with a particular focus on
                 personal brand valuation and development for high-profile athletes. At age 29, Joe Grekoski became one of the youngest economic damages experts to testify in a U.S. court.
               </p>
             </div>
@@ -69,7 +69,7 @@ export function AboutSection() {
             </ul>
 
             <p className="text-sm font-medium text-white/50 leading-relaxed uppercase tracking-wide">
-              While other agents focus only on basketball, Joe Grekoski built <span className="text-white">Acclimation Sports Management</span> as the true one-stop shop. 
+              While other agents focus only on basketball, Joe Grekoski built <span className="text-white">Acclimation Sports Management</span> as the true one-stop shop.
               <span className="text-primary"> You just play basketball. We handle everything else.</span>
             </p>
           </div>

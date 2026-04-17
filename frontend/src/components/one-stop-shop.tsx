@@ -21,7 +21,7 @@ export function OneStopShop() {
         {/* Header Section */}
         <div className="mb-8">
           <div className="glass-premium p-8 md:p-12 rounded-3xl border-white/5 shadow-2xl text-center space-y-4">
-            <GradientHeader tag="h2" size="lg" className="mb-4 pb-2">
+            <GradientHeader tag="h2" size="lg" className="mb-4 pb-3">
               One-Stop Shop for Everything
             </GradientHeader>
             <p className="max-w-4xl mx-auto text-white/80 text-sm md:text-lg leading-relaxed">
@@ -40,7 +40,7 @@ export function OneStopShop() {
               <div className="flex items-stretch gap-4 h-full">
                 <span className="text-6xl font-black text-primary/30 leading-none select-none pt-2">1.</span>
                 <div className="flex-1 glass-premium p-6 md:p-8 rounded-2xl border-white/5 hover:border-primary/40 transition-all duration-500 hover:translate-y-[-4px] shadow-2xl flex flex-col">
-                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent mb-4">
+                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-4 inline-block">
                     Pre-Draft and NBA Combine Mastery
                   </h3>
                   <ul className="space-y-2 text-sm text-white/60 font-medium list-none flex-1">
@@ -60,7 +60,7 @@ export function OneStopShop() {
               <div className="flex items-stretch gap-4 h-full">
                 <span className="text-6xl font-black text-primary/30 leading-none select-none pt-2">2.</span>
                 <div className="flex-1 glass-premium p-6 md:p-8 rounded-2xl border-white/5 hover:border-primary/40 transition-all duration-500 hover:translate-y-[-4px] shadow-2xl flex flex-col">
-                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent mb-4">
+                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-4 inline-block">
                     Proprietary Salary Cap & Analytical Models
                   </h3>
                   <ul className="space-y-2 text-sm text-white/60 font-medium list-none flex-1">
@@ -80,7 +80,7 @@ export function OneStopShop() {
               <div className="flex items-stretch gap-4 h-full">
                 <span className="text-6xl font-black text-primary/30 leading-none select-none pt-2">3.</span>
                 <div className="flex-1 glass-premium p-6 md:p-8 rounded-2xl border-white/5 hover:border-primary/40 transition-all duration-500 hover:translate-y-[-4px] shadow-2xl flex flex-col">
-                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent mb-4">
+                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-4 inline-block">
                     Litigation-Grade NBA Contract Negotiation
                   </h3>
                   <ul className="space-y-2 text-sm text-white/60 font-medium list-none flex-1">
@@ -100,7 +100,7 @@ export function OneStopShop() {
               <div className="flex items-stretch gap-4 h-full">
                 <span className="text-6xl font-black text-primary/30 leading-none select-none pt-2">4.</span>
                 <div className="flex-1 glass-premium p-6 md:p-8 rounded-2xl border-white/5 hover:border-primary/40 transition-all duration-500 hover:translate-y-[-4px] shadow-2xl flex flex-col">
-                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent mb-4">
+                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-4 inline-block">
                     Generational Wealth & Business Empire
                   </h3>
                   <ul className="space-y-2 text-sm text-white/60 font-medium list-none flex-1">

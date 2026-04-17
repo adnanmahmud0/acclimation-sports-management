@@ -27,16 +27,16 @@ export default function ContractNegotiationPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-transparent to-[#05070a]" />
       </div>
 
-      <div className="container mx-auto px-6 pt-24 relative z-10 flex flex-col items-center text-center">
-        <div className="space-y-8 max-w-5xl mx-auto">
-          <GradientHeader tag="h1" size="lg" className="mb-4">
+      <div className="container mx-auto px-6 pt-24 relative z-10 flex flex-col items-center ">
+        <div className="space-y-8 max-w-5xl mx-auto text-center">
+          <GradientHeader tag="h1" size="lg" className="mb-4 text-center">
             NBA Contract Negotiation and <br />
             <span className="flex justify-center">
               Representation
             </span>
           </GradientHeader>
 
-          <p className="text-lg md:text-xl text-white/60 font-medium leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg md:text-xl text-white font-medium leading-relaxed mx-auto">
             Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player for active NBA players, college prospects, and elite high-school talent.
           </p>
 
@@ -94,10 +94,10 @@ export default function ContractNegotiationPage() {
             </CtaButton>
           </div>
 
-            <Footer />
-          </div>
+          <Footer />
         </div>
-      </main>
+      </div>
+    </main>
   );
 }
 
