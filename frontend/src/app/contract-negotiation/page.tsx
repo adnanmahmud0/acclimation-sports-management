@@ -36,7 +36,7 @@ export default function ContractNegotiationPage() {
             </span>
           </GradientHeader>
 
-          <p className="text-lg md:text-xl text-white font-medium leading-relaxed mx-auto">
+          <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
             Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player for active NBA players, college prospects, and elite high-school talent.
           </p>
 

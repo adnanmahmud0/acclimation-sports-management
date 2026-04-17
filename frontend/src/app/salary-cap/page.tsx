@@ -27,17 +27,17 @@ export default function SalaryCapPage() {
 
       <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
         {/* Header Section */}
+        <div className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-[0.2em] text-white/50 mb-2 shadow-xl">
+          Salary Cap & Analytical Models
+        </div>
         <div className="text-center space-y-6 max-w-5xl mx-auto mb-16">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-[0.2em] text-white/50 mb-2 shadow-xl">
-            Salary Cap & Analytical Models
-          </div>
           <GradientHeader tag="h1" size="lg" className="mb-4">
             Master the Salary Cap. <br />
             <span className="   flex">
               Maximize Every Dollar.
             </span>
           </GradientHeader>
-          <p className="text-lg md:text-xl text-white/80 font-medium max-w-4xl mx-auto leading-relaxed">
+          <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
             Proprietary analytical models and expert salary cap strategy that put more money in your pocket. 
             We deliver precise, real-time salary cap modeling and data-driven strategies to optimize every contract.
           </p>

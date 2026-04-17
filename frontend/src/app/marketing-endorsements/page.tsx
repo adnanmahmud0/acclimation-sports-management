@@ -37,7 +37,7 @@ export default function MarketingEndorsementsPage() {
                 Endorsement Deals
               </span>
             </GradientHeader>
-            <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
+            <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
               We build and monetize your personal brand so you earn maximum value from endorsements, sponsorships, and marketing opportunities. elite high school talent turn their talent into real off-court income.
             </p>
           </div>

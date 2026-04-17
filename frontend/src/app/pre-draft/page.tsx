@@ -37,7 +37,7 @@ export default function PreDraftPage() {
                     COMBINE MASTERY
 
                </GradientHeader>
-               <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
+            <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
                  Our Pre-Draft and NBA Combine Mastery program prepares elite high school and college basketball prospects to rise on draft boards and enter the NBA with maximum value.
                </p>
             </div>

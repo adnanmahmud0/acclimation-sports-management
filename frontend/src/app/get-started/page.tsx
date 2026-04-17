@@ -32,7 +32,7 @@ export default function GetStartedPage() {
             Take the First Step Toward Your <br />
             Professional Basketball Career
           </GradientHeader>
-          <p className="text-xl md:text-2xl text-white/60 font-medium">
+          <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
             Your direct path to the NBA starts here.
           </p>
         </div>

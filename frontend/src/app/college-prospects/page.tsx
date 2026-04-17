@@ -39,7 +39,7 @@ export default function CollegeProspectsPage() {
                 </span>
               </GradientHeader>
               <div className="space-y-6">
-                <h2 className="text-lg md:text-xl font-black text-white tracking-tight opacity-90">
+                <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
                   Position yourself for the NBA Draft and <br />
                   build your future wealth now.
                 </h2>

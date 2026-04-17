@@ -38,7 +38,7 @@ export default function HolisticConciergePage() {
                     Concierge Support
                </GradientHeader>
                <div className="space-y-6">
-                  <h2 className="text-lg md:text-xl font-black text-white tracking-tight opacity-90">
+                <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
                     We manage your entire off-court world so you can <br className="hidden md:block" />
                     <span className="text-primary">focus only on dominating the game.</span>
                   </h2>

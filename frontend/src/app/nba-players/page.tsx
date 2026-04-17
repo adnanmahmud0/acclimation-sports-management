@@ -33,7 +33,7 @@ export default function NBAPlayersPage() {
                  Active NBA Players
                </GradientHeader>
                <div className="space-y-6">
-                  <h2 className="c">
+              <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
                     Maximize Your Off-Court Value <br className="hidden md:block" />
                     <span className="text-primary">and Build Real Wealth</span>
                   </h2>

@@ -61,7 +61,7 @@ export function OneStopShop() {
                 <span className="text-6xl font-black text-primary/30 leading-none select-none pt-2">2.</span>
                 <div className="flex-1 glass-premium p-6 md:p-8 rounded-2xl border-white/5 hover:border-primary/40 transition-all duration-500 hover:translate-y-[-4px] shadow-2xl flex flex-col">
                   <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-4 inline-block">
-                    Proprietary Salary Cap & Analytical Models
+                    Proprietary Salary Cap and Analytical Models
                   </h3>
                   <ul className="space-y-2 text-sm text-white/60 font-medium list-none flex-1">
                     {["Real-time forecasting", "Luxury-tax modeling", "Endorsement valuation algorithms", "Market value simulations", "In-house analytics that consistently put more money in your pocket."].map((item, i) => (
@@ -101,7 +101,7 @@ export function OneStopShop() {
                 <span className="text-6xl font-black text-primary/30 leading-none select-none pt-2">4.</span>
                 <div className="flex-1 glass-premium p-6 md:p-8 rounded-2xl border-white/5 hover:border-primary/40 transition-all duration-500 hover:translate-y-[-4px] shadow-2xl flex flex-col">
                   <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white to-primary bg-clip-text text-transparent mb-4 inline-block">
-                    Generational Wealth & Business Empire
+                    Generational Wealth and Business Empire
                   </h3>
                   <ul className="space-y-2 text-sm text-white/60 font-medium list-none flex-1">
                     {["Off-court brand architecture", "Endorsement empire building", "Private-jet concierge support", "Elite trainers, CPAs & wealth advisors", "Legacy planning", "Dynamics"].map((item, i) => (

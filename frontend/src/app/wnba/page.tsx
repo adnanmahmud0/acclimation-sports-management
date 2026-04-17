@@ -30,15 +30,15 @@ export default function WNBAPage() {
           {/* Header Section */}
           <div className="text-center space-y-6">
             <GradientHeader tag="h1" size="xl" className="mb-4">
-                WNBA
+              WNBA
             </GradientHeader>
 
             <div className="space-y-4 text-center">
-              <h2 className="text-lg md:text-xl font-black text-white leading-tight">
+              <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
                 Capitalize on the Historic New CBA <br /> <span className="text-primary">Maximize Your Earnings Now</span>
               </h2>
-              <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed max-w-3xl mx-auto">
-                The new 7-year WNBA CBA (2026–2032) explodes salaries: salary cap jumps to $7M in 2026, 
+              <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
+                The new 7-year WNBA CBA (2026–2032) explodes salaries: salary cap jumps to $7M in 2026,
                 average pay rises to $583K, and max contracts reach $1.4M+.
               </p>
             </div>
@@ -65,9 +65,9 @@ export default function WNBAPage() {
 
       {/* Cards Section */}
       <div className="container mx-auto px-6 pb-24">
-        <div className="max-w-4xl mx-auto space-y-24">
+        <div className="max-w-7xl mx-auto space-y-24">
           {/* "What We Provide" Card */}
-          <div className="relative group w-full">
+          <div className="relative group max-w-3xl mx-auto">
             <div className="absolute -inset-[1px] bg-gradient-to-r from-[#00d2ff] via-purple-500 to-primary rounded-[2rem] opacity-70" />
 
             <div className="relative bg-[#0a0d12]/90 h-full p-8 md:p-12 rounded-[2rem] shadow-2xl space-y-6 md:space-y-8">

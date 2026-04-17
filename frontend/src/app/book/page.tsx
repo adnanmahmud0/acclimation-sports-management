@@ -29,7 +29,7 @@ export default function BookingPage() {
          </div>
 
          <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center text-center">
-           <div className="space-y-12 max-w-6xl mx-auto">
+           <div className="space-y-12 max-w-7xl mx-auto">
              
              {/* Header Content */}
              <div className="space-y-6">
@@ -39,7 +39,7 @@ export default function BookingPage() {
                      Let&apos;s Talk Confidentially.
                   </span>
                 </GradientHeader>
-                <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
+                     <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
                   Schedule a private 20-30 minute strategy call with Joe Grekoski.
                   Get personalized guidance on NIL, recruiting, brand value, contract strategy, and your direct path to the NBA — whether you&apos;re elite high school talent, a college prospect, or an active player.
                 </p>
@@ -82,10 +82,12 @@ export default function BookingPage() {
              </div>
 
              {/* Booking Mockup Section */}
+
+             
+             {/* 
              <div id="booking" className="pt-24 space-y-8">
                 <div className="glass-premium p-8 rounded-[2rem] border-primary/20 space-y-10 shadow-2xl bg-[#0a0d12]/40">
                    <div className="flex flex-col lg:flex-row gap-12 text-left">
-                      {/* Pick Your Time Side */}
                       <div className="flex-1 space-y-6">
                          <h3 className="text-2xl font-black text-white uppercase tracking-widest border-l-4 border-primary pl-6">Pick Your Time</h3>
                          <div className="space-y-4">
@@ -97,7 +99,6 @@ export default function BookingPage() {
                          </div>
                       </div>
 
-                      {/* Choose Call Type Side */}
                       <div className="lg:w-2/3 space-y-6">
                          <h3 className="text-2xl font-black text-white uppercase tracking-widest text-center lg:text-right">Choose Your Call Type</h3>
                          <div className="flex flex-wrap justify-center lg:justify-end gap-3">
@@ -108,7 +109,6 @@ export default function BookingPage() {
                             ))}
                          </div>
 
-                         {/* Booking Matrix Mock */}
                          <div className="bg-[#0a0d12]/60 border border-white/5 p-4 rounded-2xl overflow-x-auto">
                             <table className="w-full min-w-[600px] text-left">
                                <tbody>
@@ -131,6 +131,7 @@ export default function BookingPage() {
                    <span>Family concierge</span>
                 </div>
              </div>
+             */}
 
              <Footer />
            </div>
