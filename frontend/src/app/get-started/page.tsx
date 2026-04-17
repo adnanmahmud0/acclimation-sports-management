@@ -1,9 +1,12 @@
 import Image from "next/image";
 import { Search, TrendingUp, Handshake, Trophy } from "lucide-react";
 import { Metadata } from "next";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Get Started | NBA Player Profile Submission",
+  title: "Launch Your Professional NBA Career",
   description: "Take the first step toward your professional basketball career. Submit your player profile for exclusive valuation and draft strategy.",
 };
 
@@ -25,10 +28,10 @@ export default function GetStartedPage() {
       <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center space-y-4 mb-16">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
+          <GradientHeader tag="h1" size="lg" className="mb-4">
             Take the First Step Toward Your <br />
             Professional Basketball Career
-          </h1>
+          </GradientHeader>
           <p className="text-xl md:text-2xl text-white/60 font-medium">
             Your direct path to the NBA starts here.
           </p>
@@ -61,13 +64,10 @@ export default function GetStartedPage() {
         {/* Form Section */}
         <div className="w-full max-w-5xl space-y-8">
           {/* Form Header / Action Button Placeholder */}
-          <div className="relative w-full group">
-            <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-xl scale-95" />
-            <div className="relative bg-gradient-to-r from-purple-500 via-primary to-cyan-400 py-4 rounded-xl text-center shadow-[0_0_30px_rgba(0,210,255,0.4)]">
-               <span className="text-xl md:text-2xl font-black text-white uppercase tracking-widest">
-                 Submit Your Player Profile
-               </span>
-            </div>
+          <div className="w-full">
+             <CtaButton type="submit" fullWidth>
+               Submit Your Player Profile
+             </CtaButton>
           </div>
 
           <div className="glass-premium p-8 md:p-12 rounded-3xl border-primary/20 space-y-10">
@@ -94,27 +94,13 @@ export default function GetStartedPage() {
 
              <div className="text-center pt-6">
                 <p className="text-white/60 text-lg md:text-xl font-medium tracking-wide">
-                   Or call us directly at <a href="tel:5125186547" className="text-white font-bold hover:text-primary transition-colors">512-518-6547</a> to speak with JOE GREKOSKI right away.
+                 Or call us directly at <a href="tel:5125186547" className="text-white font-bold hover:text-primary transition-colors">512-518-6547</a> to speak with Joe Grekoski right away.
                 </p>
              </div>
           </div>
         </div>
 
-        {/* Branding Footer In Page */}
-        <div className="mt-20 text-center space-y-4 opacity-40 hover:opacity-100 transition-opacity">
-           <h4 className="text-white font-bold tracking-[0.2em] uppercase text-xs md:text-sm">
-             Led by JOE GREKOSKI • Representing Active NBA Players • College Prospects • Elite High School Talent
-           </h4>
-           <div className="h-[1px] w-full max-w-md bg-gradient-to-r from-transparent via-white/20 to-transparent mx-auto" />
-           <div className="flex justify-between items-center text-[10px] font-bold text-white/30 uppercase tracking-[0.3em] pt-4 px-4 w-full">
-              <span>Acclimation Sports Management</span>
-              <div className="flex gap-6">
-                 <span>Privacy</span>
-                 <span>Terms</span>
-                 <span>Contact</span>
-              </div>
-           </div>
-        </div>
+        <Footer />
       </div>
     </main>
   );

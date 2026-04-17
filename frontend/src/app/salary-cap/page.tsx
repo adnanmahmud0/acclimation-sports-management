@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "NBA Salary Cap Analytics & Strategy",
+  title: "Proprietary Salary Cap Analytics",
   description: "Proprietary analytical models and expert salary cap strategy to optimize every contract and maximize career earnings.",
 };
 
@@ -25,15 +28,15 @@ export default function SalaryCapPage() {
       <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center space-y-6 max-w-5xl mx-auto mb-16">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 mb-2 shadow-xl">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-[0.2em] text-white/50 mb-2 shadow-xl">
             Salary Cap & Analytical Models
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
+          <GradientHeader tag="h1" size="lg" className="mb-4">
             Master the Salary Cap. <br />
             <span className="   flex">
               Maximize Every Dollar.
             </span>
-          </h1>
+          </GradientHeader>
           <p className="text-lg md:text-xl text-white/60 font-medium max-w-4xl mx-auto leading-relaxed">
             Proprietary analytical models and expert salary cap strategy that put more money in your pocket. 
             We deliver precise, real-time salary cap modeling and data-driven strategies to optimize every contract.
@@ -59,7 +62,7 @@ export default function SalaryCapPage() {
             
             <EngineCard title="Live Salary Cap Forecasting">
                <div className="space-y-4">
-                  <div className="text-[10px] font-bold text-white/30 uppercase tracking-widest leading-none">Premium Growth</div>
+                   <div className="text-xs font-bold text-white/30 uppercase tracking-widest leading-none">Premium Growth</div>
                   <div className="text-2xl font-black text-white">$2.1M / $1.8M</div>
                   <div className="h-10 flex items-end gap-1">
                      <div className="flex-1 bg-primary/20 h-[40%] rounded-sm" />
@@ -79,23 +82,23 @@ export default function SalaryCapPage() {
                      <div className="w-3 bg-white/10 h-[90%] rounded-t-sm" />
                      <div className="w-3 bg-white/10 h-[55%] rounded-t-sm" />
                   </div>
-                  <div className="flex justify-between text-[8px] font-bold text-white/20 uppercase tracking-widest px-1">
-                     <span>Base</span>
-                     <span>Scen 1</span>
-                     <span>Scen 2</span>
-                     <span>Tax</span>
-                  </div>
+                   <div className="flex justify-between text-[10px] font-bold text-white/20 uppercase tracking-widest px-1">
+                      <span>Base</span>
+                      <span>Scen 1</span>
+                      <span>Scen 2</span>
+                      <span>Tax</span>
+                   </div>
                </div>
             </EngineCard>
 
             <EngineCard title="Endorsement & NIL Valuation">
                <div className="space-y-4">
-                  <div className="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest">
-                     <span className="text-white/30">Value Uplift</span>
-                     <span className="text-primary">+120%</span>
-                  </div>
+                   <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest">
+                      <span className="text-white/30">Value Uplift</span>
+                      <span className="text-primary">+120%</span>
+                   </div>
                   <div className="bg-[#0a0d12]/60 p-4 rounded-xl border border-white/5 space-y-1">
-                     <div className="text-[9px] font-bold text-white/20 uppercase tracking-widest leading-none">Personal Brand Delta</div>
+                      <div className="text-[10px] font-bold text-white/20 uppercase tracking-widest leading-none">Personal Brand Delta</div>
                      <div className="text-xl font-black text-white">$2.1M / $1.2M</div>
                   </div>
                </div>
@@ -109,7 +112,7 @@ export default function SalaryCapPage() {
                      <circle cx="100" cy="40" r="4" className="fill-primary" />
                      <circle cx="100" cy="40" r="8" className="fill-primary/20 animate-pulse" />
                   </svg>
-                  <div className="absolute top-2 left-0 text-[10px] font-black text-white/30 tracking-[0.3em] uppercase">Value Projection</div>
+                   <div className="absolute top-2 left-0 text-xs font-black text-white/30 tracking-[0.3em] uppercase">Value Projection</div>
                </div>
             </EngineCard>
 
@@ -128,27 +131,20 @@ export default function SalaryCapPage() {
                      <div className="w-8 h-8 rounded-full bg-[#0a0d12] border border-white/10 flex items-center justify-center font-black text-primary text-xs group-hover:bg-primary group-hover:text-black transition-all">
                         {item.id}
                      </div>
-                     <p className="text-xs font-bold text-white/70 uppercase tracking-widest leading-tight">{item.text}</p>
+                      <p className="text-sm font-bold text-white/70 uppercase tracking-widest leading-tight">{item.text}</p>
                   </div>
                 ))}
              </div>
 
-             <div className="flex flex-col items-center md:items-end gap-8 order-1 md:order-2">
-                <Link href="/book" className="group relative w-full md:w-auto">
-                   <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-xl scale-95 group-hover:scale-105 transition-transform duration-500" />
-                   <div className="relative bg-gradient-to-r from-primary/10 via-white/5 to-white/5 border border-white/10 px-8 py-5 rounded-xl text-center shadow-2xl backdrop-blur-md group-hover:border-primary/50 transition-all">
-                      <span className="text-xs md:text-lg font-black text-white uppercase tracking-widest leading-tight block">
-                        SCHEDULE YOUR CONFIDENTIAL <br className="hidden md:block" />
-                        SALARY CAP STRATEGY CALL TODAY
-                      </span>
-                   </div>
-                </Link>
-             </div>
+              <div className="flex flex-col items-center md:items-end gap-8 order-1 md:order-2">
+                 <CtaButton href="/book">
+                   SCHEDULE YOUR CONFIDENTIAL <br className="hidden md:block" />
+                   SALARY CAP STRATEGY CALL TODAY
+                 </CtaButton>
+              </div>
           </div>
 
-          <div className="pt-24 text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase border-t border-white/5">
-            Economic Precision • Real-Time Simulations • Market Value Maximization
-          </div>
+          <Footer />
         </div>
       </div>
     </main>
@@ -158,7 +154,7 @@ export default function SalaryCapPage() {
 function EngineCard({ title, children }: { title: string, children: React.ReactNode }) {
   return (
     <div className="glass-premium p-6 rounded-2xl border-white/10 hover:border-primary/40 transition-all group min-h-[180px] flex flex-col justify-between">
-      <h3 className="text-xs font-black text-white uppercase tracking-widest leading-tight mb-6">{title}</h3>
+       <h3 className="text-sm font-black text-white uppercase tracking-widest leading-tight mb-6">{title}</h3>
       {children}
     </div>
   );

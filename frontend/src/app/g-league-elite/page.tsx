@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "NBA G League Representation & Fast Track",
+  title: "NBA G League Fast Track",
   description: "Rules, salaries, and the fast track from G League prospects to the NBA. Expert advocacy for athletes rising to the NBA stage.",
 };
 
@@ -27,20 +30,20 @@ export default function GLeagueElitePage() {
           <div className="space-y-12">
             
             {/* Hero Content Section */}
-            <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12">
-              <div className="space-y-8 max-w-5xl">
-                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
-                  NBA G League 2025-26: <br />
-                  <span className="text-primary">Rules, Salaries, & THE</span> 
-                  Fast Track from <br />
-                  <span className="   flex">
+            <div className="flex flex-col items-center text-center gap-12">
+              <div className="space-y-8 max-w-5xl mx-auto">
+                <GradientHeader tag="h1" size="lg" className="mb-4">
+                  NBA G League 2025-26: 
+                  Rules, Salaries, and THE 
+                  Fast Track from 
+                  
                     Prospects to the NBA
-                  </span>
-                </h1>
+                  
+                </GradientHeader>
                 
                 <div className="flex items-center gap-4">
                    <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight">
-                     Led by <span className="text-white font-bold">JOE GREKOSKI</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
+                     Led by <span className="text-white font-bold">Joe Grekoski</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
                    </p>
                 </div>
               </div>
@@ -49,15 +52,10 @@ export default function GLeagueElitePage() {
             {/* Main CTA Section */}
             <div className="text-center space-y-8">
               <div className="flex flex-col items-center gap-4">
-                <Link href="/book" className="group relative">
-                  <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-xl scale-95 group-hover:scale-105 transition-transform duration-500" />
-                  <div className="relative bg-gradient-to-r from-[#00d2ff] via-[#3adaff] to-[#0188ff] px-6 py-4 md:py-6 rounded-xl transition-all duration-300 group-hover:shadow-[0_0_50px_rgba(0,210,255,0.7)] group-active:scale-[0.98]">
-                    <span className="text-xs md:text-xl font-black text-black uppercase tracking-widest leading-tight block">
-                      SCHEDULE YOUR CONFIDENTIAL G LEAGUE STRATEGY CALL WITH JOE GREKOSKI
-                    </span>
-                  </div>
-                </Link>
-                <div className="text-white/60 text-[10px] md:text-sm font-bold tracking-widest uppercase flex flex-wrap justify-center gap-4">
+                <CtaButton href="/book">
+                  SCHEDULE YOUR CONFIDENTIAL G LEAGUE STRATEGY CALL WITH Joe Grekoski
+                </CtaButton>
+                <div className="text-white/60 text-xs font-bold tracking-widest uppercase flex flex-wrap justify-center gap-4">
                   <span>30 minutes that can add hundreds of thousands to your pro career</span>
                   <span className="hidden md:inline">•</span>
                   <span>Zero obligation</span>
@@ -80,30 +78,30 @@ export default function GLeagueElitePage() {
                <span className="text-lg font-bold text-white uppercase">Season at a Glance</span>
             </div>
             
-            <div className="flex flex-col items-center">
-               <span className="text-2xl font-black text-white">31</span>
-               <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Teams</span>
-            </div>
+             <div className="flex flex-col items-center">
+                <span className="text-2xl font-black text-white">31</span>
+                <span className="text-xs font-bold text-white/40 uppercase tracking-widest">Teams</span>
+             </div>
 
-            <div className="flex flex-col items-center">
-               <span className="text-2xl font-black text-white">50+</span>
-               <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Games</span>
-            </div>
+             <div className="flex flex-col items-center">
+                <span className="text-2xl font-black text-white">50+</span>
+                <span className="text-xs font-bold text-white/40 uppercase tracking-widest">Games</span>
+             </div>
 
-            <div className="flex flex-col items-center text-center">
-               <span className="text-lg font-black text-white uppercase leading-none">Tip-Off</span>
-               <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest leading-none">Tournament</span>
-            </div>
+             <div className="flex flex-col items-center text-center">
+                <span className="text-lg font-black text-white uppercase leading-none">Tip-Off</span>
+                <span className="text-xs font-bold text-white/40 uppercase tracking-widest leading-none">Tournament</span>
+             </div>
 
-            <div className="flex flex-col items-center">
-               <span className="text-2xl font-black text-white">12-13</span>
-               <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Active Roster</span>
-            </div>
+             <div className="flex flex-col items-center">
+                <span className="text-2xl font-black text-white">12-13</span>
+                <span className="text-xs font-bold text-white/40 uppercase tracking-widest">Active Roster</span>
+             </div>
 
-            <div className="flex flex-col items-center">
-               <span className="text-2xl font-black text-primary">$45,000</span>
-               <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Standard Salary</span>
-            </div>
+             <div className="flex flex-col items-center">
+                <span className="text-2xl font-black text-primary">$45,000</span>
+                <span className="text-xs font-bold text-white/40 uppercase tracking-widest">Standard Salary</span>
+             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -159,7 +157,7 @@ export default function GLeagueElitePage() {
                     <div className="h-full bg-primary w-[40%] shadow-[0_0_10px_rgba(0,210,255,0.5)]" />
                     <div className="h-full bg-purple-600 w-[60%]" />
                   </div>
-                  <div className="flex justify-between text-[10px] font-bold text-white/40 uppercase tracking-widest">
+                   <div className="flex justify-between text-xs font-bold text-white/40 uppercase tracking-widest">
                     <span>Base Salary</span>
                     <span>Performance Uplift</span>
                   </div>
@@ -195,9 +193,7 @@ export default function GLeagueElitePage() {
 
           </div>
 
-          <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase border-t border-white/5">
-            Developing The Future • High Stakes Representation • Strategic Career Planning
-          </div>
+          <Footer />
         </div>
       </div>
     </main>

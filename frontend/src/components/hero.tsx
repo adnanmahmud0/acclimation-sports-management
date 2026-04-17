@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, TrendingUp, Handshake, Trophy } from "lucide-react";
 import { CareerGrowthChart } from "@/components/career-growth-chart";
+import { GradientHeader } from "@/components/gradient-header";
 
 export function Hero() {
   return (
@@ -20,9 +21,9 @@ export function Hero() {
 
       <main className="container mx-auto px-6 pb-20 min-h-screen flex flex-col justify-center text-center text-balance">
         <div className="max-w-7xl mx-auto w-full">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
+          <GradientHeader tag="h1" size="lg" className="mb-4">
             Where Economic Precision <br className="hidden md:block" /> Meets NBA Domination
-          </h1>
+          </GradientHeader>
 
           <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
             A New Kind of Basketball Agency
@@ -68,7 +69,7 @@ export function Hero() {
           {/* Career Value Growth Section */}
           <div className="relative glass-premium p-6 rounded-xl overflow-hidden mb-6 border-primary/10 mx-auto">
             <div className="flex flex-col items-center">
-              <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent text-center">Projected Career Value Growth</h3>
+              <GradientHeader tag="h3" size="md" className="mb-4 text-center">Projected Career Value Growth</GradientHeader>
               <div className="w-full h-[280px] relative">
                 <CareerGrowthChart />
               </div>
@@ -80,7 +81,7 @@ export function Hero() {
             <Link href="/get-started" className="group relative">
               <div className="absolute inset-0 bg-primary/40 blur-2xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-500" />
               <button className="relative px-10 py-4 bg-primary text-background font-black text-base tracking-widest rounded-full shadow-[0_0_30px_rgba(0,210,255,0.6)] hover:shadow-[0_0_50px_rgba(0,210,255,0.8)] hover:scale-105 active:scale-95 transition-all flex items-center gap-3 font-sans!">
-                GET STARTED
+              GET STARTED
                 <ArrowRight className="w-5 h-5" />
               </button>
             </Link>
@@ -97,7 +98,7 @@ function ServiceCard({ title, desc, icon }: { title: string, desc: string, icon:
       <div className="w-10 h-10 glass rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform bg-white/5 border-white/10!">
         {icon}
       </div>
-      <h4 className="font-serif text-xl md:text-2xl font-bold leading-tight bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent mb-2">{title}</h4>
+      <GradientHeader tag="h4" size="sm" className="mb-2">{title}</GradientHeader>
       <p className="text-sm text-white/60 leading-relaxed font-light">
         {desc}
       </p>

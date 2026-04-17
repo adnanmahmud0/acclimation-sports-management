@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Holistic Concierge Support",
+  title: "One-Stop Holistic Concierge",
   description: "Elite trainers, personal chefs, private jets, and wealth management support for the modern NBA athlete.",
 };
 import { Dumbbell, Utensils, PiggyBank, Plane, Tv, Headphones } from "lucide-react";
@@ -29,14 +32,13 @@ export default function HolisticConciergePage() {
           <div className="space-y-12 max-w-6xl mx-auto">
             {/* Main Header */}
             <div className="space-y-6">
-               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
+               <GradientHeader tag="h1" size="lg" className="mb-4">
                  One-Stop Holistic <br />
-                 <span className="   flex">
+
                     Concierge Support
-                 </span>
-               </h1>
+               </GradientHeader>
                <div className="space-y-6">
-                  <h2 className="text-xl md:text-3xl font-black text-white tracking-tight opacity-90">
+                  <h2 className="text-lg md:text-xl font-black text-white tracking-tight opacity-90">
                     We manage your entire off-court world so you can <br className="hidden md:block" />
                     <span className="text-primary">focus only on dominating the game.</span>
                   </h2>
@@ -49,32 +51,32 @@ export default function HolisticConciergePage() {
             {/* Grid Section */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 w-full max-w-5xl mx-auto text-left">
                <ServiceCard 
-                 icon={<Dumbbell className="w-6 h-6 text-primary" />}
+                 icon={<Dumbbell className="w-6 h-6" />}
                  title="Elite Physical Training"
                  desc="Access to world-class trainers and state-of-the-art facilities to optimize your performance."
                />
                <ServiceCard 
-                 icon={<Plane className="w-6 h-6 text-primary" />}
+                 icon={<Plane className="w-6 h-6" />}
                  title="Luxury Travel"
                  desc="Private jet charters and VIP logistics for seamless travel."
                />
                <ServiceCard 
-                 icon={<Utensils className="w-6 h-6 text-primary" />}
+                 icon={<Utensils className="w-6 h-6" />}
                  title="Gourmet Nutrition"
                  desc="Personal chefs crafting meals tailored to your diet and training schedule."
                />
                <ServiceCard 
-                 icon={<Tv className="w-6 h-6 text-primary" />}
+                 icon={<Tv className="w-6 h-6" />}
                  title="Media & Brand Management"
                  desc="Strategic media training and brand partnerships to build your empire."
                />
                <ServiceCard 
-                 icon={<PiggyBank className="w-6 h-6 text-primary" />}
+                 icon={<PiggyBank className="w-6 h-6" />}
                  title="Wealth Management"
                  desc="Expert financial advisors ensuring your money grows and lasts."
                />
                <ServiceCard 
-                 icon={<Headphones className="w-6 h-6 text-primary" />}
+                 icon={<Headphones className="w-6 h-6" />}
                  title="24/7 Concierge"
                  desc="Round-the-clock support for any request, anytime, anywhere."
                />
@@ -82,27 +84,16 @@ export default function HolisticConciergePage() {
 
             {/* CTA Section */}
             <div className="space-y-6 pt-6">
-               <Link href="/get-started" className="group relative inline-block w-full max-w-2xl px-4">
-                  <div className="absolute inset-0 bg-primary/40 blur-3xl rounded-xl scale-75 group-hover:scale-110 transition-transform duration-500" />
-                  <div className="relative bg-gradient-to-r from-primary to-blue-600 px-8 py-6 rounded-xl transition-all duration-300 group-hover:shadow-[0_0_50px_rgba(0,180,255,0.6)] group-active:scale-[0.98] border border-white/20">
-                    <span className="text-xs md:text-xl font-black text-black uppercase tracking-widest leading-tight block">
-                      Schedule your confidential Holistic <br className="md:hidden" />
-                      Concierge Strategy Call today
-                    </span>
-                  </div>
-               </Link>
-               <p className="text-white/40 text-[10px] md:text-sm font-black uppercase tracking-[0.5em]">
+               <CtaButton href="/get-started">
+                 Schedule your confidential Holistic <br className="md:hidden" />
+                 Concierge Strategy Call today
+               </CtaButton>
+               <p className="text-white/40 text-xs font-black uppercase tracking-[0.5em]">
                  One call. Everything handled. Total peace of mind.
                </p>
             </div>
 
-            <footer className="pt-12 flex flex-col items-center gap-6 border-t border-white/5">
-                <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
-                <div className="text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase">
-                  © 2026 ACCLIMATION SPORTS MANAGEMENT ALL RIGHTS RESERVED
-                </div>
-            </footer>
-
+            <Footer />
           </div>
         </div>
       </div>
@@ -113,12 +104,12 @@ export default function HolisticConciergePage() {
 function ServiceCard({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
   return (
     <div className="flex gap-6 group p-6 rounded-2xl bg-[#0a0d12]/40 border border-white/5 hover:border-primary/40 hover:bg-[#0a0d12]/60 transition-all backdrop-blur-md shadow-xl">
-       <div className="w-12 h-12 shrink-0 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
+       <div className="w-12 h-12 shrink-0 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-all">
           {icon}
        </div>
        <div className="space-y-1">
           <h4 className="text-base md:text-lg font-black text-white tracking-tight leading-tight uppercase group-hover:text-primary transition-colors">{title}</h4>
-          <p className="text-white/40 text-[10px] md:text-xs font-bold uppercase tracking-widest leading-relaxed">
+          <p className="text-white/40 text-[11px] md:text-xs font-bold uppercase tracking-widest leading-relaxed">
              {desc}
           </p>
        </div>

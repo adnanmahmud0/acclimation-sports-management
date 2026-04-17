@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
 
 export function OneStopShop() {
   return (
@@ -19,9 +21,9 @@ export function OneStopShop() {
         {/* Header Section */}
         <div className="mb-8">
           <div className="glass-premium p-8 md:p-12 rounded-3xl border-white/5 shadow-2xl text-center space-y-4">
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent mb-4">
+            <GradientHeader tag="h2" size="lg" className="mb-4 pb-2">
               One-Stop Shop for Everything
-            </h2>
+            </GradientHeader>
             <p className="max-w-4xl mx-auto text-white/80 text-sm md:text-lg leading-relaxed">
               We do it all — contract negotiation, salary-cap strategy, brand & endorsement deals, pre-draft mastery,
               analytics, and full concierge support (trainers, chefs, CPAs, wealth advisors).
@@ -39,7 +41,7 @@ export function OneStopShop() {
                 <span className="text-6xl font-black text-primary/30 leading-none select-none pt-2">1.</span>
                 <div className="flex-1 glass-premium p-6 md:p-8 rounded-2xl border-white/5 hover:border-primary/40 transition-all duration-500 hover:translate-y-[-4px] shadow-2xl flex flex-col">
                   <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-bold leading-tight bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent mb-4">
-                    Pre-Draft & NBA Combine Mastery
+                    Pre-Draft and NBA Combine Mastery
                   </h3>
                   <ul className="space-y-2 text-sm text-white/60 font-medium list-none flex-1">
                     {["Data-driven positioning", "Medical evaluation strategy", "Elite scouting access", "Athletic profiling that sets your entire NBA career foundation."].map((item, i) => (
@@ -115,16 +117,10 @@ export function OneStopShop() {
           </div>
         </div>
 
-        {/* CTA Section */}
         <div className="mt-8 text-center">
-          <Link href="/book" className="inline-block group relative">
-            <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-xl scale-95 group-hover:scale-105 transition-transform duration-500" />
-            <div className="relative bg-gradient-to-r from-[#00d2ff] via-[#3adaff] to-[#00d2ff] px-6 py-4 md:py-6 rounded-xl transition-all duration-300 group-hover:shadow-[0_0_40px_rgba(0,210,255,0.6)] group-active:scale-[0.98]">
-              <span className="text-xs md:text-lg font-black text-black uppercase tracking-tight md:tracking-wider">
-                Schedule your confidential strategy call with JOE GREKOSKI
-              </span>
-            </div>
-          </Link>
+          <CtaButton href="/book">
+            Schedule your confidential strategy call with Joe Grekoski
+          </CtaButton>
 
           <div className="pt-8 border-t border-white/5 max-w-4xl mx-auto">
             <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-[10px] md:text-xs font-bold tracking-[0.2em] text-white/40 uppercase">

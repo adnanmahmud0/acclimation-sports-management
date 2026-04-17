@@ -17,12 +17,12 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Acclimation Sports Management | Elite NBA Agency",
-    template: "%s | Acclimation Sports Management",
+    default: "Acclimation Sports | Where Economic Precision Meets NBA Domination",
+    template: "%s | Acclimation Sports",
   },
-  description: "Data-driven NBA representation, career management, and salary cap analytics. Expert advocacy for NBA players, college prospects, and elite high-school talent.",
+  description: "Data-driven NBA representation, career management, and salary cap analytics led by Joe Grekoski. Expert advocacy for NBA players, college prospects, and elite high-school talent.",
   keywords: ["NBA Agency", "Basketball Representation", "NIL Deals", "Contract Negotiation", "Salary Cap Analytics", "NBA Draft Preparation", "Sports Management"],
-  authors: [{ name: "JOE GREKOSKI" }],
+  authors: [{ name: "Joe Grekoski" }],
   creator: "Acclimation Sports Management",
   publisher: "Acclimation Sports Management",
   formatDetection: {
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Acclimation Sports Management | Elite NBA Agency",
-    description: "Data-driven NBA representation and career management.",
+    title: "Acclimation Sports | Where Economic Precision Meets NBA Domination",
+    description: "Data-driven NBA representation led by Joe Grekoski.",
     url: "https://acclimation-sports.com",
     siteName: "Acclimation Sports Management",
     images: [
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Acclimation Sports Management | Elite NBA Agency",
-    description: "Data-driven NBA representation and career management.",
+    title: "Acclimation Sports | Where Economic Precision Meets NBA Domination",
+    description: "Data-driven NBA representation led by Joe Grekoski.",
     images: ["/logo/AcclimationLogo-Vartical.jpg"],
   },
   icons: {

@@ -2,9 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Metadata } from "next";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "NBA Contract Negotiation & Representation",
+  title: "Litigation-Grade Contract Negotiation",
   description: "Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player security.",
 };
 
@@ -24,35 +27,35 @@ export default function ContractNegotiationPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-transparent to-[#05070a]" />
       </div>
 
-      <div className="container mx-auto px-6 pt-24 relative z-10 ">
-        <div className="space-y-8">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
-            NBA Contract Negotiation & <br />
-            <span className="   pr-4">
+      <div className="container mx-auto px-6 pt-24 relative z-10 flex flex-col items-center text-center">
+        <div className="space-y-8 max-w-5xl mx-auto">
+          <GradientHeader tag="h1" size="lg" className="mb-4">
+            NBA Contract Negotiation and <br />
+            <span className="flex justify-center">
               Representation
             </span>
-          </h1>
+          </GradientHeader>
 
-            <p className="text-lg md:text-2xl text-white/90 font-medium leading-relaxed">
-              Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player for active NBA players, college prospects, and elite high-school talent.
-            </p>
+          <p className="text-lg md:text-xl text-white/60 font-medium leading-relaxed max-w-4xl mx-auto">
+            Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player for active NBA players, college prospects, and elite high-school talent.
+          </p>
 
-            <div className="flex flex-col md:flex-row">
-              <ul className="text-left">
-                {[
-                  "Salary Cap Mastery & Analytical Modeling",
-                  "Rookie Scale & Veteran Extension Negotiation",
-                  "Multi-Team Bidding War Strategy",
-                  "Full CBA Compliance & Contract Structuring",
-                  "Pre-Draft & Combine Contract Positioning"
-                ].map((point, i) => (
-                  <li key={i} className="flex items-center gap-4 text-white/80 group">
-                    <div className="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(0,210,255,1)] group-hover:scale-125 transition-transform" />
-                    <span className="text-base md:text-lg font-bold tracking-tight">{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="flex flex-col md:flex-row">
+            <ul className="text-left">
+              {[
+                "Salary Cap Mastery & Analytical Modeling",
+                "Rookie Scale & Veteran Extension Negotiation",
+                "Multi-Team Bidding War Strategy",
+                "Full CBA Compliance & Contract Structuring",
+                "Pre-Draft & Combine Contract Positioning"
+              ].map((point, i) => (
+                <li key={i} className="flex items-center gap-4 text-white/80 group">
+                  <div className="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(0,210,255,1)] group-hover:scale-125 transition-transform" />
+                  <span className="text-base md:text-lg font-bold tracking-tight">{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -85,27 +88,16 @@ export default function ContractNegotiationPage() {
             </div>
           </div>
 
-          {/* CTA Button */}
           <div className="flex justify-center pt-8">
-            <Link href="/book" className="group relative">
-              <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-xl scale-95 group-hover:scale-110 transition-transform duration-500" />
-              <div className="relative bg-[#0a0d12] border border-white/10 px-8 py-5 rounded-lg transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-[0_0_30px_rgba(0,210,255,0.3)]">
-                <span className="text-xs md:text-xl font-black text-white uppercase tracking-widest leading-tight block">
-                  SCHEDULE YOUR <span className="text-primary">CONFIDENTIAL</span> CONTRACT STRATEGY CALL
-                </span>
-              </div>
-            </Link>
+            <CtaButton href="/book">
+              SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
+            </CtaButton>
           </div>
 
-          <footer className="pt-12 flex flex-col items-center gap-6 border-t border-white/5">
-              <Logo variant="vertical" width={80} height={80} className="opacity-30 hover:opacity-100 transition-opacity" />
-              <div className="text-center text-[10px] font-black tracking-[0.5em] text-white/10 uppercase">
-                Elite Advocacy • Data Centric Identification • Strategic Market Positioning
-              </div>
-          </footer>
+            <Footer />
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
   );
 }
 

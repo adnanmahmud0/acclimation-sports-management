@@ -3,10 +3,13 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Elite High School Talent NIL Representation",
+  title: "Elite High School NIL Strategy",
   description: "Multi-million dollar NIL deal strategy and professional career planning for top-ranked prep basketball prospects.",
 };
 import { CheckCircle2 } from "lucide-react";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
+import { Footer } from "@/components/footer";
 
 export default function HighSchoolTalentPage() {
   return (
@@ -25,18 +28,17 @@ export default function HighSchoolTalentPage() {
 
         <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
           <div className="space-y-16 max-w-7xl mx-auto text-center">
-            
             {/* Header Content */}
             <div className="space-y-8">
-               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
-                 From Elite High School to the NBA — <br />
+               <GradientHeader tag="h1" size="lg" className="mb-4">
+                 From Elite High School to the NBA <br />
                  <span className="   pr-12 flex">
                     Start Building Your Professional Future Now
                  </span>
-               </h1>
+               </GradientHeader>
                
                <div className="space-y-4">
-                  <h2 className="text-2xl md:text-5xl font-black text-white tracking-tight opacity-90">
+                  <h2 className="text-lg md:text-2xl font-black text-white tracking-tight opacity-90">
                     The Path to the Pros Begins Here
                   </h2>
                   <p className="text-sm md:text-xl text-white/50 font-medium leading-relaxed max-w-4xl mx-auto">
@@ -46,74 +48,91 @@ export default function HighSchoolTalentPage() {
             </div>
 
             {/* Info Grid Section */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pt-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-16">
                
                {/* Why Choose Section */}
-               <div className="space-y-8 text-left">
-                  <h3 className="text-2xl font-black text-white uppercase tracking-widest border-l-4 border-primary pl-6">Why Choose <br /> Acclimation</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+               <div className="space-y-10 text-left">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 text-primary">
+                      <div className="h-[1px] w-8 bg-primary/40" />
+                      <span className="text-[10px] font-black uppercase tracking-[0.4em]">Acclimation Edge</span>
+                    </div>
+                    <GradientHeader tag="h3" size="md">
+                      Why Elite Prospects <br /> Choose Acclimation
+                    </GradientHeader>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                      <ChoiceItem 
                        title="Early Representation Advantage"
-                       desc="Secure NIL deals before your peers even start."
+                       desc="Secure multi-million dollar NIL deals before your peers even start their recruitment process."
                      />
                      <ChoiceItem 
                        title="Direct NBA Pathway"
-                       desc="Connect with scouts and agents directly."
+                       desc="Strategic connections to NBA scouts, front offices, and elite veteran agents."
                      />
                      <ChoiceItem 
                        title="Proprietary Valuation"
-                       desc="Maximize your market value with our exclusive algorithm."
+                       desc="Maximize your market value with our exclusive NIL-to-NBA valuation algorithm."
                      />
                      <ChoiceItem 
                        title="Family-Centric Strategy"
-                       desc="Guidance for you and your family every step of the way."
+                       desc="Comprehensive guidance and concierge support for you and your entire family circle."
                      />
                   </div>
                </div>
 
                {/* Key Benefits Section */}
-               <div className="space-y-8 text-left bg-[#0a0d12]/60 border border-white/5 p-10 rounded-[2rem] backdrop-blur-md">
-                  <h3 className="text-2xl font-black text-white uppercase tracking-widest">Key Benefits</h3>
-                  <ul className="space-y-4">
-                     {[
-                       "Guaranteed Scout Introductions",
-                       "Exclusive NIL Contract Review",
-                       "24/7 Strategy Support",
-                       "Media Training Included",
-                       "College & Pro Transition Plan"
-                     ].map((benefit, idx) => (
-                       <li key={idx} className="flex items-center gap-4 text-white/60 font-bold uppercase tracking-widest text-sm border-b border-white/5 pb-4 last:border-0 hover:text-primary transition-colors">
-                          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                          {benefit}
-                       </li>
-                     ))}
-                  </ul>
+               <div className="relative group">
+                  <div className="absolute inset-0 bg-primary/5 blur-3xl rounded-[2.5rem] group-hover:bg-primary/10 transition-colors duration-700" />
+                  <div className="relative h-full space-y-10 text-left bg-white/[0.02] border border-white/5 p-10 md:p-12 rounded-[2.5rem] backdrop-blur-2xl shadow-2xl flex flex-col justify-between">
+                    <div className="space-y-8">
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-2xl font-black text-white uppercase tracking-widest">Key Benefits</h3>
+                        <div className="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center">
+                          <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                        </div>
+                      </div>
+                      
+                      <ul className="space-y-6">
+                        {[
+                          "Guaranteed Scout Introductions",
+                          "Exclusive NIL Contract Review",
+                          "24/7 Strategy & Concierge Support",
+                          "Elite Media & Interview Training",
+                          "College-to-Pro Multi-Year Transition"
+                        ].map((benefit, idx) => (
+                          <li key={idx} className="flex items-center gap-5 text-white/50 font-bold uppercase tracking-widest text-[11px] border-b border-white/[0.03] pb-6 last:border-0 hover:text-white transition-all duration-300 group/item">
+                             <div className="w-2 h-2 rounded-full border border-primary/40 flex items-center justify-center group-hover/item:border-primary transition-colors">
+                                <div className="w-1 h-1 rounded-full bg-primary/40 group-hover/item:bg-primary" />
+                             </div>
+                             {benefit}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="pt-8">
+                       <p className="text-[10px] font-black text-primary/40 uppercase tracking-[0.4em]">Exclusive Entry • High Stakes Advocacy</p>
+                    </div>
+                  </div>
                </div>
 
             </div>
 
-            {/* CTA Section */}
             <div className="space-y-12">
-               <Link href="tel:5125186547" className="pt-6 block">
-                  <div className="group relative inline-block w-full max-w-3xl px-4">
-                     <div className="absolute inset-0 bg-primary/40 blur-3xl rounded-xl scale-75 group-hover:scale-110 transition-transform duration-500" />
-                     <div className="relative bg-gradient-to-r from-purple-600 via-primary to-cyan-400 px-10 py-6 rounded-2xl transition-all duration-300 shadow-[0_0_50px_rgba(0,180,255,0.4)] border border-white/20 group-hover:shadow-[0_0_70px_rgba(0,180,255,0.6)]">
-                       <span className="text-xs md:text-2xl font-black text-white uppercase tracking-widest leading-tight block">
-                         Schedule Your Confidential Strategy Call → 512-518-6547
-                       </span>
-                     </div>
-                  </div>
-               </Link>
+               <div className="pt-6 flex justify-center">
+                  <CtaButton href="tel:5125186547" className="w-full max-w-3xl">
+                    Schedule Your Confidential Strategy Call → 512-518-6547
+                  </CtaButton>
+               </div>
                
                <p className="text-white text-lg md:text-2xl font-black uppercase tracking-tighter opacity-80">
                   Ready to take the next step? Schedule Your <span className="text-primary">Confidential Strategy Call</span> Today
                </p>
             </div>
 
-            <div className="pt-16 text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase border-t border-white/5">
-               Early Representation Advantage • Proprietary NIL Valuation • Direct NBA Pathway
-            </div>
-
+            <Footer />
           </div>
         </div>
       </main>
@@ -122,12 +141,14 @@ export default function HighSchoolTalentPage() {
 
 function ChoiceItem({ title, desc }: { title: string, desc: string }) {
   return (
-    <div className="space-y-3 group">
+    <div className="space-y-3 group p-6 rounded-2xl bg-white/[0.01] border border-white/[0.03] hover:bg-white/[0.03] hover:border-primary/20 transition-all duration-500">
        <div className="flex items-center gap-3">
-          <CheckCircle2 className="w-5 h-5 text-primary" />
-          <h4 className="text-sm md:text-base font-black text-white uppercase tracking-widest leading-tight group-hover:text-primary transition-colors">{title}</h4>
+          <div className="w-8 h-8 rounded-lg bg-primary/5 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
+            <CheckCircle2 className="w-4 h-4 text-primary group-hover:text-inherit" />
+          </div>
+          <h4 className="text-xs font-black text-white uppercase tracking-widest leading-tight">{title}</h4>
        </div>
-       <p className="text-[11px] font-bold text-white/30 uppercase tracking-widest leading-relaxed pl-8">
+       <p className="text-[10px] font-bold text-white/30 uppercase tracking-widest leading-relaxed">
           {desc}
        </p>
     </div>

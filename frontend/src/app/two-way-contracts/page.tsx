@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "NBA Two-Way Contracts Strategy",
+  title: "Strategic Two-Way Advantage",
   description: "Maximize the strategic value and progression of Two-Way agreements. Expert negotiation for undrafted gems and rising prospects.",
 };
 
@@ -25,42 +28,22 @@ export default function TwoWayContractsPage() {
 
         <div className="container mx-auto px-6 pt-32 pb-16 relative z-10">
           <div className="space-y-12">
-            <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12">
-              <div className="space-y-8 max-w-5xl">
-                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
-                  NBA Two-Way Contracts <br />
-                  <span className="text-primary">2026: Rules, Salaries &</span> <br />
-                  The Fast Track from <br />
-                  <span className="   flex pr-12">
+            <div className="flex flex-col items-center text-center gap-12">
+              <div className="space-y-8 max-w-5xl mx-auto">
+                <GradientHeader tag="h1" size="lg" className="mb-4">
+                  NBA Two-Way Contracts
+                  2026: Rules, Salaries and
+                  The Fast Track from
                     G League to Millions
-                  </span>
-                </h1>
-                
-                <div className="flex items-center gap-4">
-                   <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight">
-                     Led by <span className="text-white font-bold">JOE GREKOSKI</span> — the contract negotiation expert with proprietary salary-cap models and litigation-grade tactics.
-                   </p>
-                </div>
+                </GradientHeader>
               </div>
             </div>
 
             <div className="text-center space-y-8">
               <div className="flex flex-col items-center gap-4">
-                <Link href="/book" className="group relative">
-                  <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-xl scale-95 group-hover:scale-105 transition-transform duration-500" />
-                  <div className="relative bg-gradient-to-r from-[#00d2ff] via-[#3adaff] to-[#0188ff] px-6 py-4 md:py-6 rounded-xl transition-all duration-300 group-hover:shadow-[0_0_50px_rgba(0,210,255,0.7)] group-active:scale-[0.98]">
-                    <span className="text-xs md:text-xl font-black text-black uppercase tracking-widest leading-tight block">
-                      SCHEDULE YOUR CONFIDENTIAL TWO-WAY STRATEGY CALL WITH JOE GREKOSKI
-                    </span>
-                  </div>
-                </Link>
-                <div className="text-white/60 text-[10px] md:text-sm font-bold tracking-widest uppercase flex flex-wrap justify-center gap-4">
-                  <span>30 minutes that can add millions to your next contract</span>
-                  <span className="hidden md:inline">•</span>
-                  <span>Zero obligation</span>
-                  <span className="hidden md:inline">•</span>
-                  <span>Fort Lauderdale, FL</span>
-                </div>
+                <CtaButton href="/book">
+                  SCHEDULE YOUR CONFIDENTIAL TWO-WAY STRATEGY CALL WITH Joe Grekoski
+                </CtaButton>
               </div>
             </div>
           </div>
@@ -70,16 +53,16 @@ export default function TwoWayContractsPage() {
       {/* Logic Grid Section */}
       <div className="container mx-auto px-6 pb-24">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          
+
           <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
             <h3 className="text-xl font-black text-white uppercase tracking-wider">
               What Is a Two-Way Contract?
             </h3>
             <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
-              <Image 
-                src="/baskatecoart.png" 
-                alt="Court" 
-                fill 
+              <Image
+                src="/baskatecoart.png"
+                alt="Court"
+                fill
                 className="object-cover opacity-60"
               />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -122,10 +105,10 @@ export default function TwoWayContractsPage() {
               <div className="text-5xl font-black text-primary drop-shadow-[0_0_15px_rgba(0,210,255,0.4)]">
                 $636,435
               </div>
-              
+
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <div className="flex justify-between text-[10px] font-bold text-white/40 uppercase tracking-widest">
+                  <div className="flex justify-between text-xs font-bold text-white/40 uppercase tracking-widest">
                     <span>Higher NBA Days</span>
                     <span>Daily Rate G League</span>
                   </div>
@@ -164,11 +147,8 @@ export default function TwoWayContractsPage() {
 
         </div>
 
-        <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/20 uppercase border-t border-white/5">
-          Undrafted To Millions • NBA Collective Bargaining Expert • Luxury Tax Optimization • Elite Representation
-        </div>
+        <Footer />
       </div>
     </main>
   );
 }
-

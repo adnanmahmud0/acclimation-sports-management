@@ -10,12 +10,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { 
-  Sheet, 
-  SheetContent, 
-  SheetHeader, 
-  SheetTitle, 
-  SheetTrigger 
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
@@ -74,33 +74,33 @@ const serviceItems = [
 ];
 
 const playerItems = [
-  { 
-    title: "Elite High School Talent", 
+  {
+    title: "Elite High School Talent",
     href: "/high-school-talent",
     description: "Multi-million dollar NIL deal strategy for top-ranked prep prospects."
   },
-  { 
-    title: "Active NBA Players", 
+  {
+    title: "Active NBA Players",
     href: "/nba-players",
     description: "Veteran representation focused on wealth architecture and contract extensions."
   },
-  { 
-    title: "College Prospects", 
+  {
+    title: "College Prospects",
     href: "/college-prospects",
     description: "NIL optimization and strategic brand launch for collegiate standouts."
   },
-  { 
-    title: "WNBA", 
+  {
+    title: "WNBA",
     href: "/wnba",
     description: "Leading advocates for women's basketball professionalization and equity."
   },
-  { 
-    title: "Two-Way Contracts", 
+  {
+    title: "Two-Way Contracts",
     href: "/two-way-contracts",
     description: "Maximizing the strategic value and progression of Two-Way agreements."
   },
-  { 
-    title: "G-League Elite", 
+  {
+    title: "G-League Elite",
     href: "/g-league-elite",
     description: "Specialized advocacy for G-League athletes rising to the NBA stage."
   },
@@ -135,11 +135,11 @@ export function Navbar() {
                 </SheetTitle>
               </div>
             </SheetHeader>
-            
+
             <div className="flex-1 overflow-y-auto py-6 px-6 space-y-8 scrollbar-hide">
               <div className="space-y-4">
-                <Link 
-                  href="/" 
+                <Link
+                  href="/"
                   className="text-xl font-bold tracking-tight hover:text-primary transition-colors block"
                   onClick={() => {
                     setOpen(false);
@@ -151,14 +151,14 @@ export function Navbar() {
                   Home
                 </Link>
               </div>
-              
+
               <div className="space-y-4">
                 <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">About Acclimation</h4>
                 <div className="grid gap-3">
                   {aboutItems.map(item => (
-                    <Link 
-                      key={item.title} 
-                      href={item.href} 
+                    <Link
+                      key={item.title}
+                      href={item.href}
                       className="group flex flex-col gap-1"
                       onClick={() => setOpen(false)}
                     >
@@ -177,9 +177,9 @@ export function Navbar() {
                 <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">Agency Services</h4>
                 <div className="grid gap-3">
                   {serviceItems.map(item => (
-                    <Link 
-                      key={item.title} 
-                      href={item.href} 
+                    <Link
+                      key={item.title}
+                      href={item.href}
                       className="group flex flex-col gap-1"
                       onClick={() => setOpen(false)}
                     >
@@ -195,8 +195,8 @@ export function Navbar() {
               </div>
 
               <div className="space-y-4">
-                <Link 
-                  href="/#advantage" 
+                <Link
+                  href="/#advantage"
                   className="text-lg font-bold hover:text-primary transition-colors block"
                   onClick={() => setOpen(false)}
                 >
@@ -208,9 +208,9 @@ export function Navbar() {
                 <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">Player Portfolios</h4>
                 <div className="grid gap-3">
                   {playerItems.map(item => (
-                    <Link 
-                      key={item.title} 
-                      href={item.href} 
+                    <Link
+                      key={item.title}
+                      href={item.href}
                       className="group flex flex-col gap-1"
                       onClick={() => setOpen(false)}
                     >
@@ -226,14 +226,14 @@ export function Navbar() {
               </div>
 
               <div className="space-y-4 pb-8">
-                <Link 
-                  href="/contact" 
+                <Link
+                  href="/contact"
                   className="text-lg font-bold hover:text-primary transition-colors block"
                   onClick={() => setOpen(false)}
                 >
                   Contact
                 </Link>
-                
+
                 <Link href="/book" className="block mt-4" onClick={() => setOpen(false)}>
                   <button className="w-full py-4 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl font-bold text-xs tracking-widest uppercase text-white shadow-lg shadow-primary/20">
                     Schedule Strategy Call
@@ -246,9 +246,9 @@ export function Navbar() {
       </div>
 
       {/* Logo */}
-      <Logo 
-        variant="horizontal" 
-        className="w-40 md:w-56 lg:w-64" 
+      <Logo
+        variant="horizontal"
+        className="w-40 md:w-56 lg:w-64"
       />
 
 
@@ -257,11 +257,11 @@ export function Navbar() {
         <NavigationMenu>
           <NavigationMenuList className="gap-1">
             <NavigationMenuItem>
-              <Link 
-                href="/" 
+              <Link
+                href="/"
                 data-slot="navigation-menu-link"
                 className={cn(
-                  navigationMenuTriggerStyle(), 
+                  navigationMenuTriggerStyle(),
                   "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors"
                 )}
                 onClick={() => {
@@ -313,11 +313,11 @@ export function Navbar() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link 
-                href="/#advantage" 
+              <Link
+                href="/#advantage"
                 data-slot="navigation-menu-link"
                 className={cn(
-                  navigationMenuTriggerStyle(), 
+                  navigationMenuTriggerStyle(),
                   "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors text-center leading-tight"
                 )}
               >
@@ -345,11 +345,11 @@ export function Navbar() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 data-slot="navigation-menu-link"
                 className={cn(
-                  navigationMenuTriggerStyle(), 
+                  navigationMenuTriggerStyle(),
                   "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors"
                 )}
               >

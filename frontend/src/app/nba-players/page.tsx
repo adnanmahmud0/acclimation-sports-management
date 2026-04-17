@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { GradientHeader } from "@/components/gradient-header";
+import { CtaButton } from "@/components/cta-button";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Representing Active NBA Players",
+  title: "Active NBA Athlete Representation",
   description: "Veteran representation focused on wealth architecture, contract extensions, and post-career financial security for active NBA athletes.",
 };
 
@@ -26,11 +29,11 @@ export default function NBAPlayersPage() {
           <div className="space-y-12 max-w-6xl mx-auto">
             {/* Main Header */}
             <div className="space-y-6">
-               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-4 bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent">
+               <GradientHeader tag="h1" size="xl" className="mb-4">
                  Active NBA Players
-               </h1>
+               </GradientHeader>
                <div className="space-y-6">
-                  <h2 className="text-xl md:text-4xl font-black text-white uppercase tracking-tight opacity-90">
+                  <h2 className="text-lg md:text-xl font-black text-white uppercase tracking-tight opacity-90">
                     Maximize Your Off-Court Value <br className="hidden md:block" />
                     <span className="text-primary">and Build Real Wealth</span>
                   </h2>
@@ -82,29 +85,58 @@ export default function NBAPlayersPage() {
 
             {/* Transition Copy */}
             <div className="space-y-8">
-               <p className="text-white/80 text-lg md:text-2xl font-bold tracking-wide leading-relaxed max-w-5xl mx-auto">
-                  We handle the business so you can focus on ball — and get paid <br className="hidden md:block" /> 
-                  what you&apos;re truly worth off the court.
+               <h2 className="text-xl md:text-3xl font-black text-white leading-tight uppercase tracking-tight">
+                  Advanced Contract Architecture & <br />
+                  Strategic Career Management
+               </h2>
+               <p className="text-sm md:text-lg text-white/50 font-medium leading-relaxed max-w-3xl mx-auto">
+                  For the veteran or rising star, we provide litigation-grade representation, proprietary market analysis, and a holistic concierge system that handles everything off the court so you can dominate on it.
                </p>
+            </div>
 
-               {/* CTA Section */}
-               <div className="pt-6">
-                  <Link href="/get-started" className="group relative inline-block w-full max-w-3xl px-4">
-                     <div className="absolute inset-0 bg-primary/40 blur-3xl rounded-xl scale-75 group-hover:scale-110 transition-transform duration-500" />
-                     <div className="relative bg-gradient-to-r from-primary via-purple-600 to-primary px-8 py-6 rounded-xl transition-all duration-300 group-hover:shadow-[0_0_50px_rgba(0,180,255,0.6)] group-active:scale-[0.98] border border-white/20">
-                       <span className="text-xs md:text-xl font-black text-white uppercase tracking-widest leading-tight block">
-                         SCHEDULE YOUR CONFIDENTIAL OFF-COURT <br className="hidden md:block" />
-                         VALUE STRATEGY CALL TODAY
-                       </span>
-                     </div>
-                  </Link>
+            {/* CTA Section */}
+            <div className="text-center space-y-8">
+              <div className="flex flex-col items-center gap-6">
+                <CtaButton href="/book">
+                  SCHEDULE YOUR CONFIDENTIAL NBA STRATEGY CALL TODAY
+                </CtaButton>
+                
+                <div className="text-white/40 text-xs font-bold tracking-widest uppercase flex flex-wrap justify-center gap-4">
+                  <span>30 minutes that can add millions to your next contract</span>
+                  <span className="hidden md:inline">•</span>
+                  <span>Zero obligation</span>
+                  <span className="hidden md:inline">•</span>
+                  <span>Fort Lauderdale, FL</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline/Process Section */}
+            <div className="relative pt-12">
+               {/* Connecting Line */}
+               <div className="absolute top-[4.5rem] left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent hidden lg:block" />
+               
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
+                  <TimelinePoint 
+                    number="01"
+                    text="Comprehensive audit of current contract & market standing."
+                  />
+                  <TimelinePoint 
+                    number="02"
+                    text="Proprietary salary cap modeling & leverage mapping."
+                  />
+                  <TimelinePoint 
+                    number="03"
+                    text="Aggressive negotiation and brand development."
+                  />
+                  <TimelinePoint 
+                    number="04"
+                    text="Full holistic concierge & wealth architecture."
+                  />
                </div>
             </div>
 
-            <div className="pt-12 text-center text-[10px] font-black tracking-[0.4em] text-white/10 uppercase border-t border-white/5">
-              Acclimation Sports Management • Veteran Representation • Wealth Architecture
-            </div>
-
+            <Footer />
           </div>
         </div>
     </main>
@@ -117,10 +149,9 @@ function TimelinePoint({ number, text }: { number: string, text: string }) {
        <div className="w-14 h-14 rounded-full bg-[#0a0d12]/80 border border-primary/40 flex items-center justify-center font-black text-xl text-white group-hover:bg-primary group-hover:text-black group-hover:border-primary transition-all shadow-[0_0_20px_rgba(0,180,255,0.2)] relative z-10">
           {number}
        </div>
-       <p className="text-[10px] md:text-xs font-bold text-white/50 uppercase tracking-widest leading-relaxed px-4 group-hover:text-white transition-colors">
+       <p className="text-xs font-bold text-white/50 uppercase tracking-widest leading-relaxed px-4 group-hover:text-white transition-colors">
           {text}
        </p>
     </div>
   );
 }
-
