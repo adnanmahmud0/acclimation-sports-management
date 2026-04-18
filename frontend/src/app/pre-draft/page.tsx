@@ -26,59 +26,56 @@ export default function PreDraftPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
       </div>
 
-        <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
-          <div className="space-y-16 max-w-6xl mx-auto text-center">
-            
-            {/* Header Content */}
-            <div className="space-y-6">
-               <GradientHeader tag="h1" size="lg" className="mb-4">
-                 PRE-DRAFT AND NBA <br />
-
-                    COMBINE MASTERY
-
-               </GradientHeader>
+      <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
+        <div className="space-y-16 max-w-6xl mx-auto text-center">
+          {/* Header Content */}
+          <div className="space-y-6">
+            <GradientHeader tag="h1" size="lg" className="mb-4">
+              Pre-Draft and NBA <br />
+              Combine Mastery
+            </GradientHeader>
             <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
-                 Our Pre-Draft and NBA Combine Mastery program prepares elite high school and college basketball prospects to rise on draft boards and enter the NBA with maximum value.
-               </p>
-            </div>
+              Our Pre-Draft and NBA Combine Mastery program prepares elite high
+              school and college basketball prospects to rise on draft boards
+              and enter the NBA with maximum value.
+            </p>
+          </div>
 
-            {/* Mastery Points List */}
-            <div className="pt-12 flex justify-center w-full">
-               <ul className="space-y-8 max-w-4xl text-left w-full">
-                  <PointItem 
-                    icon={<CircleDot className="w-6 h-6 text-primary" />} 
-                    text="PROFESSIONAL PLAYER VALUATION AND DRAFT PROJECTION REPORT" 
-                  />
-                  <PointItem 
-                    icon={<TrendingUp className="w-6 h-6 text-primary" />} 
-                    text="CUSTOMIZED NBA COMBINE AND PRO DAY TRAINING WITH TOP COACHES" 
-                  />
-                  <PointItem 
-                    icon={<Target className="w-6 h-6 text-primary" />} 
-                    text="TARGETED WORKOUTS WITH NBA TEAMS THAT NEED YOUR SKILL SET" 
-                  />
-                  <PointItem 
-                    icon={<Mic className="w-6 h-6 text-primary" />} 
-                    text="MEDIA TRAINING, INTERVIEW PREPARATION, AND PERSONAL BRANDING" 
-                  />
-                  <PointItem 
-                    icon={<FileText className="w-6 h-6 text-primary" />} 
-                    text="SEAMLESS TRANSITION INTO AGGRESSIVE ROOKIE CONTRACT NEGOTIATION" 
-                  />
-               </ul>
-            </div>
+          {/* Mastery Points List */}
+          <div className="pt-12 flex justify-center w-full">
+            <ul className="space-y-8 max-w-4xl text-left w-full">
+              <PointItem
+                icon={<CircleDot className="w-6 h-6 text-primary" />}
+                text="PROFESSIONAL PLAYER VALUATION AND DRAFT PROJECTION REPORT"
+              />
+              <PointItem
+                icon={<TrendingUp className="w-6 h-6 text-primary" />}
+                text="CUSTOMIZED NBA COMBINE AND PRO DAY TRAINING WITH TOP COACHES"
+              />
+              <PointItem
+                icon={<Target className="w-6 h-6 text-primary" />}
+                text="TARGETED WORKOUTS WITH NBA TEAMS THAT NEED YOUR SKILL SET"
+              />
+              <PointItem
+                icon={<Mic className="w-6 h-6 text-primary" />}
+                text="MEDIA TRAINING, INTERVIEW PREPARATION, AND PERSONAL BRANDING"
+              />
+              <PointItem
+                icon={<FileText className="w-6 h-6 text-primary" />}
+                text="SEAMLESS TRANSITION INTO AGGRESSIVE ROOKIE CONTRACT NEGOTIATION"
+              />
+            </ul>
+          </div>
 
-            {/* CTA Section */}
-            <div className="text-center pt-8">
-               <CtaButton href="/contact">
-                 SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
-               </CtaButton>
-            </div>
-
-
-            <Footer />
+          {/* CTA Section */}
+          <div className="text-center pt-8">
+            <CtaButton href="/contact">
+              SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
+            </CtaButton>
           </div>
         </div>
+        <Footer />
+      </div>
     </main>
   );
 }
