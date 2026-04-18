@@ -1,11 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { GradientHeader } from "@/components/gradient-header";
-import { CtaButton } from "@/components/cta-button";
 
 export function ContactSection() {
    return (
-      <section id="contact" className="relative py-24 overflow-hidden bg-[#05070a]">
+      <section id="contact" className="relative py-32 overflow-hidden bg-[#05070a]">
          {/* Background Image with Overlay */}
          <div className="absolute inset-0 z-0">
             <Image
@@ -19,79 +18,73 @@ export function ContactSection() {
 
          <div className="container mx-auto px-6 relative z-10 flex flex-col items-center">
             {/* Header Section */}
-            <div className="text-center space-y-4 mb-16 max-w-4xl mx-auto">
-               <GradientHeader tag="h2" size="lg" className="uppercase tracking-tighter drop-shadow-[0_0_30px_rgba(0,180,255,0.4)]">
+            <div className="text-center space-y-6 mb-20 max-w-4xl mx-auto">
+               <GradientHeader tag="h2" size="lg" className="mb-4">
                   Ready to Take the Next Step?
                </GradientHeader>
-               <p className="text-lg md:text-2xl text-white/70 font-medium">
-                  Start your next step with the right support and clear direction
-               </p>
+               <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
+                  Any questions or remarks? Just contact us!
+               </h2>
             </div>
 
-            {/* Contact Form Container */}
-            <div className="w-full max-w-5xl glass-premium p-8 md:p-12 rounded-[2.5rem] border-primary/20 space-y-10 shadow-2xl relative">
-
-               <form className="space-y-10">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                     <input type="text" placeholder="Full Name" className="w-full bg-[#0a0d12]/60 border border-white/10 px-6 py-5 rounded-2xl text-white placeholder:text-white/20 focus:border-primary/50 outline-none transition-all shadow-inner" />
-                     <input type="text" placeholder="Phone" className="w-full bg-[#0a0d12]/60 border border-white/10 px-6 py-5 rounded-2xl text-white placeholder:text-white/20 focus:border-primary/50 outline-none transition-all shadow-inner" />
+            {/* Info Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl">
+               
+               {/* Card 1: Phone */}
+               <div className="glass-premium p-12 rounded-[2.5rem] flex flex-col items-center text-center space-y-6 border-white/5 hover:border-primary/30 transition-all duration-500 group relative overflow-hidden">
+                  <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-500 shadow-2xl">
+                     <Phone size={40} strokeWidth={1.5} />
                   </div>
-
-                  <div className="space-y-4">
-                     <label className="text-[10px] font-black text-white/50 uppercase tracking-[0.4em] block">Player Type / Eligibility</label>
-                     <div className="flex flex-wrap gap-x-10 gap-y-4">
-                        {["Active NBA Player", "College Prospect", "Elite High School Talent", "Parent/Guardian", "Other"].map((type) => (
-                           <label key={type} className="flex items-center gap-3 cursor-pointer group">
-                              <input type="radio" name="playerType" className="w-4 h-4 accent-primary" />
-                              <span className="text-xs font-black text-white/60 group-hover:text-white transition-colors uppercase tracking-widest">{type}</span>
-                           </label>
-                        ))}
-                     </div>
-                  </div>
-
-                  <textarea placeholder="Message" rows={5} className="w-full bg-[#0a0d12]/60 border border-white/10 px-8 py-6 rounded-2xl text-white placeholder:text-white/20 focus:border-primary/50 outline-none transition-all shadow-inner" />
-
-                  <CtaButton type="submit" fullWidth size="lg">
-                     SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
-                  </CtaButton>
-               </form>
-
-               {/* Direct Contact Footer Block */}
-               <div className="pt-12 flex flex-col md:flex-row gap-12 items-center border-t border-white/5">
-                  <div className="flex-1 flex gap-6 items-center">
-                     <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/30 relative shrink-0 shadow-2xl">
-                        <Image src="/owner/me.jpg" alt="JOE GREKOSKI" fill className="object-cover" />
-                     </div>
-                     <div className="text-left">
-                        <div className="text-white font-black text-xl tracking-[0.05em] uppercase leading-tight">Joe Grekoski</div>
-                        <div className="text-primary/60 text-xs font-bold tracking-widest mb-3">Founding Principal</div>
-                        <p className="text-[10px] font-bold text-white/40 leading-relaxed uppercase max-w-md hidden lg:block">
-                           Joe Grekoski — specialized in NBA contract negotiation, economic valuation, and advanced salary-cap forecasting. Delivering courtroom-proven strategy for elite professional athletes.
-                        </p>
-                     </div>
-                  </div>
-
-                  <div className="flex flex-col items-center md:items-end gap-6 shrink-0">
-                     <a href="tel:+15125186547" className="bg-[#0a0d12]/80 border border-primary/40 p-1.5 rounded-2xl flex overflow-hidden shadow-2xl group hover:border-primary transition-all">
-                        <div className="bg-gradient-to-r from-primary to-primary/80 px-6 py-4 flex items-center justify-center rounded-xl">
-                           <span className="text-[11px] font-black text-black uppercase leading-tight text-center">
-                              Call Joe<br />Directly
-                           </span>
-                        </div>
-                        <div className="bg-[#0a0d12] px-10 py-4 flex items-center justify-center">
-                           <span className="text-2xl font-black text-white tracking-[0.1em] group-hover:text-primary transition-colors">
-                              512-518-6547
-                           </span>
-                        </div>
+                  <div className="space-y-4 relative z-10">
+                     <h3 className="text-white font-black text-xl uppercase tracking-[0.2em] pt-4">Joe's Direct Line</h3>
+                     <a
+                        href="tel:512-518-6547"
+                        className="text-2xl md:text-3xl font-serif font-black text-white hover:text-primary transition-colors block"
+                     >
+                        512-518-6547
                      </a>
-                     <div className="text-center md:text-right space-y-2">
-                        <a href="mailto:Joseph.Grekoski@AcclimationGroup.com" className="text-white hover:text-primary transition-all text-sm font-bold tracking-widest block underline decoration-primary/20 underline-offset-8">
-                           Joseph.Grekoski@AcclimationGroup.com
-                        </a>
-                        <span className="text-[11px] font-bold text-white/20 uppercase tracking-[0.4em] block">Fort Lauderdale, FL</span>
+                     <p className="text-white/50 text-sm font-bold leading-relaxed tracking-wide uppercase">
+                        Call or text Joe anytime —<br />24/7 for serious inquiries
+                     </p>
+                  </div>
+               </div>
+
+               {/* Card 2: Email */}
+               <div className="glass-premium p-12 rounded-[2.5rem] flex flex-col items-center text-center space-y-6 border-white/5 hover:border-primary/30 transition-all duration-500 group relative overflow-hidden">
+                  <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-500 shadow-2xl">
+                     <Mail size={40} strokeWidth={1.5} />
+                  </div>
+                  <div className="space-y-4 relative z-10">
+                     <h3 className="text-white font-black text-xl uppercase tracking-[0.2em] pt-4">Email</h3>
+                     <a
+                        href="mailto:Joseph.Grekoski@AcclimationGroup.com"
+                        className="text-lg md:text-xl font-bold text-white hover:text-primary transition-colors break-all leading-snug block"
+                     >
+                        Joseph.Grekoski@AcclimationGroup.com
+                     </a>
+                     <p className="text-white/50 text-sm font-bold leading-relaxed tracking-wide uppercase">
+                        Fast responses for NBA,<br />college & high school athletes
+                     </p>
+                  </div>
+               </div>
+
+               {/* Card 3: Location */}
+               <div className="glass-premium p-12 rounded-[2.5rem] flex flex-col items-center text-center space-y-6 border-white/5 hover:border-primary/30 transition-all duration-500 group relative overflow-hidden">
+                  <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-500 shadow-2xl">
+                     <MapPin size={40} strokeWidth={1.5} />
+                  </div>
+                  <div className="space-y-4 relative z-10">
+                     <h3 className="text-white font-black text-xl uppercase tracking-[0.2em] pt-4">Office Location</h3>
+                     <div className="text-white/90 font-bold text-lg leading-relaxed pt-2">
+                        Acclimation Sports Agency<br />
+                        Fort Lauderdale, Florida 33308
                      </div>
                   </div>
                </div>
+
             </div>
          </div>
       </section>

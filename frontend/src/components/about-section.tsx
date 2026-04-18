@@ -19,8 +19,8 @@ export function AboutSection() {
 
           <div className="max-w-4xl mx-auto glass-premium p-6 rounded-2xl border-primary/20 bg-primary/5">
             <p className="text-sm md:text-base font-bold text-white leading-relaxed">
-              The only NBA sports agency led by an intellectual property expert specializing in personal brand
-              valuation and development for elite basketball talent.
+              I am a certified agent from the National
+              Basketball Players Association (NBPA).
             </p>
           </div>
         </div>
@@ -77,17 +77,9 @@ export function AboutSection() {
 
         {/* CTA Section */}
         <div className="mt-20 flex flex-col items-center">
-          <CtaButton href="/contact" fullWidth>
+          <CtaButton href="/contact">
             SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
           </CtaButton>
-
-          <div className="mt-8 flex flex-wrap justify-center items-center gap-x-8 gap-y-2 text-[10px] md:text-xs font-bold tracking-[0.2em] text-white/40 uppercase">
-            <span>30 minutes that can add millions to your career</span>
-            <span className="hidden sm:inline">•</span>
-            <span>Zero obligation</span>
-            <span className="hidden sm:inline">•</span>
-            <span>Fort Lauderdale, FL</span>
-          </div>
         </div>
       </div>
 

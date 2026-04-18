@@ -121,23 +121,6 @@ export function OneStopShop() {
           <CtaButton href="/contact">
             SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
           </CtaButton>
-
-          <div className="pt-8 border-t border-white/5 max-w-4xl mx-auto">
-            <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-[10px] md:text-xs font-bold tracking-[0.2em] text-white/40 uppercase">
-              <span className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full" /> 30 minutes that can add millions</span>
-              <span className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full" /> Zero obligation</span>
-              <span className="flex items-center gap-2 text-white">
-                Call Joe Directly Now: <a href="tel:512-518-6547" className="text-primary hover:underline underline-offset-4 decoration-primary/30 font-black">512-518-6547</a>
-              </span>
-              <span className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full" /> Fort Lauderdale, FL</span>
-            </div>
-
-            <div className="mt-8 flex flex-wrap justify-center gap-8 text-[9px] font-black tracking-[0.5em] text-white/10 uppercase">
-              <span>100% Confidential</span>
-              <span>Litigation-Proven Strategies</span>
-              <span>Zero Conflict of Interest</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
