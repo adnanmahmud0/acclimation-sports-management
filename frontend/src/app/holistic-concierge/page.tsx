@@ -88,7 +88,6 @@ export default function HolisticConciergePage() {
               </CtaButton>
             </div>
           </div>
-          <Footer />
         </div>
       </div>
     </main>

@@ -135,7 +135,6 @@ export default function NBAPlayersPage() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </main>
   );

@@ -133,8 +133,6 @@ export default function PersonalBrandingPage() {
              SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
            </CtaButton>
          </div>
-
-         <Footer />
        </div>
      </main>
    );

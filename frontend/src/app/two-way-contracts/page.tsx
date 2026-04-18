@@ -161,8 +161,6 @@ export default function TwoWayContractsPage() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </main>
   );
 }

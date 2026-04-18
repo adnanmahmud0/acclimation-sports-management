@@ -93,8 +93,6 @@ export default function ContractNegotiationPage() {
                 SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
               </CtaButton>
           </div>
-
-          <Footer />
         </div>
       </div>
     </main>

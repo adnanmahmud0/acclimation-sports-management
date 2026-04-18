@@ -163,7 +163,6 @@ export default function SalaryCapPage() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </main>
   );

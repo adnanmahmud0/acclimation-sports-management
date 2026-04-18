@@ -84,7 +84,6 @@ export default function PreDraftPage() {
             </CtaButton>
           </div>
         </div>
-        <Footer />
       </div>
     </main>
   );

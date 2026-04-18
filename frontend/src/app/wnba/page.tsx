@@ -89,7 +89,6 @@ export default function WNBAPage() {
               </CtaButton>
             </div>
           </div>
-          <Footer />
         </div>
       </div>
     </main>

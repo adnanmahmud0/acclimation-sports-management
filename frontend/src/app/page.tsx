@@ -2,7 +2,7 @@ import { Hero } from "@/components/hero";
 import { OneStopShop } from "@/components/one-stop-shop";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
-import { Footer } from "@/components/footer";
+
 
 export default function Home() {
   return (
@@ -11,7 +11,6 @@ export default function Home() {
       <OneStopShop />
       <AboutSection />
       <ContactSection />
-      <Footer />
     </div>
   );
 }

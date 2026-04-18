@@ -138,7 +138,6 @@ export default function HighSchoolTalentPage() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </main>
   );

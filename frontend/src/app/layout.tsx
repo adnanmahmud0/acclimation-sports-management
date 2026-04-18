@@ -4,6 +4,7 @@ import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "@/components/navbar";
 import { FounderCard } from "@/components/founder-card";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,11 +18,21 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Acclimation Sports | Where Economic Precision Meets NBA Domination",
+    default:
+      "Acclimation Sports | Where Economic Precision Meets NBA Domination",
     template: "%s | Acclimation Sports",
   },
-  description: "Data-driven NBA representation, career management, and salary cap analytics led by Joe Grekoski. Expert advocacy for NBA players, college prospects, and elite high-school talent.",
-  keywords: ["NBA Agency", "Basketball Representation", "NIL Deals", "Contract Negotiation", "Salary Cap Analytics", "NBA Draft Preparation", "Sports Management"],
+  description:
+    "Data-driven NBA representation, career management, and salary cap analytics led by Joe Grekoski. Expert advocacy for NBA players, college prospects, and elite high-school talent.",
+  keywords: [
+    "NBA Agency",
+    "Basketball Representation",
+    "NIL Deals",
+    "Contract Negotiation",
+    "Salary Cap Analytics",
+    "NBA Draft Preparation",
+    "Sports Management",
+  ],
   authors: [{ name: "Joe Grekoski" }],
   creator: "Acclimation Sports Management",
   publisher: "Acclimation Sports Management",
@@ -79,6 +90,7 @@ export default function RootLayout({
           {/* <FounderCard /> */}
           {children}
         </TooltipProvider>
+        <Footer />
       </body>
     </html>
   );

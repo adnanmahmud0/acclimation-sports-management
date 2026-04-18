@@ -99,8 +99,6 @@ export default function GetStartedPage() {
              </div>
           </div>
         </div>
-
-        <Footer />
       </div>
     </main>
   );

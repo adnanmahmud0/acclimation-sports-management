@@ -200,8 +200,6 @@ export default function GLeagueElitePage() {
               </CtaButton>
             </div>
           </div>
-
-          <Footer />
         </div>
       </div>
     </main>

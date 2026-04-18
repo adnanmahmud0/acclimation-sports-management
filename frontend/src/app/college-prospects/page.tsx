@@ -124,7 +124,6 @@ export default function CollegeProspectsPage() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </main>
   );

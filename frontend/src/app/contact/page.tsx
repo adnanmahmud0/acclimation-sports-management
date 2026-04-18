@@ -46,7 +46,7 @@ export default function ContactPage() {
                      <Phone size={40} strokeWidth={1.5} />
                   </div>
                   <div className="space-y-4 relative z-10">
-                     <h3 className="text-white font-black text-xl uppercase tracking-[0.2em] pt-4">Joe's Direct Line</h3>
+                     <h3 className="text-white font-black text-xl uppercase tracking-[0.2em] pt-4">{`Joe's Direct Line`}</h3>
                      <a
                         href="tel:512-518-6547"
                         className="text-2xl md:text-3xl font-serif font-black text-white hover:text-primary transition-colors block"
@@ -93,11 +93,6 @@ export default function ContactPage() {
                      </div>
                   </div>
                </div>
-
-            </div>
-
-            <div className="mt-32 w-full">
-               <Footer />
             </div>
          </div>
       </main>

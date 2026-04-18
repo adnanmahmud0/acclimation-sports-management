@@ -9,7 +9,8 @@ import { Logo } from "@/components/logo";
 
 export const metadata: Metadata = {
   title: "Elite Endorsements & Marketing",
-  description: "Maximizing off-court income through shoe deals, NIL, and legacy partnerships for elite basketball talent.",
+  description:
+    "Maximizing off-court income through shoe deals, NIL, and legacy partnerships for elite basketball talent.",
 };
 
 export default function MarketingEndorsementsPage() {
@@ -33,12 +34,13 @@ export default function MarketingEndorsementsPage() {
           <div className="space-y-6">
             <GradientHeader tag="h1" size="lg" className="mb-4">
               Marketing and <br />
-              <span className="flex justify-center">
-                Endorsement Deals
-              </span>
+              <span className="flex justify-center">Endorsement Deals</span>
             </GradientHeader>
             <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
-              We build and monetize your personal brand so you earn maximum value from endorsements, sponsorships, and marketing opportunities. elite high school talent turn their talent into real off-court income.
+              We build and monetize your personal brand so you earn maximum
+              value from endorsements, sponsorships, and marketing
+              opportunities. elite high school talent turn their talent into
+              real off-court income.
             </p>
           </div>
 
@@ -75,7 +77,9 @@ export default function MarketingEndorsementsPage() {
           {/* Transition Copy */}
           <div className="space-y-6 max-w-4xl mx-auto">
             <p className="text-white/60 text-lg md:text-xl font-bold tracking-wide leading-relaxed">
-              Whether you're chasing your first major shoe deal, building your NIL portfolio, or expanding your brand as a NBA player, we make sure you're never undervalued in the marketplace.
+              {`              Whether you're chasing your first major shoe deal, building your
+              NIL portfolio, or expanding your brand as a NBA player, we make
+              sure you're never undervalued in the marketplace.`}
             </p>
             <h2 className="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter">
               Ready to unlock your full earning potential off the court?
@@ -87,31 +91,36 @@ export default function MarketingEndorsementsPage() {
               SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
             </CtaButton>
           </div>
-
-          {/* Footer Lane */}
-          <div className="pt-20 space-y-12">
-            <Footer />
-          </div>
-
         </div>
       </div>
     </main>
   );
 }
 
-function ListItem({ icon, title, desc }: { icon: React.ReactNode, title: string, desc?: string }) {
+function ListItem({
+  icon,
+  title,
+  desc,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  desc?: string;
+}) {
   return (
     <li className="flex gap-6 group">
       <div className="w-12 h-12 shrink-0 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-primary/40 transition-all shadow-xl">
         {icon}
       </div>
       <div className="space-y-1">
-        <h4 className="text-lg md:text-xl font-black text-white tracking-tight leading-tight uppercase">{title}</h4>
+        <h4 className="text-lg md:text-xl font-black text-white tracking-tight leading-tight uppercase">
+          {title}
+        </h4>
         {desc && (
-          <p className="text-white/40 text-[10px] md:text-xs font-bold uppercase tracking-widest">{desc}</p>
+          <p className="text-white/40 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+            {desc}
+          </p>
         )}
       </div>
     </li>
   );
 }
-
