@@ -72,24 +72,18 @@ export function ContactSection() {
                   </div>
 
                   <div className="flex flex-col items-center md:items-end gap-6 shrink-0">
-                     <div className="bg-[#0a0d12]/80 border border-primary/40 p-1.5 rounded-2xl flex overflow-hidden shadow-2xl">
-
-                        <a
-                           href="tel:+15125186547"
-                           className="bg-gradient-to-r from-primary to-primary/80 px-6 py-4 flex items-center justify-center rounded-xl"
-                        >
+                     <a href="tel:+15125186547" className="bg-[#0a0d12]/80 border border-primary/40 p-1.5 rounded-2xl flex overflow-hidden shadow-2xl group hover:border-primary transition-all">
+                        <div className="bg-gradient-to-r from-primary to-primary/80 px-6 py-4 flex items-center justify-center rounded-xl">
                            <span className="text-[11px] font-black text-black uppercase leading-tight text-center">
                               Call Joe<br />Directly
                            </span>
-                        </a>
-
+                        </div>
                         <div className="bg-[#0a0d12] px-10 py-4 flex items-center justify-center">
-                           <span className="text-2xl font-black text-white tracking-[0.1em]">
+                           <span className="text-2xl font-black text-white tracking-[0.1em] group-hover:text-primary transition-colors">
                               512-518-6547
                            </span>
                         </div>
-
-                     </div>
+                     </a>
                      <div className="text-center md:text-right space-y-2">
                         <a href="mailto:Joseph.Grekoski@AcclimationGroup.com" className="text-white hover:text-primary transition-all text-sm font-bold tracking-widest block underline decoration-primary/20 underline-offset-8">
                            Joseph.Grekoski@AcclimationGroup.com
