@@ -7,7 +7,8 @@ import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "NBA G League Fast Track",
-  description: "Rules, salaries, and the fast track from G League prospects to the NBA. Expert advocacy for athletes rising to the NBA stage.",
+  description:
+    "Rules, salaries, and the fast track from G League prospects to the NBA. Expert advocacy for athletes rising to the NBA stage.",
 };
 
 export default function GLeagueElitePage() {
@@ -28,27 +29,14 @@ export default function GLeagueElitePage() {
 
         <div className="container mx-auto px-6 pt-32 pb-16 relative z-10">
           <div className="space-y-12">
-
             {/* Hero Content Section */}
             <div className="flex flex-col items-center text-center gap-12">
               <div className="space-y-8 max-w-5xl mx-auto">
                 <GradientHeader tag="h1" size="lg" className="mb-4">
                   NBA G League 2025-26: <br />
-                  Rules, Salaries, and The
-                  Fast Track <br /> from
-
-                  Prospects to the NBA
-
+                  Rules, Salaries, and the Fast Track <br /> from Prospects to
+                  the NBA
                 </GradientHeader>
-              </div>
-            </div>
-
-            {/* Main CTA Section */}
-            <div className="text-center space-y-8">
-              <div className="flex flex-col items-center gap-4">
-                <CtaButton href="/contact">
-                  SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
-                </CtaButton>
               </div>
             </div>
           </div>
@@ -61,53 +49,75 @@ export default function GLeagueElitePage() {
           {/* Season at a Glance Bar */}
           <div className="glass-premium rounded-2xl md:rounded-full px-8 py-6 flex flex-wrap justify-between items-center gap-8 border-primary/20 shadow-2xl">
             <div className="flex flex-col">
-              <span className="text-xs font-black text-primary uppercase tracking-widest">2025-26 G League</span>
-              <span className="text-lg font-bold text-white uppercase">Season at a Glance</span>
+              <span className="text-xs font-black text-primary uppercase tracking-widest">
+                2025-26 G League
+              </span>
+              <span className="text-lg font-bold text-white uppercase">
+                Season at a Glance
+              </span>
             </div>
 
             <div className="flex flex-col items-center">
               <span className="text-2xl font-black text-white">31</span>
-              <span className="text-xs font-bold text-white/40 uppercase tracking-widest">Teams</span>
+              <span className="text-xs font-bold text-white/40 uppercase tracking-widest">
+                Teams
+              </span>
             </div>
 
             <div className="flex flex-col items-center">
               <span className="text-2xl font-black text-white">50+</span>
-              <span className="text-xs font-bold text-white/40 uppercase tracking-widest">Games</span>
+              <span className="text-xs font-bold text-white/40 uppercase tracking-widest">
+                Games
+              </span>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <span className="text-lg font-black text-white uppercase leading-none">Tip-Off</span>
-              <span className="text-xs font-bold text-white/40 uppercase tracking-widest leading-none">Tournament</span>
+              <span className="text-lg font-black text-white uppercase leading-none">
+                Tip-Off
+              </span>
+              <span className="text-xs font-bold text-white/40 uppercase tracking-widest leading-none">
+                Tournament
+              </span>
             </div>
 
             <div className="flex flex-col items-center">
               <span className="text-2xl font-black text-white">12-13</span>
-              <span className="text-xs font-bold text-white/40 uppercase tracking-widest">Active Roster</span>
+              <span className="text-xs font-bold text-white/40 uppercase tracking-widest">
+                Active Roster
+              </span>
             </div>
 
             <div className="flex flex-col items-center">
               <span className="text-2xl font-black text-primary">$45,000</span>
-              <span className="text-xs font-bold text-white/40 uppercase tracking-widest">Standard Salary</span>
+              <span className="text-xs font-bold text-white/40 uppercase tracking-widest">
+                Standard Salary
+              </span>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
             <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
               <h3 className="text-xl font-black text-white uppercase tracking-wider">
                 What Is the NBA G League?
               </h3>
               <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center gap-6">
                 <div className="relative w-12 h-12">
-                  <div className="w-full h-full rounded bg-primary/20 flex items-center justify-center font-black text-primary">NBA</div>
+                  <div className="w-full h-full rounded bg-primary/20 flex items-center justify-center font-black text-primary">
+                    NBA
+                  </div>
                 </div>
                 <div className="text-2xl text-white/20">×</div>
                 <div className="relative w-12 h-12">
-                  <div className="w-full h-full rounded bg-purple-500/20 flex items-center justify-center font-black text-purple-500 text-xl">G</div>
+                  <div className="w-full h-full rounded bg-purple-500/20 flex items-center justify-center font-black text-purple-500 text-xl">
+                    G
+                  </div>
                 </div>
               </div>
               <p className="text-sm text-white/70 leading-relaxed font-medium pt-2">
-                The official developmental league of the NBA — a high-level proving ground where young talent gains experience, competes against future NBA players, and earns direct call-up opportunities.
+                The official developmental league of the NBA — a high-level
+                proving ground where young talent gains experience, competes
+                against future NBA players, and earns direct call-up
+                opportunities.
               </p>
             </div>
 
@@ -119,13 +129,11 @@ export default function GLeagueElitePage() {
                 {[
                   "31 Teams (30 single-affiliated + 1 independent)",
                   "50+ Game Season (Tip-Off Tournament + Regular Season)",
-                  "Active Roster: 12-13 players; Affiliate Players: Up to 5"
+                  "Active Roster: 12-13 players; Affiliate Players: Up to 5",
                 ].map((rule, i) => (
                   <li key={i} className="flex gap-4 items-start group">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                    <p className="text-sm leading-snug font-medium">
-                      {rule}
-                    </p>
+                    <p className="text-sm leading-snug font-medium">{rule}</p>
                   </li>
                 ))}
               </ul>
@@ -150,7 +158,10 @@ export default function GLeagueElitePage() {
                   </div>
                 </div>
                 <p className="text-base text-white/90 leading-relaxed font-bold pt-4">
-                  + Standard Player Salary: $45,000 + <span className="text-primary">Enhanced minimum available</span>
+                  + Standard Player Salary: $45,000 +{" "}
+                  <span className="text-primary">
+                    Enhanced minimum available
+                  </span>
                 </p>
               </div>
             </div>
@@ -165,26 +176,29 @@ export default function GLeagueElitePage() {
                     "Strong performance",
                     "Call-ups",
                     "Two-Way conversions",
-                    "Standard NBA deals"
+                    "Standard NBA deals",
                   ].map((step, i) => (
                     <div key={i} className="flex items-center gap-4">
                       <div className="p-3 bg-white/5 border border-white/10 rounded-xl flex-1">
                         {step}
                       </div>
-                      {i < 3 && <span className="text-primary/50 text-lg">→</span>}
+                      {i < 3 && (
+                        <span className="text-primary/50 text-lg">→</span>
+                      )}
                     </div>
                   ))}
                 </div>
               </div>
             </div>
-
           </div>
-          <div className="text-white/60 text-base font-bold tracking-widest uppercase flex flex-wrap justify-center gap-4">
-            <span>30 minutes that can add hundreds of thousands to your pro career</span>
-            <span className="hidden md:inline">•</span>
-            <span>Zero obligation</span>
-            <span className="hidden md:inline">•</span>
-            <span>Fort Lauderdale, FL</span>
+
+          {/* Main CTA Section */}
+          <div className="text-center space-y-8">
+            <div className="flex flex-col items-center gap-4">
+              <CtaButton href="/contact">
+                SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
+              </CtaButton>
+            </div>
           </div>
 
           <Footer />
@@ -193,4 +207,3 @@ export default function GLeagueElitePage() {
     </main>
   );
 }
-

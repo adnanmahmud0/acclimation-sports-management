@@ -29,35 +29,20 @@ export default function WNBAPage() {
         <div className="space-y-12">
           {/* Header Section */}
           <div className="text-center space-y-6">
-            <GradientHeader tag="h1" size="xl" className="mb-4">
+            <GradientHeader tag="h1" size="lg" className="mb-4">
               WNBA
             </GradientHeader>
 
             <div className="space-y-4 text-center">
               <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
-                Capitalize on the Historic New CBA <br /> <span className="text-primary">Maximize Your Earnings Now</span>
+                Capitalize on the Historic New CBA <br />{" "}
+                <span className="text-primary">Maximize Your Earnings Now</span>
               </h2>
               <p className="text-sm md:text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
-                The new 7-year WNBA CBA (2026–2032) explodes salaries: salary cap jumps to $7M in 2026,
-                average pay rises to $583K, and max contracts reach $1.4M+.
+                The new 7-year WNBA CBA (2026–2032) explodes salaries: salary
+                cap jumps to $7M in 2026, average pay rises to $583K, and max
+                contracts reach $1.4M+.
               </p>
-            </div>
-          </div>
-
-          {/* CTA Section */}
-          <div className="text-center space-y-8">
-            <div className="flex flex-col items-center gap-6">
-              <CtaButton href="/contact">
-                SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
-              </CtaButton>
-
-              <div className="text-white/40 text-xs font-bold tracking-widest uppercase flex flex-col md:flex-row items-center gap-2 md:gap-4">
-                <span>30 minutes that can add hundreds of thousands</span>
-                <span className="hidden md:inline">•</span>
-                <span>Zero obligation</span>
-                <span className="hidden md:inline">•</span>
-                <span>Fort Lauderdale, FL</span>
-              </div>
             </div>
           </div>
         </div>
@@ -81,17 +66,29 @@ export default function WNBAPage() {
                   "High-value endorsement & brand deals",
                   "Podcast appearances and media opportunities",
                   "Personal brand development",
-                  "Full holistic concierge support (trainers, chefs, travel, taxes)"
+                  "Full holistic concierge support (trainers, chefs, travel, taxes)",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/90 text-left">
+                  <li
+                    key={i}
+                    className="flex items-start gap-3 text-white/90 text-left"
+                  >
                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(0,210,255,0.5)]" />
-                    <span className="text-sm md:text-xl font-medium tracking-tight leading-snug">{item}</span>
+                    <span className="text-sm md:text-xl font-medium tracking-tight leading-snug">
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-
+          {/* CTA Section */}
+          <div className="text-center space-y-8">
+            <div className="flex flex-col items-center gap-6">
+              <CtaButton href="/contact">
+                SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
+              </CtaButton>
+            </div>
+          </div>
           <Footer />
         </div>
       </div>

@@ -42,20 +42,24 @@ export default function HighSchoolTalentPage() {
                 The Path to the Pros Begins Here
               </h2>
               <p className="md:text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto">
-                Join the exclusive network of elite prospects who secured multi-million dollar NIL deals and direct NBA pathways before graduation. Our proprietary system turns high school talent into professional assets.
+                Join the exclusive network of elite prospects who secured
+                multi-million dollar NIL deals and direct NBA pathways before
+                graduation. Our proprietary system turns high school talent into
+                professional assets.
               </p>
             </div>
           </div>
 
           {/* Info Grid Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-16">
-
             {/* Why Choose Section */}
             <div className="space-y-10 text-left">
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-primary">
                   <div className="h-[1px] w-8 bg-primary/40" />
-                  <span className="text-xs font-black uppercase tracking-[0.4em]">Acclimation Edge</span>
+                  <span className="text-xs font-black uppercase tracking-[0.4em]">
+                    Acclimation Edge
+                  </span>
                 </div>
                 <GradientHeader tag="h3" size="md">
                   Why Elite Prospects <br /> Choose Acclimation
@@ -88,7 +92,9 @@ export default function HighSchoolTalentPage() {
               <div className="relative h-full space-y-10 text-left bg-white/[0.02] border border-white/5 p-10 md:p-12 rounded-[2.5rem] backdrop-blur-2xl shadow-2xl flex flex-col justify-between">
                 <div className="space-y-8">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-2xl font-black text-white uppercase tracking-widest">Key Benefits</h3>
+                    <h3 className="text-2xl font-black text-white uppercase tracking-widest">
+                      Key Benefits
+                    </h3>
                     <div className="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center">
                       <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                     </div>
@@ -100,9 +106,12 @@ export default function HighSchoolTalentPage() {
                       "Exclusive NIL Contract Review",
                       "24/7 Strategy & Concierge Support",
                       "Elite Media & Interview Training",
-                      "College-to-Pro Multi-Year Transition"
+                      "College-to-Pro Multi-Year Transition",
                     ].map((benefit, idx) => (
-                      <li key={idx} className="flex items-center gap-5 text-white/70 font-bold uppercase tracking-widest text-sm border-b border-white/[0.03] pb-6 last:border-0 hover:text-white transition-all duration-300 group/item">
+                      <li
+                        key={idx}
+                        className="flex items-center gap-5 text-white/70 font-bold uppercase tracking-widest text-sm border-b border-white/[0.03] pb-6 last:border-0 hover:text-white transition-all duration-300 group/item"
+                      >
                         <div className="w-2 h-2 rounded-full border border-primary/40 flex items-center justify-center group-hover/item:border-primary transition-colors">
                           <div className="w-1 h-1 rounded-full bg-primary/40 group-hover/item:bg-primary" />
                         </div>
@@ -113,11 +122,12 @@ export default function HighSchoolTalentPage() {
                 </div>
 
                 <div className="pt-8">
-                  <p className="text-xs font-black text-primary/40 uppercase tracking-[0.4em]">Exclusive Entry • High Stakes Advocacy</p>
+                  <p className="text-xs font-black text-primary/40 uppercase tracking-[0.4em]">
+                    Exclusive Entry • High Stakes Advocacy
+                  </p>
                 </div>
               </div>
             </div>
-
           </div>
 
           <div className="space-y-12">
@@ -126,11 +136,9 @@ export default function HighSchoolTalentPage() {
                 SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
               </CtaButton>
             </div>
-
           </div>
-
-          <Footer />
         </div>
+        <Footer />
       </div>
     </main>
   );

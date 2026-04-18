@@ -28,15 +28,12 @@ export default function CollegeProspectsPage() {
 
       <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
         <div className="space-y-16 max-w-7xl mx-auto text-center">
-
           {/* Header Content */}
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:text-left">
             <div className="flex-1 space-y-6">
-              <GradientHeader tag="h1" size="xl" className="mb-4">
+              <GradientHeader tag="h1" size="lg" className="mb-4">
                 College <br className="hidden md:block" />
-                <span className="   pr-12">
-                  PROSPECTS
-                </span>
+                <span className="   pr-12">PROSPECTS</span>
               </GradientHeader>
               <div className="space-y-6">
                 <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
@@ -44,7 +41,9 @@ export default function CollegeProspectsPage() {
                   build your future wealth now.
                 </h2>
                 <p className="text-sm md:text-lg text-white/50 font-medium leading-relaxed max-w-3xl mx-auto lg:mx-0">
-                  The college years are your launchpad. We help top college prospects maximize NIL deals, develop a professional brand, and prepare for the NBA with elite off-court support.
+                  The college years are your launchpad. We help top college
+                  prospects maximize NIL deals, develop a professional brand,
+                  and prepare for the NBA with elite off-court support.
                 </p>
               </div>
             </div>
@@ -53,8 +52,15 @@ export default function CollegeProspectsPage() {
             <div className="lg:w-1/3 relative aspect-square w-64 md:w-80 animate-float hidden lg:block">
               <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
               <div className="relative w-full h-full rounded-full border-2 border-primary/30 flex items-center justify-center overflow-hidden">
-                <Image src="/baskatecoart.png" alt="Basketball Grid" fill className="object-cover opacity-20 rotate-45 scale-150" />
-                <div className="text-primary font-black text-4xl tracking-tighter opacity-40 select-none">FUTURE</div>
+                <Image
+                  src="/baskatecoart.png"
+                  alt="Basketball Grid"
+                  fill
+                  className="object-cover opacity-20 rotate-45 scale-150"
+                />
+                <div className="text-primary font-black text-4xl tracking-tighter opacity-40 select-none">
+                  FUTURE
+                </div>
               </div>
             </div>
           </div>
@@ -63,7 +69,9 @@ export default function CollegeProspectsPage() {
           <div className="space-y-16 py-12">
             <div className="flex items-center justify-center gap-4 text-primary">
               <div className="h-[1px] w-12 bg-primary/30" />
-              <span className="text-sm font-black uppercase tracking-[0.4em]">What We Provide</span>
+              <span className="text-sm font-black uppercase tracking-[0.4em]">
+                What We Provide
+              </span>
               <div className="h-[1px] w-12 bg-primary/30" />
             </div>
 
@@ -114,10 +122,8 @@ export default function CollegeProspectsPage() {
               </CtaButton>
             </div>
           </div>
-
-          <Footer />
-
         </div>
+        <Footer />
       </div>
     </main>
   );

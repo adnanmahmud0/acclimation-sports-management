@@ -7,7 +7,8 @@ import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Strategic Two-Way Advantage",
-  description: "Maximize the strategic value and progression of Two-Way agreements. Expert negotiation for undrafted gems and rising prospects.",
+  description:
+    "Maximize the strategic value and progression of Two-Way agreements. Expert negotiation for undrafted gems and rising prospects.",
 };
 
 export default function TwoWayContractsPage() {
@@ -32,16 +33,8 @@ export default function TwoWayContractsPage() {
               <div className="space-y-8 max-w-5xl mx-auto">
                 <GradientHeader tag="h1" size="lg" className="mb-4">
                   NBA Two-Way Contracts <br /> 2025-26 / 2026-27: <br />
-                  Rules, Salaries and Fast Track
+                  Rules, Salaries, and Fast Track
                 </GradientHeader>
-              </div>
-            </div>
-
-            <div className="text-center space-y-8">
-              <div className="flex flex-col items-center gap-4">
-                <CtaButton href="/contact">
-                  SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
-                </CtaButton>
               </div>
             </div>
           </div>
@@ -51,7 +44,6 @@ export default function TwoWayContractsPage() {
       {/* Logic Grid Section */}
       <div className="container mx-auto px-6 pb-24">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
           <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
             <h3 className="text-xl font-black text-white uppercase tracking-wider">
               What Is a Two-Way Contract?
@@ -64,11 +56,15 @@ export default function TwoWayContractsPage() {
                 className="object-cover opacity-60"
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-xs font-bold text-white/80 uppercase">NBA x G League</span>
+                <span className="text-xs font-bold text-white/80 uppercase">
+                  NBA x G League
+                </span>
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed font-medium">
-              Hybrid deal allowing players to split time between the NBA team and its G League affiliate while receiving occasional call-ups to the main roster.
+              Hybrid deal allowing players to split time between the NBA team
+              and its G League affiliate while receiving occasional call-ups to
+              the main roster.
             </p>
           </div>
 
@@ -78,9 +74,18 @@ export default function TwoWayContractsPage() {
             </h3>
             <div className="space-y-4">
               {[
-                { id: 1, text: "May be active on either the NBA roster or inactive list." },
-                { id: 2, text: "Unlimited travel days and G League assignments." },
-                { id: 3, text: "Contract deal converted at any time from G League to NBA." }
+                {
+                  id: 1,
+                  text: "May be active on either the NBA roster or inactive list.",
+                },
+                {
+                  id: 2,
+                  text: "Unlimited travel days and G League assignments.",
+                },
+                {
+                  id: 3,
+                  text: "Contract deal converted at any time from G League to NBA.",
+                },
               ].map((rule) => (
                 <div key={rule.id} className="flex gap-4 items-start group">
                   <div className="w-8 h-8 rounded-lg bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-black flex-shrink-0 group-hover:bg-primary group-hover:text-black transition-colors">
@@ -99,7 +104,9 @@ export default function TwoWayContractsPage() {
               Salary Breakdown 2025-26
             </h3>
             <div className="space-y-6">
-              <p className="text-xs text-white/50 uppercase font-black tracking-widest">Total Value</p>
+              <p className="text-xs text-white/50 uppercase font-black tracking-widest">
+                Total Value
+              </p>
               <div className="text-5xl font-black text-primary drop-shadow-[0_0_15px_rgba(0,210,255,0.4)]">
                 $636,435
               </div>
@@ -130,7 +137,7 @@ export default function TwoWayContractsPage() {
               {[
                 "UDFA or second-round pick",
                 "Strong performance & call-ups",
-                "Team converts to standard"
+                "Team converts to standard",
               ].map((step, i) => (
                 <div key={i} className="relative group">
                   <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-sm font-bold text-white/90 group-hover:bg-primary/10 group-hover:border-primary/30 transition-all">
@@ -145,11 +152,17 @@ export default function TwoWayContractsPage() {
               ))}
             </div>
           </div>
-
         </div>
-
-        <Footer />
+        <div className="text-center space-y-8 mt-15">
+          <div className="flex flex-col items-center gap-4">
+            <CtaButton href="/contact">
+              SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
+            </CtaButton>
+          </div>
+        </div>
       </div>
+
+      <Footer />
     </main>
   );
 }
