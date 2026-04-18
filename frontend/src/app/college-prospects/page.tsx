@@ -8,7 +8,8 @@ import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "College to NBA Draft Pipeline",
-  description: "Maximize NIL deals, develop a professional brand, and prepare for the NBA with elite off-court support for top college basketball prospects.",
+  description:
+    "Maximize NIL deals, develop a professional brand, and prepare for the NBA with elite off-court support for top college basketball prospects.",
 };
 
 export default function CollegeProspectsPage() {
@@ -33,7 +34,7 @@ export default function CollegeProspectsPage() {
             <div className="flex-1 space-y-6">
               <GradientHeader tag="h1" size="lg" className="mb-4">
                 College <br className="hidden md:block" />
-                <span className="   pr-12">PROSPECTS</span>
+                <span className="   pr-12">Prospects</span>
               </GradientHeader>
               <div className="space-y-6">
                 <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
@@ -129,7 +130,17 @@ export default function CollegeProspectsPage() {
   );
 }
 
-function ArcCard({ number, icon, title, desc }: { number: string, icon: React.ReactNode, title: string, desc: string }) {
+function ArcCard({
+  number,
+  icon,
+  title,
+  desc,
+}: {
+  number: string;
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}) {
   return (
     <div className="bg-[#0a0d12]/60 border border-white/5 p-6 rounded-2xl backdrop-blur-md hover:border-primary/40 transition-all group flex flex-col items-center text-center space-y-4 shadow-xl min-h-[280px]">
       <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center font-black text-primary text-sm group-hover:bg-primary group-hover:text-black transition-all">
@@ -139,7 +150,9 @@ function ArcCard({ number, icon, title, desc }: { number: string, icon: React.Re
         {icon}
       </div>
       <div className="space-y-3">
-        <h4 className="text-base md:text-lg font-black text-white uppercase tracking-widest leading-tight">{title}</h4>
+        <h4 className="text-base md:text-lg font-black text-white uppercase tracking-widest leading-tight">
+          {title}
+        </h4>
         <p className="text-sm font-bold text-white/60 uppercase tracking-widest leading-relaxed">
           {desc}
         </p>
@@ -147,4 +160,3 @@ function ArcCard({ number, icon, title, desc }: { number: string, icon: React.Re
     </div>
   );
 }
-

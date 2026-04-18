@@ -9,11 +9,16 @@ interface LogoProps {
   height?: number;
 }
 
-export function Logo({ className, variant = "horizontal", width, height }: LogoProps) {
-  const src = variant === "horizontal" 
-    ? "/logo/AcclimationLogo-Horizontal.jpg" 
-    : "/logo/AcclimationLogo-Vartical.jpg";
-
+export function Logo({
+  className,
+  variant = "horizontal",
+  width,
+  height,
+}: LogoProps) {
+  const src =
+    variant === "horizontal"
+      ? "/logo/AcclimationLogo-Horizontal.png"
+      : "/logo/AcclimationLogo-Vartical.png";
 
   // Default sizes based on variant if not provided
   const defaultWidth = variant === "horizontal" ? 180 : 120;
@@ -27,7 +32,6 @@ export function Logo({ className, variant = "horizontal", width, height }: LogoP
         width={width || defaultWidth}
         height={height || defaultHeight}
         className="object-contain rounded-md"
-
         priority
       />
     </Link>
