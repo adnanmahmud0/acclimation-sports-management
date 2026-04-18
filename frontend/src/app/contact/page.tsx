@@ -58,7 +58,7 @@ export default function ContactPage() {
                   <textarea placeholder="Message" rows={4} className="w-full bg-[#0a0d12]/60 border border-white/10 px-6 py-4 rounded-xl text-white placeholder:text-white/20 focus:border-primary/50 outline-none transition-all" />
 
                   <CtaButton type="submit" fullWidth>
-                     Schedule Confidential Strategy Call
+                     SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
                   </CtaButton>
                </form>
 
@@ -78,14 +78,14 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex flex-col items-center md:items-end gap-4 shrink-0">
-                     <div className="bg-[#0a0d12]/80 border border-primary/40 p-1.5 rounded-xl flex overflow-hidden shadow-2xl">
+                     <a href="tel:512-518-6547" className="bg-[#0a0d12]/80 border border-primary/40 p-1.5 rounded-xl flex overflow-hidden shadow-2xl group hover:border-primary transition-all">
                         <div className="bg-gradient-to-r from-primary to-primary/80 px-4 py-2 flex items-center justify-center rounded-lg">
                            <span className="text-xs font-black text-black uppercase leading-tight text-center ">Call Joe<br />Directly</span>
                         </div>
-                        <div className="bg-[#0a0d12] px-6 py-3 flex items-center justify-center group cursor-pointer">
+                        <div className="bg-[#0a0d12] px-6 py-3 flex items-center justify-center">
                            <span className="text-xl font-black text-white tracking-widest group-hover:text-primary transition-colors">512-518-6547</span>
                         </div>
-                     </div>
+                     </a>
                      <div className="text-center md:text-right space-y-1">
                         <a href="mailto:Joseph.Grekoski@AcclimationGroup.com" className="text-white/60 hover:text-primary transition-colors text-xs font-bold tracking-widest block">
                            Joseph.Grekoski@AcclimationGroup.com

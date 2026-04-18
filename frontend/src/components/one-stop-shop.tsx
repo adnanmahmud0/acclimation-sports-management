@@ -118,8 +118,8 @@ export function OneStopShop() {
         </div>
 
         <div className="mt-8 text-center">
-          <CtaButton href="/book">
-            Schedule your confidential strategy call with Joe Grekoski
+          <CtaButton href="/contact">
+            SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
           </CtaButton>
 
           <div className="pt-8 border-t border-white/5 max-w-4xl mx-auto">

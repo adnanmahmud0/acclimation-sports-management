@@ -234,7 +234,7 @@ export function Navbar() {
                   Contact
                 </Link>
 
-                <Link href="/book" className="block mt-4" onClick={() => setOpen(false)}>
+                <Link href="/contact" className="block mt-4" onClick={() => setOpen(false)}>
                   <button className="w-full py-4 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl font-bold text-xs tracking-widest uppercase text-white shadow-lg shadow-primary/20">
                     Schedule Strategy Call
                   </button>
@@ -362,7 +362,7 @@ export function Navbar() {
 
       {/* CTA Button */}
       <div className="flex items-center gap-4">
-        <Link href="/book" className="group hidden sm:block">
+        <Link href="/contact" className="group hidden sm:block">
           <button className="relative px-3 md:px-6 py-2 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl leading-tight text-center transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,210,255,0.3)] hover:shadow-[0_0_30px_rgba(0,210,255,0.5)]">
             <span className="hidden md:block text-[10px] font-bold tracking-wider text-white opacity-90 uppercase">Schedule Confidential</span>
             <span className="block text-[10px] md:text-xs font-black tracking-widest text-white uppercase">Strategy Call</span>

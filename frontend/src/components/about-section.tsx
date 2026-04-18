@@ -77,8 +77,8 @@ export function AboutSection() {
 
         {/* CTA Section */}
         <div className="mt-20 flex flex-col items-center">
-          <CtaButton href="/book" fullWidth>
-            Schedule your confidential strategy call with Joe Grekoski - 512-518-6547
+          <CtaButton href="/contact" fullWidth>
+            SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
           </CtaButton>
 
           <div className="mt-8 flex flex-wrap justify-center items-center gap-x-8 gap-y-2 text-[10px] md:text-xs font-bold tracking-[0.2em] text-white/40 uppercase">

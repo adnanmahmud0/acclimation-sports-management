@@ -122,8 +122,8 @@ export default function HighSchoolTalentPage() {
 
           <div className="space-y-12">
             <div className="pt-6 flex justify-center">
-              <CtaButton href="tel:5125186547" className="w-full max-w-3xl">
-                Schedule Your Confidential Strategy Call → 512-518-6547
+              <CtaButton href="/contact" className="w-full max-w-3xl">
+                SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
               </CtaButton>
             </div>
 

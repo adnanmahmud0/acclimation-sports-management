@@ -137,9 +137,9 @@ export default function SalaryCapPage() {
              </div>
 
               <div className="flex flex-col items-center md:items-end gap-8 order-1 md:order-2">
-                 <CtaButton href="/book">
+                 <CtaButton href="/contact">
                    SCHEDULE YOUR CONFIDENTIAL <br className="hidden md:block" />
-                   SALARY CAP STRATEGY CALL TODAY
+                   CONTRACT STRATEGY CALL
                  </CtaButton>
               </div>
           </div>

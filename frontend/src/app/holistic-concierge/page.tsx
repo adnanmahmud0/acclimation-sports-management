@@ -84,9 +84,8 @@ export default function HolisticConciergePage() {
 
             {/* CTA Section */}
             <div className="space-y-6 pt-6">
-               <CtaButton href="/get-started">
-                 Schedule your confidential Holistic <br className="md:hidden" />
-                 Concierge Strategy Call today
+               <CtaButton href="/contact">
+                 SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
                </CtaButton>
                <p className="text-white/40 text-xs font-black uppercase tracking-[0.5em]">
                  One call. Everything handled. Total peace of mind.

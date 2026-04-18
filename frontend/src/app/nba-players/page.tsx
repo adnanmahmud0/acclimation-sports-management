@@ -97,8 +97,8 @@ export default function NBAPlayersPage() {
             {/* CTA Section */}
             <div className="text-center space-y-8">
               <div className="flex flex-col items-center gap-6">
-                <CtaButton href="/book">
-                  SCHEDULE YOUR CONFIDENTIAL NBA STRATEGY CALL TODAY
+                <CtaButton href="/contact">
+                  SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
                 </CtaButton>
                 
                 <div className="text-white/40 text-xs font-bold tracking-widest uppercase flex flex-wrap justify-center gap-4">

@@ -89,9 +89,9 @@ export default function ContractNegotiationPage() {
           </div>
 
           <div className="flex justify-center pt-8">
-            <CtaButton href="/book">
-              SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
-            </CtaButton>
+              <CtaButton href="/contact" fullWidth className="max-w-4xl">
+                SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
+              </CtaButton>
           </div>
 
           <Footer />

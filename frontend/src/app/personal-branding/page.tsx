@@ -113,8 +113,8 @@ export default function PersonalBrandingPage() {
                </div>
 
                <div className="pt-8 w-full pb-12">
-                  <CtaButton href="/book" fullWidth>
-                     SCHEDULE YOUR CONFIDENTIAL PERSONAL BRAND VALUATION STRATEGY CALL TODAY
+                  <CtaButton href="/contact" fullWidth>
+                     SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
                   </CtaButton>
                </div>
 

@@ -109,8 +109,8 @@ export default function CollegeProspectsPage() {
             </p>
 
             <div className="pt-6 w-full flex justify-center">
-              <CtaButton href="/get-started" fullWidth className="max-w-4xl">
-                SCHEDULE YOUR CONFIDENTIAL COLLEGE PROSPECT STRATEGY CALL TODAY
+              <CtaButton href="/contact" fullWidth className="max-w-4xl">
+                SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
               </CtaButton>
             </div>
           </div>

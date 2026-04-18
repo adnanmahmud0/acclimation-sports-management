@@ -52,7 +52,7 @@ export function ContactSection() {
                   <textarea placeholder="Message" rows={5} className="w-full bg-[#0a0d12]/60 border border-white/10 px-8 py-6 rounded-2xl text-white placeholder:text-white/20 focus:border-primary/50 outline-none transition-all shadow-inner" />
 
                   <CtaButton type="submit" fullWidth size="lg">
-                     Schedule Confidential Strategy Call
+                     SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
                   </CtaButton>
                </form>
 

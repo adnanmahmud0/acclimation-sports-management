@@ -83,8 +83,8 @@ export default function MarketingEndorsementsPage() {
           </div>
 
           <div className="pt-6">
-            <CtaButton href="/get-started">
-              GET STARTED
+            <CtaButton href="/contact">
+              SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
             </CtaButton>
           </div>
 

@@ -47,8 +47,8 @@ export default function WNBAPage() {
           {/* CTA Section */}
           <div className="text-center space-y-8">
             <div className="flex flex-col items-center gap-6">
-              <CtaButton href="/book">
-                SCHEDULE YOUR CONFIDENTIAL WNBA STRATEGY CALL TODAY
+              <CtaButton href="/contact">
+                SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
               </CtaButton>
 
               <div className="text-white/40 text-xs font-bold tracking-widest uppercase flex flex-col md:flex-row items-center gap-2 md:gap-4">

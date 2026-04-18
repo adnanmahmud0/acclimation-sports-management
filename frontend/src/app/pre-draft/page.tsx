@@ -70,8 +70,8 @@ export default function PreDraftPage() {
 
             {/* CTA Section */}
             <div className="text-center pt-8">
-               <CtaButton href="/book">
-                 SCHEDULE YOUR CONFIDENTIAL PRE-DRAFT STRATEGY CALL TODAY
+               <CtaButton href="/contact">
+                 SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
                </CtaButton>
             </div>
 

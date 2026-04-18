@@ -46,8 +46,8 @@ export default function GLeagueElitePage() {
             {/* Main CTA Section */}
             <div className="text-center space-y-8">
               <div className="flex flex-col items-center gap-4">
-                <CtaButton href="/book">
-                  SCHEDULE YOUR CONFIDENTIAL G LEAGUE STRATEGY CALL WITH Joe Grekoski
+                <CtaButton href="/contact">
+                  SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
                 </CtaButton>
               </div>
             </div>
