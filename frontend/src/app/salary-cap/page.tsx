@@ -7,7 +7,8 @@ import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Proprietary Salary Cap Analytics",
-  description: "Proprietary analytical models and expert salary cap strategy to optimize every contract and maximize career earnings.",
+  description:
+    "Proprietary analytical models and expert salary cap strategy to optimize every contract and maximize career earnings.",
 };
 
 export default function SalaryCapPage() {
@@ -168,12 +169,19 @@ export default function SalaryCapPage() {
   );
 }
 
-function EngineCard({ title, children }: { title: string, children: React.ReactNode }) {
+function EngineCard({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="glass-premium p-6 rounded-2xl border-white/10 hover:border-primary/40 transition-all group min-h-[180px] flex flex-col justify-between">
-      <h3 className="text-sm font-black text-white uppercase tracking-widest leading-tight mb-6">{title}</h3>
+      <h3 className="text-sm font-black text-white uppercase tracking-widest leading-tight mb-6">
+        {title}
+      </h3>
       {children}
     </div>
   );
 }
-

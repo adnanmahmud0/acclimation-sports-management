@@ -1,6 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CircleDot, TrendingUp, Target, Mic, FileText, Zap, Award, Scale } from "lucide-react";
+import {
+  CircleDot,
+  TrendingUp,
+  Target,
+  Mic,
+  FileText,
+  Zap,
+  Award,
+  Scale,
+} from "lucide-react";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
@@ -8,22 +17,23 @@ import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Elite Pre-Draft Mastery",
-  description: "Elite draft preparation, Combine mastery, and expert strategy for top basketball prospects entering the NBA Draft.",
+  description:
+    "Elite draft preparation, Combine mastery, and expert strategy for top basketball prospects entering the NBA Draft.",
 };
 
 export default function PreDraftPage() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden pt-12">
+    <main className="relative min-h-screen overflow-x-hidden pt-12 bg-[#05070a]">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/pre-draft.png"
+          src="/baskateballplayer.png"
           alt="Pre-Draft Arena"
           fill
-          className="object-cover opacity-80"
+          className="object-cover opacity-60"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/90 via-[#05070a]/40 to-[#05070a]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#05070a]/60 via-[#05070a]/20 to-[#05070a]" />
       </div>
 
       <div className="container mx-auto px-6 pt-32 pb-24 relative z-10 flex flex-col items-center">
@@ -80,14 +90,15 @@ export default function PreDraftPage() {
   );
 }
 
-function PointItem({ icon, text }: { icon: React.ReactNode, text: string }) {
+function PointItem({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
     <li className="flex items-center gap-6 group">
-       <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-primary/40 transition-all shadow-xl">
-          {icon}
-       </div>
-       <span className="text-base md:text-lg font-bold text-white tracking-tight leading-tight uppercase">{text}</span>
+      <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-primary/40 transition-all shadow-xl">
+        {icon}
+      </div>
+      <span className="text-base md:text-lg font-bold text-white tracking-tight leading-tight uppercase">
+        {text}
+      </span>
     </li>
   );
 }
-

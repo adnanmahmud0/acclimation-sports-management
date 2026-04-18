@@ -36,7 +36,8 @@ export default function PersonalBrandingPage() {
                   Economic Asset
                </GradientHeader>
                <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
-                  Personal Brand Development: the art of truly identifying the unique value, data-backed and scaling strategically and carefully, then to view the potential.
+                  Personal Brand Development: the art of truly identifying the unique value, <br/>
+                  data-backed and scaling strategically and carefully, then to view the potential.
                </p>
             </div>
 
@@ -113,7 +114,7 @@ export default function PersonalBrandingPage() {
                </div>
 
                <div className="pt-8 w-full pb-12">
-                  <CtaButton href="/contact" fullWidth>
+                  <CtaButton href="/contact">
                      SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
                   </CtaButton>
                </div>
