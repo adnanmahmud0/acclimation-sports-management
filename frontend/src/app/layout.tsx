@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "Acclimation Sports Management",
     images: [
       {
-        url: "/logo/AcclimationLogo-Vartical.jpg",
+        url: "/logo/AcclimationLogo-Vartical.png",
         width: 1200,
         height: 630,
         alt: "Acclimation Sports Management Logo",
@@ -65,12 +65,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Acclimation Sports | Where Economic Precision Meets NBA Domination",
     description: "Data-driven NBA representation led by Joe Grekoski.",
-    images: ["/logo/AcclimationLogo-Vartical.jpg"],
+    images: ["/logo/AcclimationLogo-Vartical.png"],
   },
   icons: {
-    icon: "/logo/AcclimationLogo-Vartical.jpg",
-    shortcut: "/logo/AcclimationLogo-Vartical.jpg",
-    apple: "/logo/AcclimationLogo-Vartical.jpg",
+    icon: "/logo/AcclimationLogo-Vartical.png",
+    shortcut: "/logo/AcclimationLogo-Vartical.png",
+    apple: "/logo/AcclimationLogo-Vartical.png",
   },
 };
 
