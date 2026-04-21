@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteMetadata.name}`,
   },
   description: siteMetadata.description,
-  keywords: siteMetadata.keywords,
+  keywords: [...siteMetadata.keywords],
   authors: [{ name: "Joe Grekoski" }],
   creator: siteMetadata.name,
   publisher: siteMetadata.name,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: siteMetadata.name,
     images: [
       {
-        url: siteMetadata.ogImage,
+        url: siteMetadata.defaultImage,
         width: 1200,
         height: 630,
         alt: siteMetadata.name,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteMetadata.name,
     description: siteMetadata.description,
-    images: [siteMetadata.ogImage],
+    images: [siteMetadata.defaultImage],
   },
   icons: {
     icon: "/logo/AcclimationLogo-Vartical.png",
