@@ -1,15 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "NBA G League Fast Track",
-  description:
-    "Rules, salaries, and the fast track from G League prospects to the NBA. Expert advocacy for athletes rising to the NBA stage.",
-};
+export const metadata: Metadata = buildPageMetadata("/g-league-elite");
 
 export default function GLeagueElitePage() {
   return (

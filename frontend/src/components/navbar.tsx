@@ -15,7 +15,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
-  SheetTrigger
+  SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
@@ -26,12 +26,14 @@ const aboutItems = [
   {
     title: "Our Vision",
     href: "/#about",
-    description: "The economic edge that sets Acclimation apart from traditional agencies.",
+    description:
+      "The economic edge that sets Acclimation apart from traditional agencies.",
   },
   {
     title: "JOE GREKOSKI",
     href: "/#about",
-    description: "Meet the intellectual property expert leading the next era of NBA representation.",
+    description:
+      "Meet the intellectual property expert leading the next era of NBA representation.",
   },
   {
     title: "Valuation Expertise",
@@ -44,32 +46,38 @@ const serviceItems = [
   {
     title: "Contract Negotiation",
     href: "/contract-negotiation",
-    description: "Litigation-grade strategy designed to maximize your career earnings.",
+    description:
+      "Litigation-grade strategy designed to maximize your career earnings.",
   },
   {
     title: "Brand Development",
     href: "/personal-branding",
-    description: "Transforming your talent into a premium, monetizable economic asset.",
+    description:
+      "Transforming your talent into a premium, monetizable economic asset.",
   },
   {
     title: "Salary Cap Analytics",
     href: "/salary-cap",
-    description: "Proprietary models for real-time forecasting and luxury-tax simulations.",
+    description:
+      "Proprietary models for real-time forecasting and luxury-tax simulations.",
   },
   {
     title: "Marketing & Endorsements",
     href: "/marketing-endorsements",
-    description: "Maximizing off-court income through shoe deals, NIL, and legacy partnerships.",
+    description:
+      "Maximizing off-court income through shoe deals, NIL, and legacy partnerships.",
   },
   {
     title: "Pre-Draft Mastery",
     href: "/pre-draft",
-    description: "Tailored preparation and strategic positioning for the NBA Combine.",
+    description:
+      "Tailored preparation and strategic positioning for the NBA Combine.",
   },
   {
     title: "Holistic Concierge",
     href: "/holistic-concierge",
-    description: "Elite trainers, personal chefs, private jets, and wealth management support.",
+    description:
+      "Elite trainers, personal chefs, private jets, and wealth management support.",
   },
 ];
 
@@ -77,38 +85,45 @@ const playerItems = [
   {
     title: "Elite High School Talent",
     href: "/high-school-talent",
-    description: "Multi-million dollar NIL deal strategy for top-ranked prep prospects."
+    description:
+      "Multi-million dollar NIL deal strategy for top-ranked prep prospects.",
   },
   {
     title: "Active NBA Players",
     href: "/nba-players",
-    description: "Veteran representation focused on wealth architecture and contract extensions."
+    description:
+      "Veteran representation focused on wealth architecture and contract extensions.",
   },
   {
     title: "College Prospects",
     href: "/college-prospects",
-    description: "NIL optimization and strategic brand launch for collegiate standouts."
+    description:
+      "NIL optimization and strategic brand launch for collegiate standouts.",
   },
   {
     title: "WNBA",
     href: "/wnba",
-    description: "Leading advocates for women's basketball professionalization and equity."
+    description:
+      "Leading advocates for women's basketball professionalization and equity.",
   },
   {
     title: "Two-Way Contracts",
     href: "/two-way-contracts",
-    description: "Maximizing the strategic value and progression of Two-Way agreements."
+    description:
+      "Maximizing the strategic value and progression of Two-Way agreements.",
   },
   {
     title: "G-League Elite",
     href: "/g-league-elite",
-    description: "Specialized advocacy for G-League athletes rising to the NBA stage."
+    description:
+      "Specialized advocacy for G-League athletes rising to the NBA stage.",
   },
 ];
 
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [menuValue, setMenuValue] = useState<string | null>(null);
 
   // Hide navbar on admin pages
   if (pathname?.startsWith("/admin")) {
@@ -127,7 +142,10 @@ export function Navbar() {
               </button>
             }
           />
-          <SheetContent side="left" className="bg-[#05070a]/95 backdrop-blur-xl border-white/10 text-white w-[300px] sm:w-[350px] flex flex-col h-full p-0">
+          <SheetContent
+            side="left"
+            className="bg-[#05070a]/95 backdrop-blur-xl border-white/10 text-white w-[300px] sm:w-[350px] flex flex-col h-full p-0"
+          >
             <SheetHeader className="text-left p-6 border-b border-white/5 bg-[#05070a]">
               <div className="flex items-center justify-between">
                 <SheetTitle>
@@ -153,9 +171,11 @@ export function Navbar() {
               </div>
 
               <div className="space-y-4">
-                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">About Acclimation</h4>
+                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">
+                  About Acclimation
+                </h4>
                 <div className="grid gap-3">
-                  {aboutItems.map(item => (
+                  {aboutItems.map((item) => (
                     <Link
                       key={item.title}
                       href={item.href}
@@ -174,9 +194,11 @@ export function Navbar() {
               </div>
 
               <div className="space-y-4">
-                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">Agency Services</h4>
+                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">
+                  Agency Services
+                </h4>
                 <div className="grid gap-3">
-                  {serviceItems.map(item => (
+                  {serviceItems.map((item) => (
                     <Link
                       key={item.title}
                       href={item.href}
@@ -205,9 +227,11 @@ export function Navbar() {
               </div>
 
               <div className="space-y-4">
-                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">Player Portfolios</h4>
+                <h4 className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase">
+                  Player Portfolios
+                </h4>
                 <div className="grid gap-3">
-                  {playerItems.map(item => (
+                  {playerItems.map((item) => (
                     <Link
                       key={item.title}
                       href={item.href}
@@ -234,7 +258,11 @@ export function Navbar() {
                   Contact
                 </Link>
 
-                <Link href="/contact" className="block mt-4" onClick={() => setOpen(false)}>
+                <Link
+                  href="/contact"
+                  className="block mt-4"
+                  onClick={() => setOpen(false)}
+                >
                   <button className="w-full py-4 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl font-bold text-xs tracking-widest uppercase text-white shadow-lg shadow-primary/20">
                     Schedule Strategy Call
                   </button>
@@ -246,15 +274,14 @@ export function Navbar() {
       </div>
 
       {/* Logo */}
-      <Logo
-        variant="horizontal"
-        className="w-40 md:w-56 lg:w-64"
-      />
-
+      <Logo variant="horizontal" className="w-40 md:w-56 lg:w-64" />
 
       {/* Navigation Menu (Desktop) */}
       <div className="hidden lg:flex items-center gap-2">
-        <NavigationMenu>
+        <NavigationMenu
+          value={menuValue}
+          onValueChange={(value) => setMenuValue(value ?? null)}
+        >
           <NavigationMenuList className="gap-1">
             <NavigationMenuItem>
               <Link
@@ -262,7 +289,7 @@ export function Navbar() {
                 data-slot="navigation-menu-link"
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors"
+                  "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors",
                 )}
                 onClick={() => {
                   if (pathname === "/") {
@@ -274,7 +301,7 @@ export function Navbar() {
               </Link>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
+            <NavigationMenuItem value="about">
               <NavigationMenuTrigger className="bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary data-[active]:text-primary transition-colors">
                 About
               </NavigationMenuTrigger>
@@ -285,6 +312,7 @@ export function Navbar() {
                       key={item.title}
                       title={item.title}
                       href={item.href}
+                      onClick={() => setMenuValue(null)}
                     >
                       {item.description}
                     </ListItem>
@@ -293,7 +321,7 @@ export function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
+            <NavigationMenuItem value="services">
               <NavigationMenuTrigger className="bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary data-[active]:text-primary transition-colors">
                 Services
               </NavigationMenuTrigger>
@@ -304,6 +332,7 @@ export function Navbar() {
                       key={item.title}
                       title={item.title}
                       href={item.href}
+                      onClick={() => setMenuValue(null)}
                     >
                       {item.description}
                     </ListItem>
@@ -318,14 +347,14 @@ export function Navbar() {
                 data-slot="navigation-menu-link"
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors text-center leading-tight"
+                  "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors text-center leading-tight",
                 )}
               >
                 The Acclimation Advantage
               </Link>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
+            <NavigationMenuItem value="players">
               <NavigationMenuTrigger className="bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary data-[active]:text-primary transition-colors">
                 For Players
               </NavigationMenuTrigger>
@@ -336,6 +365,7 @@ export function Navbar() {
                       key={item.title}
                       title={item.title}
                       href={item.href}
+                      onClick={() => setMenuValue(null)}
                     >
                       {item.description}
                     </ListItem>
@@ -350,7 +380,7 @@ export function Navbar() {
                 data-slot="navigation-menu-link"
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors"
+                  "bg-transparent text-white/90 hover:bg-transparent focus:bg-transparent hover:text-primary transition-colors",
                 )}
               >
                 Contact
@@ -364,8 +394,12 @@ export function Navbar() {
       <div className="flex items-center gap-4">
         <Link href="/contact" className="group hidden sm:block">
           <button className="relative px-3 md:px-6 py-2 bg-gradient-to-br from-primary via-secondary to-purple-600 rounded-xl leading-tight text-center transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,210,255,0.3)] hover:shadow-[0_0_30px_rgba(0,210,255,0.5)]">
-            <span className="hidden md:block text-[10px] font-bold tracking-wider text-white opacity-90 uppercase">Schedule Confidential</span>
-            <span className="block text-[10px] md:text-xs font-black tracking-widest text-white uppercase">Strategy Call</span>
+            <span className="hidden md:block text-[10px] font-bold tracking-wider text-white opacity-90 uppercase">
+              Schedule Confidential
+            </span>
+            <span className="block text-[10px] md:text-xs font-black tracking-widest text-white uppercase">
+              Strategy Call
+            </span>
           </button>
         </Link>
       </div>
@@ -386,7 +420,7 @@ const ListItem = React.forwardRef<
         className={cn(
           "flex flex-col select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:text-primary focus:text-primary",
           "hover:bg-muted focus:bg-muted text-sm",
-          className
+          className,
         )}
         {...props}
       >

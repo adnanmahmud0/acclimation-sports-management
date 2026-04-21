@@ -1,15 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Elite High School NIL Strategy",
-  description: "Multi-million dollar NIL deal strategy and professional career planning for top-ranked prep basketball prospects.",
-};
+import { buildPageMetadata } from "@/lib/seo";
 import { CheckCircle2 } from "lucide-react";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+
+export const metadata: Metadata = buildPageMetadata("/high-school-talent");
 
 export default function HighSchoolTalentPage() {
   return (
@@ -143,14 +139,16 @@ export default function HighSchoolTalentPage() {
   );
 }
 
-function ChoiceItem({ title, desc }: { title: string, desc: string }) {
+function ChoiceItem({ title, desc }: { title: string; desc: string }) {
   return (
     <div className="space-y-3 group p-6 rounded-2xl bg-white/[0.01] border border-white/[0.03] hover:bg-white/[0.03] hover:border-primary/20 transition-all duration-500">
       <div className="flex items-center gap-3">
         <div className="w-8 h-8 rounded-lg bg-primary/5 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
           <CheckCircle2 className="w-4 h-4 text-primary group-hover:text-inherit" />
         </div>
-        <h4 className="text-base font-black text-white uppercase tracking-widest leading-tight">{title}</h4>
+        <h4 className="text-base font-black text-white uppercase tracking-widest leading-tight">
+          {title}
+        </h4>
       </div>
       <p className="text-sm font-bold text-white/50 uppercase tracking-widest leading-relaxed">
         {desc}
@@ -158,4 +156,3 @@ function ChoiceItem({ title, desc }: { title: string, desc: string }) {
     </div>
   );
 }
-

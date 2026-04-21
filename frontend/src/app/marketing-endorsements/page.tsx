@@ -1,17 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
 import { BarChart3, Mic2, Handshake, Network, Trophy } from "lucide-react";
-import { Logo } from "@/components/logo";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Elite Endorsements & Marketing",
-  description:
-    "Maximizing off-court income through shoe deals, NIL, and legacy partnerships for elite basketball talent.",
-};
+export const metadata: Metadata = buildPageMetadata("/marketing-endorsements");
 
 export default function MarketingEndorsementsPage() {
   return (

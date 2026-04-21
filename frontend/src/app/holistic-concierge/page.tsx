@@ -1,16 +1,18 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "One-Stop Holistic Concierge",
-  description: "Elite trainers, personal chefs, private jets, and wealth management support for the modern NBA athlete.",
-};
-import { Dumbbell, Utensils, PiggyBank, Plane, Tv, Headphones } from "lucide-react";
-import { Logo } from "@/components/logo";
+export const metadata: Metadata = buildPageMetadata("/holistic-concierge");
+import {
+  Dumbbell,
+  Utensils,
+  PiggyBank,
+  Plane,
+  Tv,
+  Headphones,
+} from "lucide-react";
 
 export default function HolisticConciergePage() {
   return (
@@ -94,19 +96,28 @@ export default function HolisticConciergePage() {
   );
 }
 
-function ServiceCard({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
+function ServiceCard({
+  icon,
+  title,
+  desc,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}) {
   return (
     <div className="flex gap-6 group p-6 rounded-2xl bg-[#0a0d12]/40 border border-white/5 hover:border-primary/40 hover:bg-[#0a0d12]/60 transition-all backdrop-blur-md shadow-xl">
-       <div className="w-12 h-12 shrink-0 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-all">
-          {icon}
-       </div>
-       <div className="space-y-1">
-          <h4 className="text-base md:text-lg font-black text-white tracking-tight leading-tight uppercase group-hover:text-primary transition-colors">{title}</h4>
-          <p className="text-white/60 text-xs md:text-sm font-bold uppercase tracking-widest leading-relaxed">
-             {desc}
-          </p>
-       </div>
+      <div className="w-12 h-12 shrink-0 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-all">
+        {icon}
+      </div>
+      <div className="space-y-1">
+        <h4 className="text-base md:text-lg font-black text-white tracking-tight leading-tight uppercase group-hover:text-primary transition-colors">
+          {title}
+        </h4>
+        <p className="text-white/60 text-xs md:text-sm font-bold uppercase tracking-widest leading-relaxed">
+          {desc}
+        </p>
+      </div>
     </div>
   );
 }
-

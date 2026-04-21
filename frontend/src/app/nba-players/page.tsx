@@ -1,14 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Active NBA Athlete Representation",
-  description: "Veteran representation focused on wealth architecture, contract extensions, and post-career financial security for active NBA athletes.",
-};
+export const metadata: Metadata = buildPageMetadata("/nba-players");
 
 export default function NBAPlayersPage() {
   return (
@@ -140,15 +136,15 @@ export default function NBAPlayersPage() {
   );
 }
 
-function TimelinePoint({ number, text }: { number: string, text: string }) {
+function TimelinePoint({ number, text }: { number: string; text: string }) {
   return (
     <div className="flex flex-col items-center space-y-6 group">
-       <div className="w-14 h-14 rounded-full bg-[#0a0d12]/80 border border-primary/40 flex items-center justify-center font-black text-xl text-white group-hover:bg-primary group-hover:text-black group-hover:border-primary transition-all shadow-[0_0_20px_rgba(0,180,255,0.2)] relative z-10">
-          {number}
-       </div>
-       <p className="text-base font-bold text-white/90 uppercase tracking-widest leading-relaxed px-4 group-hover:text-white transition-colors">
-          {text}
-       </p>
+      <div className="w-14 h-14 rounded-full bg-[#0a0d12]/80 border border-primary/40 flex items-center justify-center font-black text-xl text-white group-hover:bg-primary group-hover:text-black group-hover:border-primary transition-all shadow-[0_0_20px_rgba(0,180,255,0.2)] relative z-10">
+        {number}
+      </div>
+      <p className="text-base font-bold text-white/90 uppercase tracking-widest leading-relaxed px-4 group-hover:text-white transition-colors">
+        {text}
+      </p>
     </div>
   );
 }

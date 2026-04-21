@@ -1,25 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
-import {
-  CircleDot,
-  TrendingUp,
-  Target,
-  Mic,
-  FileText,
-  Zap,
-  Award,
-  Scale,
-} from "lucide-react";
+import { CircleDot, TrendingUp, Target, Mic, FileText } from "lucide-react";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Elite Pre-Draft Mastery",
-  description:
-    "Elite draft preparation, Combine mastery, and expert strategy for top basketball prospects entering the NBA Draft.",
-};
+export const metadata: Metadata = buildPageMetadata("/pre-draft");
 
 export default function PreDraftPage() {
   return (

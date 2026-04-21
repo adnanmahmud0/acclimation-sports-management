@@ -1,16 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Logo } from "@/components/logo";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Litigation-Grade Contract Negotiation",
-  description: "Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player security.",
-};
-
+export const metadata: Metadata = buildPageMetadata("/contract-negotiation");
 
 export default function ContractNegotiationPage() {
   return (
@@ -31,13 +25,14 @@ export default function ContractNegotiationPage() {
         <div className="space-y-8 max-w-5xl mx-auto text-center">
           <GradientHeader tag="h1" size="lg" className="mb-4 text-center">
             NBA Contract Negotiation and <br />
-            <span className="flex justify-center">
-              Representation
-            </span>
+            <span className="flex justify-center">Representation</span>
           </GradientHeader>
 
           <p className="text-sm font-bold tracking-[0.3em] uppercase text-white/50 mb-4">
-            Data-driven contract deals with proprietary in-house salary-cap models. Expert representation that maximizes guaranteed money, incentives, and long-term player for active NBA players, college prospects, and elite high-school talent.
+            Data-driven contract deals with proprietary in-house salary-cap
+            models. Expert representation that maximizes guaranteed money,
+            incentives, and long-term player for active NBA players, college
+            prospects, and elite high-school talent.
           </p>
 
           <div className="flex flex-col md:flex-row">
@@ -47,11 +42,16 @@ export default function ContractNegotiationPage() {
                 "Rookie Scale & Veteran Extension Negotiation",
                 "Multi-Team Bidding War Strategy",
                 "Full CBA Compliance & Contract Structuring",
-                "Pre-Draft & Combine Contract Positioning"
+                "Pre-Draft & Combine Contract Positioning",
               ].map((point, i) => (
-                <li key={i} className="flex items-center gap-4 text-white/80 group">
+                <li
+                  key={i}
+                  className="flex items-center gap-4 text-white/80 group"
+                >
                   <div className="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(0,210,255,1)] group-hover:scale-125 transition-transform" />
-                  <span className="text-base md:text-lg font-bold tracking-tight">{point}</span>
+                  <span className="text-base md:text-lg font-bold tracking-tight">
+                    {point}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -62,7 +62,6 @@ export default function ContractNegotiationPage() {
       {/* Process Section */}
       <div className="container mx-auto px-6 pb-24 relative z-10">
         <div className="space-y-20">
-
           {/* Horizontal Timeline */}
           <div className="relative pt-12">
             {/* Connecting Line */}
@@ -71,17 +70,32 @@ export default function ContractNegotiationPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
               {[
                 { step: 1, title: "Maximum", subtitle: "Guaranteed Money" },
-                { step: 2, title: "Performance", subtitle: "Incentives & Escalators" },
+                {
+                  step: 2,
+                  title: "Performance",
+                  subtitle: "Incentives & Escalators",
+                },
                 { step: 3, title: "Trade & Buyout", subtitle: "Negotiation" },
-                { step: 4, title: "Post-Contract", subtitle: "Wealth Coordination" }
+                {
+                  step: 4,
+                  title: "Post-Contract",
+                  subtitle: "Wealth Coordination",
+                },
               ].map((item) => (
-                <div key={item.step} className="flex flex-col items-center text-center group">
+                <div
+                  key={item.step}
+                  className="flex flex-col items-center text-center group"
+                >
                   <div className="w-12 h-12 rounded-full bg-[#0a0d12] border border-primary/40 flex items-center justify-center font-black text-primary mb-6 group-hover:bg-primary group-hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(0,210,255,0.2)]">
                     {item.step}
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-white text-sm font-black uppercase tracking-widest">{item.title}</h3>
-                    <p className="text-white/40 text-xs font-bold uppercase tracking-widest">{item.subtitle}</p>
+                    <h3 className="text-white text-sm font-black uppercase tracking-widest">
+                      {item.title}
+                    </h3>
+                    <p className="text-white/40 text-xs font-bold uppercase tracking-widest">
+                      {item.subtitle}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -89,13 +103,12 @@ export default function ContractNegotiationPage() {
           </div>
 
           <div className="flex justify-center pt-8">
-              <CtaButton href="/contact" fullWidth className="max-w-4xl">
-                SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
-              </CtaButton>
+            <CtaButton href="/contact" fullWidth className="max-w-4xl">
+              SCHEDULE YOUR CONFIDENTIAL CONTRACT STRATEGY CALL
+            </CtaButton>
           </div>
         </div>
       </div>
     </main>
   );
 }
-

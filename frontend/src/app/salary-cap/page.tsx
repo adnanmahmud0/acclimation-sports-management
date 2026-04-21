@@ -1,15 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Proprietary Salary Cap Analytics",
-  description:
-    "Proprietary analytical models and expert salary cap strategy to optimize every contract and maximize career earnings.",
-};
+export const metadata: Metadata = buildPageMetadata("/salary-cap");
 
 export default function SalaryCapPage() {
   return (

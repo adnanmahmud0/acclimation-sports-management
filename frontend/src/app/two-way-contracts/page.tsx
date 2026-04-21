@@ -1,15 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Strategic Two-Way Advantage",
-  description:
-    "Maximize the strategic value and progression of Two-Way agreements. Expert negotiation for undrafted gems and rising prospects.",
-};
+export const metadata: Metadata = buildPageMetadata("/two-way-contracts");
 
 export default function TwoWayContractsPage() {
   return (

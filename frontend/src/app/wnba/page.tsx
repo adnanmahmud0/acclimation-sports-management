@@ -1,14 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
-import { Footer } from "@/components/footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "WNBA Advocacy & Representation",
-  description: "Capitalize on the historic new WNBA CBA. Expert negotiation and representation that maximizes earnings and brand value for WNBA athletes.",
-};
+export const metadata: Metadata = buildPageMetadata("/wnba");
 
 export default function WNBAPage() {
   return (
