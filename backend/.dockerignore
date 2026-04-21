@@ -1,0 +1,32 @@
+# Dependencies (re-installed inside Docker)
+node_modules
+
+# Compiled output (re-built inside Docker)
+dist
+
+# Environment secrets (injected via Render env vars)
+.env
+.env.*
+
+# Logs and uploads (runtime data)
+logs
+*.log
+uploads
+/winston
+
+# Git
+.git
+.gitignore
+
+# Dev tooling
+.eslintrc
+eslint.config.js
+.prettierrc
+
+# Docker files themselves
+Dockerfile
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
