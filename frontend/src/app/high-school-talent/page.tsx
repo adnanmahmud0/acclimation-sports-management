@@ -4,12 +4,14 @@ import { buildPageMetadata } from "@/lib/seo";
 import { CheckCircle2 } from "lucide-react";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
+import { BreadcrumbSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/high-school-talent");
 
 export default function HighSchoolTalentPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden pt-12">
+      <BreadcrumbSchema items={[{ name: "Elite High School Talent", href: "/high-school-talent" }]} />
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -57,8 +59,9 @@ export default function HighSchoolTalentPage() {
                     Acclimation Edge
                   </span>
                 </div>
-                <GradientHeader tag="h3" size="md">
-                  Why Elite Prospects <br /> Choose Acclimation
+                <GradientHeader tag="h2" size="md">
+                  Why Elite Prospects <br />
+                  Choose Acclimation
                 </GradientHeader>
               </div>
 

@@ -3,12 +3,16 @@ import { Metadata } from "next";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { GradientHeader } from "@/components/gradient-header";
 import { buildPageMetadata } from "@/lib/seo";
+import { LocalBusinessSchema, PersonSchema, BreadcrumbSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/contact");
 
 export default function ContactPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden flex flex-col bg-black/5">
+      <LocalBusinessSchema />
+      <PersonSchema />
+      <BreadcrumbSchema items={[{ name: "Contact", href: "/contact" }]} />
       <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_top,_rgba(0,210,255,0.14),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(58,123,213,0.16),_transparent_32%),linear-gradient(180deg,_#070b10_0%,_#05070a_55%,_#030406_100%)]" />
       <div className="absolute inset-0 -z-10 bg-[url('/bascatecoart_v6.png')] bg-cover bg-center opacity-15 mix-blend-screen" />
       {/* Background Image with Overlay */}

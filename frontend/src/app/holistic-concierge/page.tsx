@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/holistic-concierge");
 import {
@@ -17,6 +18,7 @@ import {
 export default function HolisticConciergePage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden pt-12">
+      <BreadcrumbSchema items={[{ name: "Holistic Concierge", href: "/holistic-concierge" }]} />
       {/* Hero Section */}
       <div className="relative">
         <div className="absolute inset-x-0 top-0 z-[-1] h-[85vh]">

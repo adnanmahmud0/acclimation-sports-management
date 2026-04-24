@@ -3,12 +3,14 @@ import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/two-way-contracts");
 
 export default function TwoWayContractsPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
+      <BreadcrumbSchema items={[{ name: "Two-Way Contracts", href: "/two-way-contracts" }]} />
       {/* Hero Section */}
       <div className="relative">
         <div className="absolute inset-0 z-[-1] h-[85vh]">
@@ -38,6 +40,9 @@ export default function TwoWayContractsPage() {
 
       {/* Logic Grid Section */}
       <div className="container mx-auto px-6 pb-24">
+        <h2 className="text-sm font-black uppercase tracking-[0.4em] text-primary text-center mb-8">
+          Two-Way Contract Rules, Salary &amp; Strategy
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="glass-premium p-8 rounded-3xl border-primary/20 space-y-6">
             <h3 className="text-xl font-black text-white uppercase tracking-wider">

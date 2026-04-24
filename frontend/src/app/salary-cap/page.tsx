@@ -3,12 +3,14 @@ import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/salary-cap");
 
 export default function SalaryCapPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-[#05070a] text-white">
+      <BreadcrumbSchema items={[{ name: "Salary Cap Analytics", href: "/salary-cap" }]} />
       {/* Hero Background */}
       <div className="absolute inset-x-0 top-0 h-[85vh]">
         <Image

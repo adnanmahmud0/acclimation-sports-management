@@ -4,12 +4,18 @@ import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema, FAQSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/pre-draft");
 
 export default function PreDraftPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden pt-12 bg-[#05070a]">
+      <BreadcrumbSchema items={[{ name: "Pre-Draft Mastery", href: "/pre-draft" }]} />
+      <FAQSchema faqs={[
+        { question: "What does NBA Combine preparation include?", answer: "Our Pre-Draft Mastery program includes player valuation reports, customized NBA Combine training with top coaches, targeted workouts with NBA teams, media and interview preparation, and seamless transition into rookie contract negotiation." },
+        { question: "How do you prepare prospects for the NBA Draft?", answer: "We provide professional player valuation and draft projection reports, customized combine training, targeted workouts, media training, and aggressive rookie contract negotiation planning." },
+      ]} />
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image

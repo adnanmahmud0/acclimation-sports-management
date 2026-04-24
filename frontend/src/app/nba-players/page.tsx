@@ -3,12 +3,14 @@ import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/nba-players");
 
 export default function NBAPlayersPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden pt-12">
+      <BreadcrumbSchema items={[{ name: "Active NBA Players", href: "/nba-players" }]} />
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image

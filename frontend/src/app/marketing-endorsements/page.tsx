@@ -4,12 +4,14 @@ import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { BarChart3, Mic2, Handshake, Network, Trophy } from "lucide-react";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/marketing-endorsements");
 
 export default function MarketingEndorsementsPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden pt-12">
+      <BreadcrumbSchema items={[{ name: "Marketing & Endorsements", href: "/marketing-endorsements" }]} />
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image

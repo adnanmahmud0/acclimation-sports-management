@@ -3,12 +3,18 @@ import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema, FAQSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/wnba");
 
 export default function WNBAPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
+      <BreadcrumbSchema items={[{ name: "WNBA", href: "/wnba" }]} />
+      <FAQSchema faqs={[
+        { question: "What is the new WNBA CBA salary cap?", answer: "The new 7-year WNBA CBA (2026–2032) raises the salary cap to $7M in 2026, bumps average pay to $583K, and sets max contracts at over $1.4M." },
+        { question: "How can Acclimation help WNBA athletes?", answer: "We provide expert negotiation under the new WNBA CBA, high-value endorsement and brand deals, podcast and media opportunities, personal brand development, and full holistic concierge support." },
+      ]} />
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image

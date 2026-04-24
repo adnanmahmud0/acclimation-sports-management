@@ -3,12 +3,14 @@ import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/personal-branding");
 
 export default function PersonalBrandingPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden flex flex-col">
+      <BreadcrumbSchema items={[{ name: "Personal Branding", href: "/personal-branding" }]} />
       {/* Background Image */}
       <div className="absolute inset-0 z-[-1]">
         <Image

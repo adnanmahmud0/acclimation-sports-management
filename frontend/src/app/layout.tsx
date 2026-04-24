@@ -4,7 +4,8 @@ import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { siteMetadata } from "@/lib/seo";
+import { buildSiteMetadata, siteMetadata } from "@/lib/seo";
+import { OrganizationSchema } from "@/components/json-ld";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,12 +18,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  ...buildSiteMetadata(),
   title: {
     default: siteMetadata.name,
     template: `%s | ${siteMetadata.name}`,
   },
-  description: siteMetadata.description,
-  keywords: [...siteMetadata.keywords],
   authors: [{ name: "Joe Grekoski" }],
   creator: siteMetadata.name,
   publisher: siteMetadata.name,
@@ -31,41 +31,15 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(siteMetadata.url),
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: siteMetadata.name,
-    description: siteMetadata.description,
-    url: siteMetadata.url,
-    siteName: siteMetadata.name,
-    images: [
-      {
-        url: siteMetadata.defaultImage,
-        width: 1200,
-        height: 630,
-        alt: siteMetadata.name,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteMetadata.name,
-    description: siteMetadata.description,
-    images: [siteMetadata.defaultImage],
-  },
   icons: {
-    icon: "/logo/AcclimationLogo-Vartical.png",
-    shortcut: "/logo/AcclimationLogo-Vartical.png",
-    apple: "/logo/AcclimationLogo-Vartical.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({
@@ -79,6 +53,7 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col bg-[#05070a] text-white">
+        <OrganizationSchema />
         <TooltipProvider>
           <Navbar />
           {/* <FounderCard /> */}

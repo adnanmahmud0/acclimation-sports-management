@@ -3,12 +3,19 @@ import { Metadata } from "next";
 import { GradientHeader } from "@/components/gradient-header";
 import { CtaButton } from "@/components/cta-button";
 import { buildPageMetadata } from "@/lib/seo";
+import { BreadcrumbSchema, FAQSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = buildPageMetadata("/contract-negotiation");
 
 export default function ContractNegotiationPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden pt-12">
+      <BreadcrumbSchema items={[{ name: "Contract Negotiation", href: "/contract-negotiation" }]} />
+      <FAQSchema faqs={[
+        { question: "How does Acclimation negotiate NBA contracts?", answer: "We use proprietary in-house salary-cap models and litigation-grade strategies to maximize guaranteed money, incentives, and long-term player security." },
+        { question: "What is salary cap mastery in NBA contracts?", answer: "Our analytical models provide real-time cap forecasting, Bird Rights optimization, luxury tax stress testing, and trade scenario analysis to ensure the best possible contract structure." },
+        { question: "Can Acclimation help with rookie scale contracts?", answer: "Yes. We specialize in rookie scale and veteran extension negotiations, pre-draft positioning, and full CBA compliance for all stages of an NBA career." },
+      ]} />
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -64,6 +71,9 @@ export default function ContractNegotiationPage() {
         <div className="space-y-20">
           {/* Horizontal Timeline */}
           <div className="relative pt-12">
+            <h2 className="text-center text-sm font-black uppercase tracking-[0.4em] text-primary mb-10">
+              Our Negotiation Process
+            </h2>
             {/* Connecting Line */}
             <div className="absolute top-[4.5rem] left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent hidden md:block" />
 
