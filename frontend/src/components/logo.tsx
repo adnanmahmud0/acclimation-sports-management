@@ -31,7 +31,7 @@ export function Logo({
         alt="Acclimation Sports Management"
         width={width || defaultWidth}
         height={height || defaultHeight}
-        className="object-contain rounded-md"
+        className="object-contain"
         priority
       />
     </Link>

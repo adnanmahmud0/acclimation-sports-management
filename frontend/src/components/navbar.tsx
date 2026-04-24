@@ -418,7 +418,7 @@ const ListItem = React.forwardRef<
         ref={ref}
         data-slot="navigation-menu-link"
         className={cn(
-          "flex flex-col select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:text-primary focus:text-primary",
+          "flex flex-col select-none space-y-1 p-3 leading-none no-underline outline-none transition-colors hover:text-primary focus:text-primary",
           "hover:bg-muted focus:bg-muted text-sm",
           className,
         )}
