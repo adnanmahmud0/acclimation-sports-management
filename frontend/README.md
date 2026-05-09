@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Application
+
+> **Note**: This application is deployed to Vercel using only the frontend code. See [FRONTEND_ONLY.md](./FRONTEND_ONLY.md) for more details.
 
 ## Getting Started
 
